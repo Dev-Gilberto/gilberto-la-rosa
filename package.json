@@ -1,0 +1,22 @@
+{
+  "name": "gilberto-la-rosa",
+  "type": "module",
+  "version": "0.0.1",
+  "author": {
+    "name": "Gilberto La Rosa",
+    "email": "gilberto.larosa@codafter.codes",
+    "url": "https://www.gilberto-la-rosa.dev"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/tailwind": "^5.1.0",
+    "astro": "^4.4.4",
+    "tailwindcss": "^3.4.1"
+  }
+}
