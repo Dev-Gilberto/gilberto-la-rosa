@@ -2,6 +2,17 @@
   <div class="container">
     <input id="responsive-menu" type="checkbox" />
     <label for="responsive-menu">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="32"
+        height="32"
+        viewBox="0 0 24 24"
+        ><path
+          fill="currentcolor"
+          fill-rule="evenodd"
+          d="M20.05 17.65a3 3 0 0 0 1.2-2.4v-11a3 3 0 0 0-3-3h-12a3 3 0 0 0-3 3v11a3 3 0 0 0 1.2 2.4l6 4.5a3 3 0 0 0 3.6 0z"
+          clip-rule="evenodd"></path></svg
+      >
       <span id="menu-icon"></span>
     </label>
 
@@ -14,10 +25,13 @@
         <a href="/proyectos">proyectos</a>
       </li>
       <li>
-        <a href="/trabajos">trabajos dependientes</a>
+        <a href="/trabajos-dependientes">trabajos dependientes</a>
       </li>
       <li>
-        <a href="/trabajos">trabajos como freelancer</a>
+        <a href="/trabajos-freelance">trabajos freelance</a>
+      </li>
+      <li>
+        <a href="/blog">blog</a>
       </li>
     </ul>
     <ul id="social-media">
@@ -110,7 +124,8 @@
   /*** LABEL ***/
   nav label {
     cursor: pointer;
-    display: block;
+    display: flex;
+    justify-content: space-between;
     font: 2em/1 var(--Font-global);
     padding: 0.5em;
   }
