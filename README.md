@@ -1,5 +1,16 @@
 # Portafolio web de Gilberto La Rosa
 
-Pagina biografica, donde se detalle un breve resumen de la vida profesional de Gilberto La Rosa.
+Página biográfica de Gilberto La Rosa, donde se detalla un breve resumen de la vida profesional, excelente ejemplo para babydev que están iniciando en este mundo de la programación web y desean darse a conocer por medio de su sitio web, no que ser como el dicho “casa de herrero cuchillo de palo”, hay que demostrar profesionalismos desde los inicios para que se que vuelva una costumbre profesional y personal.
 
-## Estrutura del sitio
+## Estructura del sitio
+
+-Inicio = Hola!
+-Proyectos.
+-Trabajos Dependientes.
+-Trabajos Como Freelancer.
+
+## ¿Quieres saber más de mi? Sígueme
+
+[LinkedIn](https://www.linkedin.com/in/gilberto-la-rosa/)🚀
+[Twitter](https://twitter.com/dev_gilberto)🌎
+[CODAFTER](https://codafter.cl/)💻
