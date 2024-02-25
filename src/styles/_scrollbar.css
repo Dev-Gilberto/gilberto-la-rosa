@@ -1,0 +1,25 @@
+body::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+body::-webkit-scrollbar:vertical {
+  width: 22px;
+  background-color: var(--text-color-global);
+}
+body::-webkit-scrollbar:horizontal {
+  height: 22px;
+  background-color: var(--text-color-global);
+}
+body::-webkit-scrollbar-button {
+  display: none;
+}
+body::-webkit-scrollbar-button:increment {
+  display: none;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--bg-global);
+  border-radius: 22px;
+  border: solid 3px var(--text-color-global);
+}
+body::-webkit-scrollbar-track {
+  border-radius: 22px;
+}

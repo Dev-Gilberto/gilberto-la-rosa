@@ -1,0 +1,25 @@
+@import "./_scrollbar.css";
+
+@import url("https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200..700&display=swap");
+
+:root {
+  /* Fonts */
+  --Font-global: "Yanone Kaffeesatz", sans-serif;
+  /* colors*/
+  --bg-global: #f5efe7;
+  --text-color-global: #213555;
+  --navy-color: #4f709c;
+  --beige-color: #d8c4b6;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--Font-global);
+  background: var(--bg-global);
+  font-size: 1.3em;
+  color: var(--text-color-global);
+}
