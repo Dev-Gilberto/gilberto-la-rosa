@@ -3,13 +3,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200..700&display=swap");
 
 :root {
-  /* Fonts */
+  /* fonts */
   --Font-global: "Yanone Kaffeesatz", sans-serif;
   /* colors*/
   --bg-global: #f5efe7;
   --text-color-global: #213555;
   --navy-color: #4f709c;
   --beige-color: #d8c4b6;
+  /* degradados */
+  --degra-text-rainbow: linear-gradient(
+    90deg,
+    #f79533,
+    #f37055,
+    #ef4e7b,
+    #a166ab,
+    #5073b8,
+    #1098ad,
+    #07b39b,
+    #6fba82
+  );
 }
 *,
 *:before,
@@ -22,4 +34,29 @@ html {
   background: var(--bg-global);
   font-size: 1.3em;
   color: var(--text-color-global);
+}
+/* global class */
+.text-deg {
+  background: var(--degra-text-rainbow);
+  background-clip: text;
+  color: transparent;
+}
+.animate-text-deg {
+  background: var(--degra-text-rainbow);
+  background-size: 300%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: fluido 6s ease-in-out infinite;
+}
+@keyframes fluido {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
 }

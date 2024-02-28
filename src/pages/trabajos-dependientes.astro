@@ -1,5 +1,28 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Hbt from "../components/Hbt.astro";
+import Ucab from "../components/Ucab.astro";
+import Flasalle from "../components/Flasalle.astro";
 ---
 
-<Layout title="Trabajos 💻 Gilberto La Rosa 🚀 Web Developer 🌎" />
+<Layout title="Trabajos 💻 Gilberto La Rosa 🚀 Web Developer 🌎">
+  <section class="w-[90%] mx-auto my-8">
+    <h1 class="text-6xl md:text-9xl font-bold capitalize">
+      Trabajos
+      <br />
+      dependientes
+    </h1>
+  </section>
+  <!-- empleos  -->
+  <section class="w-[90%] mx-auto md:grid md:grid-cols-2">
+    <Hbt />
+    <Ucab />
+    <Flasalle />
+  </section>
+</Layout>
+
+<style>
+  .parrafos-work {
+    width: 80%;
+  }
+</style>

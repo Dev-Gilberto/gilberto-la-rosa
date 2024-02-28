@@ -1,21 +1,27 @@
 <nav>
-  <div class="container">
+  <div>
     <input id="responsive-menu" type="checkbox" />
-    <label for="responsive-menu">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="32"
-        height="32"
-        viewBox="0 0 24 24"
-        ><path
-          fill="currentcolor"
-          fill-rule="evenodd"
-          d="M20.05 17.65a3 3 0 0 0 1.2-2.4v-11a3 3 0 0 0-3-3h-12a3 3 0 0 0-3 3v11a3 3 0 0 0 1.2 2.4l6 4.5a3 3 0 0 0 3.6 0z"
-          clip-rule="evenodd"></path></svg
-      >
+    <label for="responsive-menu" class="animate__animated animate__bounceIn">
+      <!-- logo -->
+      <a href="/" title="Logo Gilberto La Rosa">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          viewBox="0 0 24 24"
+          ><path
+            fill="currentcolor"
+            fill-rule="evenodd"
+            d="M20.05 17.65a3 3 0 0 0 1.2-2.4v-11a3 3 0 0 0-3-3h-12a3 3 0 0 0-3 3v11a3 3 0 0 0 1.2 2.4l6 4.5a3 3 0 0 0 3.6 0z"
+            clip-rule="evenodd"></path>
+        </svg>
+      </a>
+      <!-- texto -->
+      <span class="animate-text-deg text-4xl uppercase font-bold">[menú]</span>
+      <!-- button -->
       <span id="menu-icon"></span>
     </label>
-
+    <!-- menu  -->
     <div id="overlay"></div>
     <ul>
       <li>
@@ -34,6 +40,8 @@
         <a href="/blog">blog</a>
       </li>
     </ul>
+    <!-- redes sociales -->
+    <!-- LinkedIn -->
     <ul id="social-media">
       <li>
         <a
@@ -52,6 +60,7 @@
           <span class="screen-reader-text">LinkedIn</span>
         </a>
       </li>
+      <!-- twitter -->
       <li>
         <a
           href="https://twitter.com/dev_gilberto"
@@ -73,7 +82,7 @@
           <span class="screen-reader-text">X</span>
         </a>
       </li>
-
+      <!-- github -->
       <li>
         <a
           href="https://github.com/Dev-Gilberto"
@@ -113,10 +122,10 @@
   }
 
   nav {
+    flex:;
     right: 0;
     position: relative;
     top: 0;
-    width: 100%;
     z-index: 9999;
   }
 
@@ -133,7 +142,7 @@
     display: flex;
     justify-content: space-between;
     font: 2em/1 var(--Font-global);
-    padding: 0.5em;
+    padding: 0.5em 0;
   }
 
   /* Hamburger Icon */
@@ -215,8 +224,7 @@
     max-height: inherit;
     opacity: 1;
   }
-
-  nav ul > li {
+  78 nav ul > li {
     margin: 1em 0;
   }
   @media (min-width: 768px) {

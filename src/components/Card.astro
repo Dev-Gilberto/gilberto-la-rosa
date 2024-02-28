@@ -1,0 +1,100 @@
+---
+import GitHub from "../components/GitHub.astro";
+---
+
+<ul>
+  <li>
+    <img src="../../chaps_1x.jpg" alt="" />
+    <div class="caption">
+      <div class="bg-text"></div>
+      <a href="/">
+        <div class="caption-text">
+          <h1>Amazing Caption</h1>
+          <p>Whatever It Is - Always Awesome</p>
+          <GitHub />
+        </div>
+      </a>
+    </div>
+  </li>
+  <li>
+    <img src="../../ithinkican_01.jpg" alt="img1" />
+    <div class="caption">
+      <div class="bg-text"></div>
+      <a href="/">
+        <div class="caption-text">
+          <h1>Amazing Caption</h1>
+          <p>Whatever It Is - Always Awesome</p>
+          <GitHub />
+        </div>
+      </a>
+    </div>
+  </li>
+  <li>
+    <img src="../../sketch_1x.jpg" alt="" />
+    <div class="caption">
+      <div class="bg-text"></div>
+      <a href="/">
+        <div class="caption-text">
+          <h1>Amazing Caption</h1>
+          <p>Whatever It Is - Always Awesome</p>
+          <GitHub />
+        </div>
+      </a>
+    </div>
+  </li>
+</ul>
+
+<style>
+  ul li {
+    float: left;
+    padding: 0px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  ul li:hover .caption {
+    opacity: 1;
+    transform: translateY(-100px);
+  }
+
+  ul li:hover img {
+    opacity: 1;
+    transform: translateY(-40px);
+  }
+
+  ul img {
+    margin: 0px;
+    padding: 0px;
+    float: left;
+    z-index: 0;
+  }
+
+  ul .caption {
+    cursor: pointer;
+    position: absolute;
+    opacity: 0;
+    top: 300px;
+    transition: all 0.2s ease-in-out;
+  }
+
+  ul img {
+    transition: all 0.2s ease-in-out;
+  }
+  ul .bg-text {
+    background: var(--text-color-global);
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    z-index: 5;
+  }
+
+  ul .caption-text {
+    width: 400px;
+    height: 300px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 20px;
+    z-index: 10;
+  }
+</style>
