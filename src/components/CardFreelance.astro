@@ -1,148 +1,70 @@
+---
+interface Props {
+  name: string;
+  src: string;
+  alt: string;
+}
+
+const { name, src, alt } = Astro.props;
+---
+
 <li
   class="w-[20rem] h-[31rem] list-none bg-[#d8c4b6] text-white overflow-hidden relative"
 >
   <div class="w-full h-[15rem] p-4">
     <img
-      src="/LOGO_CODAFTER.jpg"
-      alt=""
+      {src}
+      {alt}
       class="w-full hover:scale-150 transition-all rounded-3xl"
     />
   </div>
   <div class="text-center bg-[#d8c4b6] absolute z-20 py-4">
-    <ul class="flex flex-wrap justify-center py-4">
+    <ul class="flex flex-wrap justify-center py-2 gap-1">
       <li>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="32"
-          height="32"
-          viewBox="0 0 256 256"
-          ><g fill="none"
-            ><rect
-              width="256"
-              height="256"
-              fill="url(#skillIconsAstro0)"
-              rx="60"></rect><path
-              fill="#31274A"
-              fill-rule="evenodd"
-              d="M157.719 33.011c1.634 2.028 2.466 4.765 4.132 10.237l36.396 119.561a151.488 151.488 0 0 0-43.513-14.732l-23.697-80.08a3.086 3.086 0 0 0-4.809-1.593c-.533.4-.922.962-1.109 1.602l-23.411 80.031A151.447 151.447 0 0 0 58 162.791l36.573-119.57c1.673-5.464 2.507-8.195 4.141-10.219a13.443 13.443 0 0 1 5.449-4.032c2.414-.97 5.27-.97 10.984-.97h26.123c5.721 0 8.581 0 10.997.972a13.447 13.447 0 0 1 5.452 4.04"
-              clip-rule="evenodd"></path><path
-              fill="#FF5D01"
-              fill-rule="evenodd"
-              d="M162.074 168.499c-6 5.131-17.976 8.629-31.77 8.629c-16.931 0-31.122-5.271-34.887-12.359c-1.346 4.063-1.648 8.712-1.648 11.683c0 0-.887 14.585 9.257 24.729a9.538 9.538 0 0 1 9.538-9.538c9.028 0 9.018 7.877 9.009 14.268v.57c0 9.7 5.928 18.015 14.359 21.519a19.55 19.55 0 0 1-1.966-8.572c0-9.251 5.432-12.696 11.744-16.698c5.022-3.185 10.602-6.724 14.448-13.824a26.062 26.062 0 0 0 3.145-12.454c0-2.773-.431-5.445-1.229-7.953"
-              clip-rule="evenodd"></path><path
-              fill="url(#skillIconsAstro1)"
-              fill-rule="evenodd"
-              d="M162.074 168.499c-6 5.131-17.976 8.629-31.77 8.629c-16.931 0-31.122-5.271-34.887-12.359c-1.346 4.063-1.648 8.712-1.648 11.683c0 0-.887 14.585 9.257 24.729a9.538 9.538 0 0 1 9.538-9.538c9.028 0 9.018 7.877 9.009 14.268v.57c0 9.7 5.928 18.015 14.359 21.519a19.55 19.55 0 0 1-1.966-8.572c0-9.251 5.432-12.696 11.744-16.698c5.022-3.185 10.602-6.724 14.448-13.824a26.062 26.062 0 0 0 3.145-12.454c0-2.773-.431-5.445-1.229-7.953"
-              clip-rule="evenodd"></path><defs
-              ><linearGradient
-                id="skillIconsAstro0"
-                x1="128"
-                x2="128"
-                y1="0"
-                y2="256"
-                gradientUnits="userSpaceOnUse"
-                ><stop offset=".193" stop-color="#FCB3B2"></stop><stop
-                  offset="1"
-                  stop-color="#C587EE"></stop></linearGradient
-              ><linearGradient
-                id="skillIconsAstro1"
-                x1="189.089"
-                x2="153.565"
-                y1="126.765"
-                y2="201.132"
-                gradientUnits="userSpaceOnUse"
-                ><stop stop-color="#FF1639"></stop><stop
-                  offset="1"
-                  stop-color="#FF1639"
-                  stop-opacity="0"></stop></linearGradient
-              ></defs
-            ></g
-          ></svg
-        >
+        <img
+          class="w-8 h-8"
+          src="https://api.iconify.design/skill-icons:astro.svg"
+          alt="astrojs"
+        />
       </li>
       <li>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="32"
-          height="32"
-          viewBox="0 0 256 256"
-          ><g fill="none"
-            ><rect width="256" height="256" fill="#E14E1D" rx="60"></rect><path
-              fill="#fff"
-              d="m48 38l8.61 96.593h110.71l-3.715 41.43l-35.646 9.638l-35.579-9.624l-2.379-26.602H57.94l4.585 51.281l65.427 18.172l65.51-18.172l8.783-98.061H85.824l-2.923-32.71h122.238L208 38z"
-            ></path><path
-              fill="#EBEBEB"
-              d="M128 38H48l8.61 96.593H128v-31.938H85.824l-2.923-32.71H128zm0 147.647l-.041.014l-35.579-9.624l-2.379-26.602H57.94l4.585 51.281l65.427 18.172l.049-.014z"
-            ></path></g
-          ></svg
-        >
-      </li>
-      <li>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="32"
-          height="32"
-          viewBox="0 0 256 256"
-          ><g fill="none"
-            ><rect width="256" height="256" fill="#0277BD" rx="60"></rect><path
-              fill="#EBEBEB"
-              d="m53.753 102.651l2.862 31.942h71.481v-31.942zM128.095 38H48l2.904 31.942h77.191zm0 180.841v-33.233l-.14.037l-35.574-9.605l-2.274-25.476H58.042l4.475 50.154l65.431 18.164z"
-            ></path><path
-              fill="#fff"
-              d="m167.318 134.593l-3.708 41.426l-35.625 9.616v33.231l65.483-18.148l.48-5.397l7.506-84.092l.779-8.578L208 38h-80.015v31.942h45.009l-2.906 32.709h-42.103v31.942z"
-            ></path></g
-          ></svg
-        >
-      </li>
-      <li>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="32"
-          height="32"
-          viewBox="0 0 256 256"
-          ><g fill="none"
-            ><rect width="256" height="256" fill="#F0DB4F" rx="60"></rect><path
-              fill="#323330"
-              d="m67.312 213.932l19.59-11.856c3.78 6.701 7.218 12.371 15.465 12.371c7.905 0 12.889-3.092 12.889-15.12v-81.798h24.058v82.138c0 24.917-14.606 36.259-35.916 36.259c-19.245 0-30.416-9.967-36.087-21.996m85.07-2.576l19.588-11.341c5.157 8.421 11.859 14.607 23.715 14.607c9.969 0 16.325-4.984 16.325-11.858c0-8.248-6.53-11.17-17.528-15.98l-6.013-2.579c-17.357-7.388-28.871-16.668-28.871-36.258c0-18.044 13.748-31.792 35.229-31.792c15.294 0 26.292 5.328 34.196 19.247l-18.731 12.029c-4.125-7.389-8.591-10.31-15.465-10.31c-7.046 0-11.514 4.468-11.514 10.31c0 7.217 4.468 10.139 14.778 14.608l6.014 2.577c20.449 8.765 31.963 17.699 31.963 37.804c0 21.654-17.012 33.51-39.867 33.51c-22.339 0-36.774-10.654-43.819-24.574"
-            ></path></g
-          ></svg
-        >
+        <img
+          class="w-8 h-8"
+          src="https://api.iconify.design/skill-icons:html.svg"
+          alt="html"
+        />
       </li>
 
       <li>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="32"
-          height="32"
-          viewBox="0 0 256 256"
-          ><g fill="none"
-            ><rect width="256" height="256" fill="#242938" rx="60"></rect><path
-              fill="url(#skillIconsTailwindcssDark0)"
-              fill-rule="evenodd"
-              d="M83 110c6-24 21.001-36 45-36c36 0 40.5 27 58.5 31.5c12.001 3.001 22.5-1.499 31.5-13.5c-5.999 23.999-21.001 36-45 36c-36 0-40.5-27-58.5-31.5C102.499 93.5 92 98 83 110m-45 54c6-23.999 21-36 45-36c36 0 40.5 27 58.5 31.5c12.001 3.001 22.5-1.499 31.5-13.5c-5.999 23.999-21.001 36-45 36c-36 0-40.5-27-58.5-31.5c-12-3.001-22.5 1.499-31.5 13.5"
-              clip-rule="evenodd"></path><defs
-              ><linearGradient
-                id="skillIconsTailwindcssDark0"
-                x1="86.5"
-                x2="163.5"
-                y1="74"
-                y2="185.5"
-                gradientUnits="userSpaceOnUse"
-                ><stop stop-color="#32B1C1"></stop><stop
-                  offset="1"
-                  stop-color="#14C6B7"></stop></linearGradient
-              ></defs
-            ></g
-          ></svg
-        >
+        <img
+          class="w-8 h-8"
+          src="https://api.iconify.design/skill-icons:css.svg"
+          alt="css"
+        />
+      </li>
+      <li>
+        <img
+          class="w-8 h-8"
+          src="https://api.iconify.design/skill-icons:javascript.svg"
+          alt="javascript"
+        />
+      </li>
+      <li>
+        <img
+          class="w-8 h-8"
+          src="https://api.iconify.design/skill-icons:tailwindcss-light.svg"
+          alt="tailwindcss"
+        />
       </li>
     </ul>
 
-    <p class="text-xl uppercase font-medium tracking-wider text-[#213555]">
-      [codafter, SpA]
+    <p
+      class="text-deg text-xl uppercase font-bold tracking-wider text-[#213555]"
+    >
+      {name}
     </p>
     <p
-      class="bg-white m-4 rounded-3xl text-[#213555] p-4 font-light tracking-wide"
+      class="bg-white mx-4 mb-6 mt-2 rounded-3xl text-[#213555] p-4 font-light tracking-wide"
     >
       Agencia de diseno y desarrollo web para sitios de alto perfomance.
     </p>

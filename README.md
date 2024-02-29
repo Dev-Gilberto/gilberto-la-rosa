@@ -4,10 +4,11 @@ Página biográfica de Gilberto La Rosa, donde se detalla un breve resumen de la
 
 ## Estructura del sitio
 
-- Inicio === Hola!
-- Proyectos.
+- ¡Hola!
+- Proyectos Open Source.
 - Trabajos Dependientes.
-- Trabajos Como Freelancer.
+- Proyectos Freelance.
+- Blog.
 
 ## ¿Quieres saber más de mi? Sígueme
 
