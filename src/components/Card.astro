@@ -1,100 +1,65 @@
 ---
 import GitHub from "../components/GitHub.astro";
+
+interface Props {
+  name: string;
+  languages: string;
+  src: string;
+  alt: string;
+}
+
+const { name, languages, src, alt } = Astro.props;
 ---
 
-<ul>
-  <li>
-    <img src="../../chaps_1x.jpg" alt="" />
-    <div class="caption">
-      <div class="bg-text"></div>
-      <a href="/">
-        <div class="caption-text">
-          <h1>Amazing Caption</h1>
-          <p>Whatever It Is - Always Awesome</p>
+<li class="float-left p-0 relative overflow-hidden">
+  <img class="w-[350px] m-0 p-0 float-left z-0" {src} {alt} />
+  <div class="caption absolute opacity-0 top-[300px]">
+    <div class="bg-[#213555] w-[350px] h-[300px] absolute z-[5]"></div>
+    <a href="/">
+      <div class="caption-text">
+        <h2 class="text-lg font-semibold capitalize tracking-wide">
+          {name}
+        </h2>
+        <p class="text-xs font-light mb-1 uppercase tracking-wider">
+          {languages}
+        </p>
+        <span class="flex justify-center pb-4">
           <GitHub />
-        </div>
-      </a>
-    </div>
-  </li>
-  <li>
-    <img src="../../ithinkican_01.jpg" alt="img1" />
-    <div class="caption">
-      <div class="bg-text"></div>
-      <a href="/">
-        <div class="caption-text">
-          <h1>Amazing Caption</h1>
-          <p>Whatever It Is - Always Awesome</p>
-          <GitHub />
-        </div>
-      </a>
-    </div>
-  </li>
-  <li>
-    <img src="../../sketch_1x.jpg" alt="" />
-    <div class="caption">
-      <div class="bg-text"></div>
-      <a href="/">
-        <div class="caption-text">
-          <h1>Amazing Caption</h1>
-          <p>Whatever It Is - Always Awesome</p>
-          <GitHub />
-        </div>
-      </a>
-    </div>
-  </li>
-</ul>
+        </span>
+      </div>
+    </a>
+  </div>
+</li>
 
 <style>
-  ul li {
-    float: left;
-    padding: 0px;
-    position: relative;
-    overflow: hidden;
-  }
-
-  ul li:hover .caption {
+  li:hover .caption {
     opacity: 1;
-    transform: translateY(-100px);
+    transform: translateY(-170px);
   }
 
-  ul li:hover img {
+  li:hover img {
     opacity: 1;
     transform: translateY(-40px);
   }
 
-  ul img {
-    margin: 0px;
-    padding: 0px;
-    float: left;
-    z-index: 0;
+  .caption {
+    transition: all 0.2s ease-in-out;
   }
-
-  ul .caption {
-    cursor: pointer;
-    position: absolute;
-    opacity: 0;
-    top: 300px;
+  img {
     transition: all 0.2s ease-in-out;
   }
 
-  ul img {
-    transition: all 0.2s ease-in-out;
-  }
-  ul .bg-text {
-    background: var(--text-color-global);
-    width: 400px;
-    height: 300px;
-    position: absolute;
-    z-index: 5;
-  }
-
-  ul .caption-text {
-    width: 400px;
+  .caption-text {
+    width: 350px;
     height: 300px;
     color: white;
     text-align: center;
     position: absolute;
-    top: 20px;
+    top: 15px;
     z-index: 10;
+    transition: all 0.3s ease-in-out;
+  }
+  .caption-text:hover {
+    color: var(--navy-color);
   }
 </style>

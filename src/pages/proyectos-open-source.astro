@@ -1,0 +1,41 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+---
+
+<Layout title="Pryectos 📚 Gilberto La Rosa 🚀 Web Developer 🌎">
+  <section class="w-[90%] mx-auto my-8">
+    <section>
+      <h1 class="text-6xl md:text-9xl font-bold capitalize">
+        proyectos <br /> open source
+      </h1>
+    </section>
+    <section class="my-8">
+      <ul class="inline-block">
+        <Card
+          src="../../chaps_1x.jpg"
+          alt="Menu hamburguesa"
+          name="Menu hamburguesa responsivo"
+          languages="html - css - javascript"
+        />
+      </ul>
+    </section>
+    <section>
+      <p class="text-center font-light mb-4">
+        Siéntete con toda la libertad de usar mis repositorios como desees, soy
+        un entusiasta de la comunidad y la programación, me encanta apoyar a
+        otros que están iniciando en este mundo tan maravilloso, y si esta a tu
+        disposición, me puedes apoyar con un café, que te lo agradeceria de todo
+        corazón 👏.
+      </p>
+      <a
+        href="https://www.buymeacoffee.com/devgilberto"
+        target="_blank"
+        class="flex justify-center"
+        ><img
+          src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=devgilberto&button_colour=FFDD00&font_colour=000000&font_family=Comic&outline_colour=000000&coffee_colour=ffffff"
+        /></a
+      >
+    </section>
+  </section>
+</Layout>
