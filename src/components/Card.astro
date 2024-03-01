@@ -6,16 +6,17 @@ interface Props {
   languages: string;
   src: string;
   alt: string;
+  href: string;
 }
 
-const { name, languages, src, alt } = Astro.props;
+const { name, languages, src, alt, href } = Astro.props;
 ---
 
 <li class="float-left p-0 relative overflow-hidden">
   <img class="w-[350px] m-0 p-0 float-left z-0" {src} {alt} />
   <div class="caption absolute opacity-0 top-[300px]">
     <div class="bg-[#213555] w-[350px] h-[300px] absolute z-[5]"></div>
-    <a href="/">
+    <a {href} target="_blank" title="Enlace del repositorio en GitHub">
       <div class="caption-text">
         <h2 class="text-lg font-semibold capitalize tracking-wide">
           {name}

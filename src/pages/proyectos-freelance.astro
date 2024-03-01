@@ -3,21 +3,41 @@ import Layout from "../layouts/Layout.astro";
 import CardFreelance from "../components/CardFreelance.astro";
 ---
 
-<Layout title="Proyectos 💻 Gilberto La Rosa 🚀 Web Developer 🌎">
+<Layout title="Proyectos Freelance 💻 Gilberto La Rosa 🚀 Web Developer 🌎">
   <section class="w-[90%] mx-auto my-8">
     <section>
       <h1 class="text-6xl md:text-9xl font-bold capitalize">
         proyectos <br /> freelance
       </h1>
+      <p class="mb-4 font-light text-lg">
+        Como profesional freelance especializado en proyectos web, mi principal
+        objetivo es satisfacer las necesidades de mis clientes al crear sitios
+        web de alta calidad. Trabajar como freelance me brinda la flexibilidad
+        de adaptarme a las demandas y preferencias de cada cliente, lo que me
+        permite ofrecer un servicio personalizado y a medida.
+      </p>
     </section>
-    <section>
-      <ul class="flex flex-wrap justify-between gap-4">
+    <section class="my-8">
+      <ul class="flex flex-col flex-wrap justify-between md:flex-row gap-y-10">
         <CardFreelance
           name="codafter, spa"
-          src="/LOGO_CODAFTER.jpg"
+          src="/codafter-cl.png"
           alt="codafter"
+          tecnology="astro - html - css - javascript - tailwind"
+          text="Startup para el diseño y desarrollo de sitios y plataformas webs de alto rendimiento."
+          href="https://codafter.cl/"
         />
       </ul>
+    </section>
+    <section>
+      <p class="font-light text-lg">
+        Estos son algunos de los proyectos a los cuales tengo el consentimiento
+        o permiso por parte del cliente, para hacerlos públicos en el sitio web
+        de Gilberto La Rosa, lo que quiere decir que existen otros proyectos en
+        los cuales he participado o desarrollado, de los cuales se creó un
+        acuerdo de confidencialidad en su momento, lo que impide su publicación
+        en este sitio web.
+      </p>
     </section>
   </section>
 </Layout>
