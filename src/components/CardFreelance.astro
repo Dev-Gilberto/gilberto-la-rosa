@@ -6,48 +6,56 @@ interface Props {
   tecnology: string;
   text: string;
   href: string;
+  state: string;
 }
 
-const { name, src, alt, tecnology, text, href } = Astro.props;
+const { name, src, alt, tecnology, text, href, state } = Astro.props;
 ---
 
-<li
-  class="w-[19rem] h-[32rem] list-none bg-[#d8c4b6] text-white overflow-hidden relative"
->
-  <div class="w-full h-[15rem] p-4">
-    <img {src} {alt} class="bg-top md:hover:scale-150 md:transition-all" />
+<li class="w-full md:w-[19rem] h-auto list-none bg-[#d8c4b6] text-[#212121]">
+  <div class="w-full h-auto p-4 -mt-10">
+    <img {src} {alt} />
   </div>
-  <div class="text-center bg-[#d8c4b6] absolute z-20 py-4 bottom-3">
-    <h2 class="font-medium text-left pl-4 capitalize text-[#213555]">
-      tecnologías usadas:
+  <div class="text-center bg-[#d8c4b6]">
+    <h2 class="font-medium text-left pl-4 capitalize">
+      tecnologías aplicadas:
     </h2>
-    <ul class="mb-2 px-4">
+    <ul>
       <li
-        class="m-0 p-2 bg-white text-[#213555] text-xs font-light tracking-wide uppercase"
+        class="m-0 p-2 bg-[#f5efe7] text-xs font-normal tracking-wide uppercase"
       >
         {tecnology}
       </li>
     </ul>
-    <h2 class="font-medium text-left pl-4 text-[#213555]">
-      Empresa u Organización:
-    </h2>
-    <p
-      class="animate-text-deg text-xl uppercase font-bold tracking-wider text-[#213555]"
-    >
+    <h2 class="font-medium text-left pl-4">Empresa u Organización:</h2>
+    <p class="animate-text-deg text-xl uppercase font-bold tracking-wider">
       {name}
     </p>
     <p
-      class="bg-white mx-4 mb-6 mt-2 text-[#213555] p-2 font-light tracking-wide text-left text-sm"
+      class="w-full bg-[#f5efe7] mt-2 p-2 font-light tracking-wide text-left text-sm"
     >
       {text}
     </p>
-    <a
-      {href}
-      target="_blank"
-      title="Sitio web de la empresa u organizacion"
-      class="border border-white tracking-wider text-[#213555] py-2 px-8 hover:bg-white transition-all hover:font-bold uppercase"
-    >
-      sitio web</a
-    >
   </div>
+  <a
+    {href}
+    target="_blank"
+    title="Sitio web de la empresa u organizacion"
+    class="tracking-wider hover:font-bold uppercase py-4 block text-center"
+  >
+    {state}</a
+  >
 </li>
+<style>
+  img {
+    clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 10% 100%);
+  }
+  @media (min-width: 768px) {
+    a {
+      transition: box-shadow 0.3s ease-in-out;
+    }
+    a:hover {
+      box-shadow: 7px 10px 0 0 var(--gray-dark-color);
+    }
+  }
+</style>

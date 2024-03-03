@@ -13,11 +13,17 @@ const { name, languages, src, alt, href } = Astro.props;
 ---
 
 <li class="float-left p-0 relative overflow-hidden">
-  <img class="w-[350px] m-0 p-0 float-left z-0" {src} {alt} />
-  <div class="caption absolute opacity-0 top-[300px]">
-    <div class="bg-[#213555] w-[350px] h-[300px] absolute z-[5]"></div>
+  <img
+    class="object-cover max-w-full w-[19rem] h-[30rem] m-0 p-0 float-left z-0"
+    {src}
+    {alt}
+  />
+  <div class="caption absolute opacity-0 top-[25rem]">
+    <div class="bg-[#6ab0e4] w-[19rem] h-[30rem] absolute z-[5]"></div>
     <a {href} target="_blank" title="Enlace del repositorio en GitHub">
-      <div class="caption-text">
+      <div
+        class="caption-text w-[19rem] h-[30rem] text-[#212121] text-center absolute top-4 z-10 hover:text-[#f5efe7]"
+      >
         <h2 class="text-lg font-semibold capitalize tracking-wide">
           {name}
         </h2>
@@ -35,7 +41,7 @@ const { name, languages, src, alt, href } = Astro.props;
 <style>
   li:hover .caption {
     opacity: 1;
-    transform: translateY(-170px);
+    transform: translateY(-40px);
   }
 
   li:hover img {
@@ -51,16 +57,6 @@ const { name, languages, src, alt, href } = Astro.props;
   }
 
   .caption-text {
-    width: 350px;
-    height: 300px;
-    color: white;
-    text-align: center;
-    position: absolute;
-    top: 15px;
-    z-index: 10;
     transition: all 0.3s ease-in-out;
-  }
-  .caption-text:hover {
-    color: var(--navy-color);
   }
 </style>

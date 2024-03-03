@@ -10,6 +10,9 @@
   --text-color-global: #213555;
   --navy-color: #4f709c;
   --beige-color: #d8c4b6;
+  --gray-dark-color: #212121;
+  --blue-color: #6ab0e4;
+
   /* degradados */
   --degra-text-rainbow: linear-gradient(
     90deg,
@@ -33,7 +36,7 @@ html {
   font-family: var(--Font-global);
   background: var(--bg-global);
   font-size: 1.3em;
-  color: var(--text-color-global);
+  color: var(--gray-dark-color);
 }
 /* global class */
 .text-deg {
@@ -41,6 +44,7 @@ html {
   background-clip: text;
   color: transparent;
 }
+
 .animate-text-deg {
   background: var(--degra-text-rainbow);
   background-size: 300%;
@@ -59,4 +63,9 @@ html {
   100% {
     background-position: 0 50%;
   }
+}
+h1 {
+  background: var(--degra-text-rainbow);
+  background-clip: text;
+  color: transparent;
 }

@@ -3,11 +3,11 @@ body::-webkit-scrollbar {
 }
 body::-webkit-scrollbar:vertical {
   width: 22px;
-  background-color: var(--text-color-global);
+  background-color: var(--gray-dark-color);
 }
 body::-webkit-scrollbar:horizontal {
   height: 22px;
-  background-color: var(--text-color-global);
+  background-color: var(--gray-dark-color);
 }
 body::-webkit-scrollbar-button {
   display: none;
@@ -18,7 +18,7 @@ body::-webkit-scrollbar-button:increment {
 body::-webkit-scrollbar-thumb {
   background-color: var(--bg-global);
   border-radius: 22px;
-  border: solid 3px var(--text-color-global);
+  border: solid 3px var(--gray-dark-color);
 }
 body::-webkit-scrollbar-track {
   border-radius: 22px;

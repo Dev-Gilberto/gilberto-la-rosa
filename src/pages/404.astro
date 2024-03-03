@@ -3,11 +3,39 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="404  Gilberto La Rosa 🚀 Web Developer 🌎">
-  <section>
-    <h1>
-      Ohh pagina no encontrada
-      <br />
-      <span>Error 404</span>
-    </h1>
+  <section class="w-[90%] h-screen mx-auto mt-8">
+    <section class="flex flex-col justify-center items-center">
+      <h1 class="text-6xl md:text-8xl font-bold text-wrap">
+        UFF página no encontrada,
+
+        <span class="uppercase">error:</span>
+      </h1>
+    </section>
+    <section class="relative">
+      <img src="/404.svg" class="img-404-animate" alt="Error 404" />
+    </section>
   </section>
 </Layout>
+<style>
+  .img-404-animate {
+    max-width: 100%;
+    width: 21rem;
+    height: 21rem;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: -2;
+    animation: animacion cubic-bezier(0.42, 0, 0.58, 1) 5s infinite alternate;
+  }
+  @keyframes animacion {
+    0% {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-30px);
+    }
+  }
+</style>

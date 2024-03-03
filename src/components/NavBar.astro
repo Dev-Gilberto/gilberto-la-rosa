@@ -1,7 +1,7 @@
 <nav>
   <div>
     <input id="responsive-menu" type="checkbox" />
-    <label for="responsive-menu" class="animate__animated animate__bounceIn">
+    <label for="responsive-menu">
       <!-- logo -->
       <a href="/" title="Logo Gilberto La Rosa">
         <svg
@@ -149,7 +149,7 @@
   #menu-icon,
   #menu-icon:before,
   #menu-icon:after {
-    background: #213555;
+    background: var(--gray-dark-color);
     border-radius: 0.05em;
     height: 0.2em;
     transition: all 0.2s ease-in-out;
@@ -196,7 +196,7 @@
   /*** MENU ***/
   /* Overlay */
   nav input:checked ~ #overlay {
-    background: var(--navy-color);
+    background: var(--blue-color);
     bottom: 0;
     left: 0;
     height: 100vh;
@@ -205,11 +205,12 @@
     top: 0;
     width: 100vw;
     z-index: -1;
+    transition: all 0.3s ease;
   }
 
   /* List */
   nav ul {
-    font-size: 1.5em;
+    font-size: 1.6em;
     list-style: none;
     margin: 0;
     max-height: 0;
@@ -217,6 +218,7 @@
     overflow: hidden;
     padding: 0;
     text-align: center;
+    transition: all 0.3s ease;
   }
 
   nav input:checked ~ ul {
@@ -224,8 +226,9 @@
     max-height: inherit;
     opacity: 1;
   }
-  78 nav ul > li {
-    margin: 1em 0;
+  nav ul > li {
+    margin: 0.4em 0;
+    transition: all 0.3s ease;
   }
   @media (min-width: 768px) {
     nav ul > li {
@@ -234,11 +237,12 @@
   }
 
   nav ul a {
-    color: var(--text-color-global) !important;
+    color: var(--gray-dark-color) !important;
     text-decoration: none;
     font-weight: 900;
     text-transform: capitalize;
     font-size: 1.2em;
+    transition: text-decoration 0.3s ease-in-out;
   }
 
   @media (min-width: 768px) {
