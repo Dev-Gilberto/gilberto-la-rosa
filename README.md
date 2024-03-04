@@ -2,6 +2,29 @@
 
 Página de biografía de Gilberto La Rosa, que proporciona un breve resumen de su trayectoria profesional. Es un excelente ejemplo para los babydevs que están comenzando en el mundo de la programación web y desean darse a conocer a través de sus sitios web. No hay que ser como el dicho "casa de herrero, cuchillo de palo", es importante demostrar profesionalismo desde el principio para que se convierta en una costumbre tanto profesional como personal.
 
+## 🚀 Estructura del proyecto
+
+Dentro del proyecto, verá las siguientes carpetas y archivos:
+
+```text
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── layouts/
+│   ├── pages/
+│   │   └── blog/
+│   ├── styles/
+│   └── env.d.ts
+├── astro.config.mjs
+├── LICENSE
+├── package-lock.json
+├── package.json
+├── README.md
+├── tailwind.config.mjs
+└── tsconfig.json
+```
+
 ## 📰 Estructura del sitio (Sitemap)
 
 - ¡Hola!
@@ -33,6 +56,29 @@ Estos son todos los comandos utilizados en el proyecto ubicados en el `package.j
 ### 😎 Web portfolio of freelance web developer, Gilberto La Rosa
 
 Gilberto La Rosa biography page, which provides a brief summary of his professional career. It is an excellent example for babydevs who are starting out in the world of web programming and want to make themselves known through their websites. You don't have to be like the saying "blacksmith's house, wooden knife", it is important to demonstrate professionalism from the beginning so that it becomes both a professional and personal habit.
+
+## 🚀 Project Structure
+
+Inside the project, you will see the following folders and files:
+
+```text
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── layouts/
+│   ├── pages/
+│   │   └── blog/
+│   ├── styles/
+│   └── env.d.ts
+├── astro.config.mjs
+├── LICENSE
+├── package-lock.json
+├── package.json
+├── README.md
+├── tailwind.config.mjs
+└── tsconfig.json
+```
 
 ### 📰 Site structure (Sitemap)
 

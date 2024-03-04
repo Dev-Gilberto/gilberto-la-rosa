@@ -1,0 +1,33 @@
+---
+import "@styles/BlogPosts.css";
+import Layout from "./Layout.astro";
+import { slugify, formatDate } from "@assets/js/utils";
+import AvatarFirma from "@components/AvatarFirma.astro";
+import SocialNetwork from "@components/SocialNetwork.astro";
+const { frontmatter } = Astro.props;
+const { title, description, date, author, url } = frontmatter;
+---
+
+<Layout {title}>
+  <section class="w-[90%] mx-auto my-8 md:w-3/5">
+    <article>
+      <h1 class="text-3xl md:text-7xl font-bold uppercase">
+        {title}
+      </h1>
+      <section>
+        <p><em>{description}</em></p>
+        <p class="text-center text-lg">
+          Escrito por: <span class="font-semibold">{author}</span>
+        </p>
+        <SocialNetwork />
+      </section>
+      <span class="flex items-center my-4">
+        <span class="h-px flex-1 bg-[#212121]"></span>
+        <span class="shrink-0 px-6">{formatDate(date)}</span>
+        <span class="h-px flex-1 bg-[#212121]"></span>
+      </span>
+
+      <slot />
+    </article>
+  </section>
+</Layout>

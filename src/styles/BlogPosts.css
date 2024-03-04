@@ -1,0 +1,11 @@
+article p {
+  font-size: 1.3em;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+article h2 {
+  font-size: 4em;
+  line-height: 1;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}

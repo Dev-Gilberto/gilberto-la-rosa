@@ -14,15 +14,17 @@ const { name, languages, src, alt, href } = Astro.props;
 
 <li class="float-left p-0 relative overflow-hidden">
   <img
-    class="object-cover max-w-full w-[19rem] h-[30rem] m-0 p-0 float-left z-0"
+    class="object-cover max-w-full w-[18.2rem] h-[18.2rem] m-0 p-0 float-left z-0"
     {src}
     {alt}
   />
-  <div class="caption absolute opacity-0 top-[25rem]">
-    <div class="bg-[#6ab0e4] w-[19rem] h-[30rem] absolute z-[5]"></div>
+  <div
+    class="caption absolute opacity-0 top-[12rem] left-[-6%] md:left-0 right-0"
+  >
+    <div class="w-[18.2rem] h-[18.2rem] absolute z-[5]"></div>
     <a {href} target="_blank" title="Enlace del repositorio en GitHub">
       <div
-        class="caption-text w-[19rem] h-[30rem] text-[#212121] text-center absolute top-4 z-10 hover:text-[#f5efe7]"
+        class="w-[18.2rem] h-[18.2rem] caption-text text-[#212121] items-center text-center absolute top-4 z-10 hover:text-[#f5efe7]"
       >
         <h2 class="text-lg font-semibold capitalize tracking-wide">
           {name}
@@ -41,7 +43,7 @@ const { name, languages, src, alt, href } = Astro.props;
 <style>
   li:hover .caption {
     opacity: 1;
-    transform: translateY(-40px);
+    transform: translateY(-26px);
   }
 
   li:hover img {
@@ -51,6 +53,21 @@ const { name, languages, src, alt, href } = Astro.props;
 
   .caption {
     transition: all 0.2s ease-in-out;
+  }
+  .caption > div {
+    background: linear-gradient(
+      60deg,
+      #f79533,
+      #f37055,
+      #ef4e7b,
+      #a166ab,
+      #5073b8,
+      #1098ad,
+      #07b39b,
+      #6fba82
+    );
+    background-size: 40rem;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 100%, 0 100%, 0% 20%);
   }
   img {
     transition: all 0.2s ease-in-out;

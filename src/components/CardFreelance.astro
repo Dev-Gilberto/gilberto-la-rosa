@@ -17,9 +17,7 @@ const { name, src, alt, tecnology, text, href, state } = Astro.props;
     <img {src} {alt} />
   </div>
   <div class="text-center bg-[#d8c4b6]">
-    <h2 class="font-medium text-left pl-4 capitalize">
-      tecnologías aplicadas:
-    </h2>
+    <h2 class="font-medium text-left pl-4 uppercase">tecnologías aplicadas:</h2>
     <ul>
       <li
         class="m-0 p-2 bg-[#f5efe7] text-xs font-normal tracking-wide uppercase"
@@ -27,7 +25,9 @@ const { name, src, alt, tecnology, text, href, state } = Astro.props;
         {tecnology}
       </li>
     </ul>
-    <h2 class="font-medium text-left pl-4">Empresa u Organización:</h2>
+    <h2 class="font-medium text-left pl-4 uppercase">
+      Empresa u Organización:
+    </h2>
     <p class="animate-text-deg text-xl uppercase font-bold tracking-wider">
       {name}
     </p>

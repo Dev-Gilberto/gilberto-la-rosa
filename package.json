@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "author": {
     "name": "Gilberto La Rosa",
-    "email": "gilberto.larosa@codafter.codes",
+    "email": "gilberto.larosa@codafter.cl",
     "url": "https://www.gilberto-la-rosa.dev"
   },
   "scripts": {
@@ -14,9 +14,11 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/mdx": "^2.1.1",
+    "@astrojs/partytown": "^2.0.4",
     "@astrojs/tailwind": "^5.1.0",
     "astro": "^4.4.4",
-    "iconate": "^0.3.1",
+    "iconate": "^0.2.4",
     "tailwindcss": "^3.4.1"
   }
 }
