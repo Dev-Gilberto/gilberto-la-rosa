@@ -1,3 +1,6 @@
 {
-  "cSpell.language": "es,es-ES"
+  "cSpell.language": "es,es-ES",
+  "workbench.tree.enableStickyScroll": false,
+  "editor.hover.sticky": false,
+  "editor.stickyScroll.scrollWithEditor": false
 }

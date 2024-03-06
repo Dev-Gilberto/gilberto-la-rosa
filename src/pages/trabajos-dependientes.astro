@@ -1,4 +1,5 @@
 ---
+import empleos from "../data/empleos.json";
 import Layout from "../layouts/Layout.astro";
 import Hbt from "../components/Hbt.astro";
 import Ucab from "../components/Ucab.astro";
@@ -14,25 +15,166 @@ import Flasalle from "../components/Flasalle.astro";
         dependientes
       </h1>
       <p class="mb-4 font-light text-lg">
-        El ingeniero Gilberto La Rosa ha realizado importantes contribuciones en
-        el campo del soporte técnico de sistemas y el desarrollo web. Su
-        experiencia radica en el diseño y mantenimiento de servidores,
+        En el rol como ingeniero he realizado importantes contribuciones en el
+        campo del soporte técnico de sistemas y el desarrollo web. Mi
+        experiencia radica en el desarrolo web y mantenimiento de servidores,
         garantizando un funcionamiento sin problemas y un rendimiento óptimo.
       </p>
     </section>
     <!-- empleos -->
-    <section class="md:grid
-        md:grid-cols-2
-        mt-8">
-      <Hbt />
-      <Ucab />
-      <Flasalle />
+    <section class="md:w-[60%] md:mx-auto flex flex-col gap-4">
+      <section>
+        <div class="flex items-center">
+          <span class="h-px flex-1 bg-[#212121]"></span>
+          <span class="shrink-0 px-6 font-bold text-5xl uppercase">hbt</span>
+          <span class="h-px flex-1 bg-[#212121]"></span>
+        </div>
+        <p class="text-center text-sm font-light">
+          hbt, LTDA, es una empresa familiar de origen nórdica fundada en
+          Santiago,Chile por la Arquitecta Gisela Litvanyi quien con el objetivo
+          de crear un punto de encuentro para profesionales y clientes decide
+          desarrollar su propia cultura de diseño y tecnología de producción en
+          Chile.
+        </p>
+      </section>
+
+      <section>
+        <h2 class="font-bold text-5xl">Asistente de TI</h2>
+        <p class="font-light text-lg md:text-xl">
+          Como asistente informático en la empresa HBT, mi función consistía en
+          prestar apoyo y asistencia en diversos aspectos de la infraestructura
+          tecnológica de la empresa. Esto incluye la gestión del sitio web,
+          garantizando su funcionalidad y realizando las actualizaciones
+          necesarias.
+        </p>
+        <p class="font-light text-lg md:text-xl my-4">
+          Además, era responsable del mantenimiento del sistema ERP,
+          garantizando su buen funcionamiento y solucionando cualquier problema
+          que surja. Además de estas tareas, también atiendo las consultas del
+          HelpDesk de los empleados, proporcionando soluciones oportunas y
+          eficaces a sus necesidades técnicas.
+        </p>
+
+        <p class="font-light text-lg md:text-xl">
+          Conozco bien las integraciones y tengo experiencia trabajando con API
+          para agilizar los procesos y mejorar la eficiencia. Además, conozco
+          bien las tecnologías B2B y pude ayudar a implantar soluciones que
+          mejoren la comunicación y la colaboración con nuestros socios
+          comerciales.
+        </p>
+      </section>
+      <section>
+        <h2 class="font-bold text-5xl capitalize text-wrap">
+          habilidades &#8943; Herramientas
+        </h2>
+        <ul class="flex gap-3 flex-wrap justify-center wu md:w-1/2 mx-auto">
+          <li
+            class="py-1 px-4 rounded-xl bg-white border-t-2 border-[#f79533] uppercase"
+          >
+            windows
+          </li>
+          <li
+            class="py-1 px-4 rounded-xl bg-white border-t-2 border-[#f79533] uppercase"
+          >
+            windows server
+          </li>
+          <li
+            class="py-1 px-4 rounded-xl bg-white border-t-2 border-[#f79533] uppercase"
+          >
+            linux
+          </li>
+          <li
+            class="py-1 px-4 rounded-xl bg-white border-t-2 border-[#f79533] uppercase"
+          >
+            Microsoft 365
+          </li>
+          <li
+            class="py-1 px-4 rounded-xl bg-white border-t-2 border-[#f79533] uppercase"
+          >
+            wrike
+          </li>
+          <li
+            class="py-1 px-4 rounded-xl bg-white border-t-2 border-[#f79533] uppercase"
+          >
+            jira
+          </li>
+          <li
+            class="py-1 px-4 rounded-xl bg-white border-t-2 border-[#f79533] uppercase"
+          >
+            flexline (ERP)
+          </li>
+          <li
+            class="py-1 px-4 rounded-xl bg-white border-t-2 border-[#f79533] uppercase"
+          >
+            clickUp
+          </li>
+          <li
+            class="py-1 px-4 rounded-xl bg-white border-t-2 border-[#f79533] uppercase"
+          >
+            SQL
+          </li>
+          <li
+            class="py-1 px-4 rounded-xl bg-white border-t-2 border-[#f79533] uppercase"
+          >
+            Active Directory
+          </li>
+          <li
+            class="py-1 px-4 rounded-xl bg-white border-t-2 border-[#f79533] uppercase"
+          >
+            comercio B2C, B2B
+          </li>
+          <li
+            class="py-1 px-4 rounded-xl bg-white border-t-2 border-[#f79533] uppercase"
+          >
+            administración web
+          </li>
+          <li
+            class="py-1 px-4 rounded-xl bg-white border-t-2 border-[#f79533] uppercase"
+          >
+            soporte técnico nivel 1 y 2
+          </li>
+          <li
+            class="py-1 px-4 rounded-xl bg-white border-t-2 border-[#f79533] uppercase"
+          >
+            HelpDesk
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2 class="font-bold text-5xl capitalize">periodo</h2>
+        <time>
+          <div class="flex justify-center gap-2 items-center">
+            <span class="capitalize font-light text-lg md:text-xl"
+              >marzo <span class="font-bold text-4xl"> 2023</span></span
+            >&#10145;
+            <span class="capitalize font-light text-lg md:text-xl"
+              >enero <span class="font-bold text-4xl"> 2024</span></span
+            >
+          </div>
+          <div class="capitalize text-lg md:text-xl font-light text-center">
+            <span>durarion</span>
+            <span class="text-3xl font-bold">11 meses</span>
+          </div>
+        </time>
+        <span class="flex items-center">
+          <span class="pr-6 font-bold text-3xl capitalize">pais</span>
+          <span class="h-px flex-1 bg-[#212121]"></span>
+        </span>
+        <!-- <h3 class="font-bold text-3xl capitalize">pais</h3> -->
+        <span class="text-center font-bold capitalize text-3xl block"
+          >chile</span
+        >
+      </section>
+      <section class="text-center">
+        <a
+          href="https://www.hbt.cl/"
+          target="_blank"
+          title="sitio web de la empresa u organizacion"
+          class="font-medium underline tracking-wide text-lg hover:text-[#f79533] duration-300"
+        >
+          Sitio web de la empresa u organizacion &#10138;
+        </a>
+      </section>
     </section>
   </section>
 </Layout>
-
-<style>
-  .parrafos-work {
-    width: 80%;
-  }
-</style>

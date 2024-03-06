@@ -1,12 +1,14 @@
 ---
-layout: "../../layouts/BlogPostLayout.astro"
+layout: ../../layouts/PostLayout.astro
 title: "Guía paso a paso para ser un desarrollador web"
-date: "2023-07-19"
+pubDate: 2022-07-01
+description: "Este es la primera publicación de mi nuevo blog de Astro."
 author: "Gilberto La Rosa"
-tags: ["programcion", "desarrollo web"]
+image:
+  url: "https://docs.astro.build/assets/full-logo-light.png"
+  alt: "El logotipo completo de Astro."
+tags: ["astro", "bloguear", "aprender en público"]
 ---
-
-import AvatarFirma from "@components/AvatarFirma.astro";
 
 ## Primeros pasos.
 
@@ -19,5 +21,3 @@ Para convertirse en un desarrollador web de éxito, es fundamental estar continu
 Por último, crear un portafolio sólido es esencial para mostrar las habilidades y atraer a posibles clientes o empleadores. Esto puede hacerse trabajando en proyectos personales u ofreciendo servicios como autónomo para adquirir experiencia práctica. Incluir una variedad de proyectos que demuestren el dominio de distintos aspectos del desarrollo web puede ayudar a destacar la versatilidad y la experiencia.
 
 En conclusión, convertirse en desarrollador web requiere dedicación, aprendizaje continuo y experiencia práctica. Siguiendo una guía paso a paso que incluya la creación de una base sólida en lenguajes de programación, la ampliación de conocimientos en diversas áreas del desarrollo web, la actualización con las tendencias del sector y la creación de una cartera, las personas pueden allanar su camino hacia una carrera de éxito en este campo.
-
-<AvatarFirma />

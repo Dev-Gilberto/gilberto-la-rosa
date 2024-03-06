@@ -3,77 +3,44 @@ import GitHub from "../components/GitHub.astro";
 
 interface Props {
   name: string;
-  languages: string;
-  src: string;
-  alt: string;
   href: string;
 }
 
-const { name, languages, src, alt, href } = Astro.props;
+const { name, href } = Astro.props;
 ---
 
-<li class="float-left p-0 relative overflow-hidden">
-  <img
-    class="object-cover max-w-full w-[18.2rem] h-[18.2rem] m-0 p-0 float-left z-0"
-    {src}
-    {alt}
-  />
-  <div
-    class="caption absolute opacity-0 top-[12rem] left-[-6%] md:left-0 right-0"
-  >
-    <div class="w-[18.2rem] h-[18.2rem] absolute z-[5]"></div>
-    <a {href} target="_blank" title="Enlace del repositorio en GitHub">
-      <div
-        class="w-[18.2rem] h-[18.2rem] caption-text text-[#212121] items-center text-center absolute top-4 z-10 hover:text-[#f5efe7]"
-      >
-        <h2 class="text-lg font-semibold capitalize tracking-wide">
-          {name}
-        </h2>
-        <p class="text-xs font-light mb-1 uppercase tracking-wider">
-          {languages}
-        </p>
-        <span class="flex justify-center pb-4">
-          <GitHub />
-        </span>
-      </div>
-    </a>
+<li
+  class="border-[#f79533] border-t-8 md:border-l-8 md:border-t-0 rounded-xl items-center grid grid-cols-4"
+>
+  <div class="flex justify-center col-span-1 md:col-span-1">
+    <GitHub width="70" height="70" fill="#212121" />
   </div>
+
+  <div class="col-span-3 md:col-span-2 py-4 md:py-0">
+    <h3 class="font-bold uppercase text-xl text-left tracking-wide">{name}</h3>
+  </div>
+
+  <a
+    {href}
+    title="Repositorios de GitHub"
+    class="text-white uppercase col-span-4 md:col-span-1 text-center"
+  >
+    <div
+      class="bg-[#f79533] p-2 md:p-4 md:px-0 rounded-b-xl md:rounded-r-xl md:rounded-b-none hover:bg-[#212121] duration-300"
+    >
+      <span class="tracking-widest md:rotate-180 md:[writing-mode:_vertical-lr]"
+        >repositorio</span
+      >
+    </div>
+  </a>
 </li>
 
 <style>
-  li:hover .caption {
-    opacity: 1;
-    transform: translateY(-26px);
+  li {
+    box-shadow: none;
+    transition: box-shadow 0.3s ease-in-out;
   }
-
-  li:hover img {
-    opacity: 1;
-    transform: translateY(-40px);
-  }
-
-  .caption {
-    transition: all 0.2s ease-in-out;
-  }
-  .caption > div {
-    background: linear-gradient(
-      60deg,
-      #f79533,
-      #f37055,
-      #ef4e7b,
-      #a166ab,
-      #5073b8,
-      #1098ad,
-      #07b39b,
-      #6fba82
-    );
-    background-size: 40rem;
-    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 100%, 0 100%, 0% 20%);
-  }
-  img {
-    transition: all 0.2s ease-in-out;
-  }
-
-  .caption-text {
-    transition: all 0.3s ease-in-out;
+  li:hover {
+    box-shadow: 7px 10px 0 var(--gray-dark-color);
   }
 </style>

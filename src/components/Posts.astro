@@ -1,0 +1,46 @@
+---
+const { frontmatter } = Astro.props;
+---
+
+<li>
+  <article
+    class="rounded-xl bg-white p-4 shadow-sm transition hover:shadow-lg sm:p-6"
+  >
+    <span class="inline-block text-5xl pt-2">📝</span>
+
+    <a
+      href="/blog/guia-para-ser-un-desarrollador-web/"
+      title="Guía paso a paso para ser un desarrollador web"
+    >
+      <h2
+        class="my-4 text-3xl font-bold uppercase tracking-wide hover:text-[#f79533] transition duration-300"
+      >
+        <span class="md:hover:underline"
+          >Guía paso a paso para ser un desarrollador web</span
+        > 💪 💯
+      </h2>
+    </a>
+
+    <p class="mt-2 text-base font-light">
+      Convertirse en desarrollador web puede ser una elección profesional
+      apasionante y gratificante. Con la creciente demanda de profesionales
+      cualificados en este campo, es importante disponer de una guía clara paso
+      a paso que ayude a recorrer el camino.
+    </p>
+
+    <a
+      href="/blog/guia-para-ser-un-desarrollador-web/"
+      title="Guía paso a paso para ser un desarrollador web"
+      class="group mt-4 inline-flex items-center gap-1 text-sm font-medium uppercase hover:text-[#f79533] transition duration-300"
+    >
+      ver mas
+
+      <span
+        aria-hidden="true"
+        class="block duration-300 group-hover:ms-0.5 rtl:rotate-180"
+      >
+        &#10145;
+      </span>
+    </a>
+  </article>
+</li>
