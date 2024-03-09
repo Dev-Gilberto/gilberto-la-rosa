@@ -1,7 +1,10 @@
 ---
+import { formatBlogPosts } from "../../assets/js/utils";
+
 import Layout from "../../layouts/Layout.astro";
 import Posts from "../../components/Posts.astro";
 const allPosts = await Astro.glob("./*.md");
+const formattedPosts = formatBlogPosts(allPosts);
 ---
 
 <Layout title="Blog 📝 Gilberto La Rosa 🚀 Web Developer 🌎">
@@ -32,8 +35,12 @@ const allPosts = await Astro.glob("./*.md");
       <!-- card blog posts -->
       <section class="col-span-4 md:col-span-2">
         <ul class="flex flex-col gap-4">
-          {allPosts.map((post) => <Posts {post} />)}
-          <!-- <Posts post={allPosts[0]} /> -->
+          {
+            formattedPosts.map((post) => (
+              <Posts frontmatter={post.frontmatter} url={post.url} />
+            ))
+          }
+          <!-- <Posts frontmatter={allPosts[0].frontmatter} url={allPosts[0].url} /> -->
         </ul>
       </section>
       <!-- publicidad y otros  -->

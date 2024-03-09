@@ -1,27 +1,25 @@
 ---
-const { frontmatter, post, url } = Astro.props;
+import { slugify, formatpubDate } from "../assets/js/utils";
+
+const { frontmatter, url } = Astro.props;
+
+const { title, emojis, pubDate, image, description } = frontmatter;
 ---
 
 <li class="rounded-xl bg-white p-4 sm:p-6">
   <article>
-    <span class="inline-block text-5xl pt-2">📝</span>
+    <span class="inline-block text-5xl pt-2">{image.url}</span>
 
-    <a
-      href={post.frontmatter.url}
-      title="Guía paso a paso para ser un desarrollador web"
-    >
+    <a href={url} title="Guía paso a paso para ser un desarrollador web">
       <h2
         class="my-4 text-3xl font-bold uppercase tracking-wide hover:text-[#f79533] transition duration-300"
       >
-        <span class="md:hover:underline">{post.frontmatter.title}</span> 💪 💯
+        <span class="md:hover:underline">{title}</span>{emojis}
       </h2>
     </a>
 
     <p class="mt-2 text-base font-light">
-      Convertirse en desarrollador web puede ser una elección profesional
-      apasionante y gratificante. Con la creciente demanda de profesionales
-      cualificados en este campo, es importante disponer de una guía clara paso
-      a paso que ayude a recorrer el camino.
+      {description}
     </p>
 
     <div
@@ -41,7 +39,9 @@ const { frontmatter, post, url } = Astro.props;
           &#10145;
         </span>
       </a>
-      <time datetime="" class="uppercase">publicación: 10-12-2024</time>
+      <time datetime="" class="uppercase"
+        >publicación: {formatpubDate(pubDate)}</time
+      >
     </div>
   </article>
 </li>

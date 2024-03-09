@@ -1,13 +1,14 @@
 ---
-layout: ../../layouts/SinglePostLayout.astro
+layout: "../../layouts/SinglePostLayout.astro"
 title: "Como obtener tu primer empleo como web developer"
-pubDate: 2022-07-01
+emojis: "💰 💵"
+pubDate: "2024-03-07T00:00:00.000Z"
 description: "Este es la primera publicación de mi nuevo blog de Astro."
 author: "Gilberto La Rosa"
 image:
-  url: "https://docs.astro.build/assets/full-logo-light.png"
-  alt: "El logotipo completo de Astro."
-tags: ["astro", "bloguear", "aprender en público"]
+  url: "💼"
+  alt: "Emoji del articulo"
+tags: ["developer"]
 ---
 
 En la era digital actual, el desarrollo web se ha convertido en una habilidad muy solicitada. Muchas personas están interesadas en seguir una carrera en este campo, pero a menudo tienen dificultades para encontrar su primer trabajo como desarrollador web. Sin embargo, con el enfoque y la estrategia adecuados, es posible conseguir ese primer empleo y dar el pistoletazo de salida a tu carrera en el desarrollo web.

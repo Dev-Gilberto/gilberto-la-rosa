@@ -1,11 +1,12 @@
 ---
 layout: "../../layouts/SinglePostLayout.astro"
 title: "Guía paso a paso para ser un desarrollador web"
-pubDate: "2022-07-01T00:00:00.000Z"
-description: "Este es la primera publicación de mi nuevo blog de Astro."
+emojis: "💪 💯"
+pubDate: "2024-03-08T00:00:00.000Z"
+description: "En un mundo con rutas de aprendizajes pero sin poder definirse por cual tomar..."
 author: "Gilberto La Rosa"
 image:
-  url: "https://docs.astro.build/assets/full-logo-light.png"
+  url: "📝"
   alt: "El logotipo completo de Astro."
 tags: ["websities"]
 ---
