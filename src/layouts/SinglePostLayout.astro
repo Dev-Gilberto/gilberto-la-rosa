@@ -9,15 +9,17 @@ import Frases from "@components/Frases.astro";
 const { frontmatter } = Astro.props;
 console.log(frontmatter);
 
-const { title, description, pubDate, author, url, tags } = frontmatter;
+const { title, emojis, pubDate, author, tags } = frontmatter;
 ---
 
 <Layout {title}>
   <section class="w-[90%] mx-auto my-8 md:w-3/5">
     <article>
-      <h1 class="text-3xl md:text-7xl font-bold uppercase">
-        {title}
-      </h1>
+      <div class="text-3xl md:text-7xl font-bold uppercase">
+        <h1 class="inline">
+          {title}
+        </h1>{emojis}
+      </div>
       <!-- category -->
       <section>
         <small class="">
