@@ -1,0 +1,31 @@
+---
+
+---
+
+<button
+  id="btnSubir"
+  class="flex-none fixed bottom-5 right-5 z-50 tracking-wider cursor-pointer px-4 py-2 rounded-lg uppercase bg-white font-bold border-b-4 border-[#f79533] active:border-none duration-300"
+  >Subir <span>&#11014;</span></button
+>
+
+<script type="text/javascript">
+  window.onscroll = function () {
+    scrollFunction();
+  };
+
+  function scrollFunction() {
+    if (
+      document.body.scrollTop > 20 ||
+      document.documentElement.scrollTop > 20
+    ) {
+      document.getElementById("btnSubir").style.display = "block";
+    } else {
+      document.getElementById("btnSubir").style.display = "none";
+    }
+  }
+
+  document.getElementById("btnSubir").addEventListener("click", function () {
+    document.body.scrollTop = 0; // Para Safari
+    document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE y Opera
+  });
+</script>

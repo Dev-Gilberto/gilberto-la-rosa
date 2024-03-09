@@ -38,6 +38,9 @@ html {
   background: var(--bg-global);
   font-size: 1.3em;
   color: var(--gray-dark-color);
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  position: relative;
 }
 /* global class */
 .text-deg {

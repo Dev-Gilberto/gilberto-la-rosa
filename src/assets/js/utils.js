@@ -8,6 +8,8 @@ export function slugify(text) {
     .replace(/^-+/, "")
     .replace(/-+$/, "");
 }
-export function formatDate(date) {
-  return new Date(date).toLocaleDateString("es");
+export function formatpubDate(pubDate) {
+  return new Date(pubDate).toLocaleDateString("es", {
+    timeZone: "UTC",
+  });
 }

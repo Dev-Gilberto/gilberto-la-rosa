@@ -1,23 +1,19 @@
 ---
-const { frontmatter } = Astro.props;
+const { frontmatter, post, url } = Astro.props;
 ---
 
-<li>
-  <article
-    class="rounded-xl bg-white p-4 shadow-sm transition hover:shadow-lg sm:p-6"
-  >
+<li class="rounded-xl bg-white p-4 sm:p-6">
+  <article>
     <span class="inline-block text-5xl pt-2">📝</span>
 
     <a
-      href="/blog/guia-para-ser-un-desarrollador-web/"
+      href={post.frontmatter.url}
       title="Guía paso a paso para ser un desarrollador web"
     >
       <h2
         class="my-4 text-3xl font-bold uppercase tracking-wide hover:text-[#f79533] transition duration-300"
       >
-        <span class="md:hover:underline"
-          >Guía paso a paso para ser un desarrollador web</span
-        > 💪 💯
+        <span class="md:hover:underline">{post.frontmatter.title}</span> 💪 💯
       </h2>
     </a>
 
@@ -28,19 +24,34 @@ const { frontmatter } = Astro.props;
       a paso que ayude a recorrer el camino.
     </p>
 
-    <a
-      href="/blog/guia-para-ser-un-desarrollador-web/"
-      title="Guía paso a paso para ser un desarrollador web"
-      class="group mt-4 inline-flex items-center gap-1 text-sm font-medium uppercase hover:text-[#f79533] transition duration-300"
+    <div
+      class="text-sm font-medium uppercase mt-4 items-center flex justify-between"
     >
-      ver mas
-
-      <span
-        aria-hidden="true"
-        class="block duration-300 group-hover:ms-0.5 rtl:rotate-180"
+      <a
+        href={url}
+        title="Guía paso a paso para ser un desarrollador web"
+        class="group inline-flex gap-1 hover:text-[#f79533] transition duration-300"
       >
-        &#10145;
-      </span>
-    </a>
+        ver mas
+
+        <span
+          aria-hidden="true"
+          class="block duration-300 group-hover:ms-0.5 rtl:rotate-180"
+        >
+          &#10145;
+        </span>
+      </a>
+      <time datetime="" class="uppercase">publicación: 10-12-2024</time>
+    </div>
   </article>
 </li>
+
+<style>
+  li {
+    box-shadow: none;
+    transition: all 0.3s ease-in-out;
+  }
+  li:hover {
+    box-shadow: 8px 10px 0 var(--hover-orange);
+  }
+</style>

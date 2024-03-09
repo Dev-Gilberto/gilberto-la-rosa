@@ -17,8 +17,13 @@
     "@astrojs/mdx": "^2.1.1",
     "@astrojs/partytown": "^2.0.4",
     "@astrojs/tailwind": "^5.1.0",
+    "@astrojs/vue": "^4.0.8",
     "astro": "^4.4.4",
     "iconate": "^0.2.4",
-    "tailwindcss": "^3.4.1"
+    "tailwindcss": "^3.4.1",
+    "vue": "^3.4.21"
+  },
+  "devDependencies": {
+    "tailwindcss-animated": "^1.0.1"
   }
 }

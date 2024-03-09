@@ -1,0 +1,163 @@
+---
+interface Props {
+  nameEnterprise: string;
+  textEnterprise: string;
+  jobTitle: string;
+  experienceSumary: string;
+  experienceSumaryTwo: string;
+  month: string;
+  monthTwo: string;
+  year: string;
+  yearTwo: string;
+  number: number;
+  contry: string;
+  href: string;
+  skill: string;
+  skillTwo: string;
+  skillThree: string;
+  skillFor: string;
+  skillFive: string;
+  skillSix: string;
+  skillSeven: string;
+  skillEight: string;
+  skillNine: string;
+  skillTen: string;
+}
+
+const {
+  nameEnterprise,
+  textEnterprise,
+  jobTitle,
+  experienceSumary,
+  experienceSumaryTwo,
+  month,
+  monthTwo,
+  year,
+  yearTwo,
+  number,
+  contry,
+  href,
+  skill,
+  skillTwo,
+  skillThree,
+  skillFor,
+  skillFive,
+  skillSix,
+  skillSeven,
+  skillEight,
+  skillNine,
+  skillTen,
+} = Astro.props;
+---
+
+<section>
+  <div class="flex items-center">
+    <span class="h-px flex-1 bg-[#212121]"></span>
+    <span class="shrink-0 px-6 font-bold text-5xl uppercase"
+      >{nameEnterprise}</span
+    >
+    <span class="h-px flex-1 bg-[#212121]"></span>
+  </div>
+  <p class="text-center text-sm font-light">
+    {textEnterprise}
+  </p>
+</section>
+
+<section>
+  <h2 class="font-bold text-5xl">{jobTitle}</h2>
+  <p class="font-light text-lg md:text-xl">
+    {experienceSumary}
+  </p>
+  <p class="font-light text-lg md:text-xl mt-4">
+    {experienceSumaryTwo}
+  </p>
+</section>
+<section>
+  <h2 class="font-bold text-5xl capitalize text-wrap">aptitudes</h2>
+  <ul
+    class="flex gap-3 flex-wrap justify-center wu md:w-1/2 mx-auto tracking-wide"
+  >
+    <li
+      class="py-1 px-4 rounded-xl bg-white border-t-2 border-[#f79533] uppercase"
+    >
+      {skill}
+    </li>
+    <li
+      class="py-1 px-4 rounded-xl bg-white border-t-2 border-[#f79533] uppercase"
+    >
+      {skillTwo}
+    </li>
+    <li
+      class="py-1 px-4 rounded-xl bg-white border-t-2 border-[#f79533] uppercase"
+    >
+      {skillThree}
+    </li>
+    <li
+      class="py-1 px-4 rounded-xl bg-white border-t-2 border-[#f79533] uppercase"
+    >
+      {skillFor}
+    </li>
+    <li
+      class="py-1 px-4 rounded-xl bg-white border-t-2 border-[#f79533] uppercase"
+    >
+      {skillFive}
+    </li>
+    <li
+      class="py-1 px-4 rounded-xl bg-white border-t-2 border-[#f79533] uppercase"
+    >
+      {skillSix}
+    </li>
+    <li
+      class="py-1 px-4 rounded-xl bg-white border-t-2 border-[#f79533] uppercase"
+    >
+      {skillSeven}
+    </li>
+    <li
+      class="py-1 px-4 rounded-xl bg-white border-t-2 border-[#f79533] uppercase"
+    >
+      {skillEight}
+    </li>
+    <li
+      class="py-1 px-4 rounded-xl bg-white border-t-2 border-[#f79533] uppercase"
+    >
+      {skillNine}
+    </li>
+    <li
+      class="py-1 px-4 rounded-xl bg-white border-t-2 border-[#f79533] uppercase"
+    >
+      {skillTen}
+    </li>
+  </ul>
+</section>
+<section>
+  <h2 class="font-bold text-5xl capitalize">periodo</h2>
+  <time>
+    <div class="flex justify-center gap-2 items-center">
+      <span class="capitalize font-light text-lg md:text-xl"
+        >{month} <span class="font-bold text-4xl"> {year}</span></span
+      >&#10145;
+      <span class="capitalize font-light text-lg md:text-xl"
+        >{monthTwo} <span class="font-bold text-4xl"> {yearTwo}</span></span
+      >
+    </div>
+    <div class="capitalize text-lg md:text-xl font-light text-center">
+      <span>durarion</span>
+      <span class="text-3xl font-bold">{number} meses</span>
+    </div>
+  </time>
+  <span class="flex items-center">
+    <span class="pr-6 font-bold text-3xl capitalize">pais</span>
+    <span class="h-px flex-1 bg-[#212121]"></span>
+  </span>
+  <span class="text-center font-bold capitalize text-3xl block">{contry}</span>
+</section>
+<section class="rounded-b-xl text-center pb-8 mb-8 border-b-8 border-[#f79533]">
+  <a
+    href={href}
+    target="_blank"
+    title="sitio web de la empresa u organizacion"
+    class="font-medium underline tracking-wide text-lg hover:text-[#f79533] duration-300"
+  >
+    Sitio web de la empresa u organizacion &#10138;
+  </a>
+</section>

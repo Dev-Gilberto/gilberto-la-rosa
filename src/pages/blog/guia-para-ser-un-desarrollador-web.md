@@ -1,13 +1,13 @@
 ---
-layout: ../../layouts/PostLayout.astro
+layout: "../../layouts/SinglePostLayout.astro"
 title: "Guía paso a paso para ser un desarrollador web"
-pubDate: 2022-07-01
+pubDate: "2022-07-01T00:00:00.000Z"
 description: "Este es la primera publicación de mi nuevo blog de Astro."
 author: "Gilberto La Rosa"
 image:
   url: "https://docs.astro.build/assets/full-logo-light.png"
   alt: "El logotipo completo de Astro."
-tags: ["astro", "bloguear", "aprender en público"]
+tags: ["websities"]
 ---
 
 ## Primeros pasos.

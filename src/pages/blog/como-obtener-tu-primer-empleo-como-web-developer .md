@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/PostLayout.astro
+layout: ../../layouts/SinglePostLayout.astro
 title: "Como obtener tu primer empleo como web developer"
 pubDate: 2022-07-01
 description: "Este es la primera publicación de mi nuevo blog de Astro."

@@ -1,6 +1,7 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import Posts from "../../components/Posts.astro";
+const allPosts = await Astro.glob("./*.md");
 ---
 
 <Layout title="Blog 📝 Gilberto La Rosa 🚀 Web Developer 🌎">
@@ -31,11 +32,8 @@ import Posts from "../../components/Posts.astro";
       <!-- card blog posts -->
       <section class="col-span-4 md:col-span-2">
         <ul class="flex flex-col gap-4">
-          <Posts />
-          <Posts />
-          <Posts />
-          <Posts />
-          <Posts />
+          {allPosts.map((post) => <Posts {post} />)}
+          <!-- <Posts post={allPosts[0]} /> -->
         </ul>
       </section>
       <!-- publicidad y otros  -->

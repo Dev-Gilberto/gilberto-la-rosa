@@ -1,13 +1,15 @@
 ---
 import "@styles/BlogPosts.css";
-import Layout from "./Layout.astro";
-import { slugify, formatDate } from "@assets/js/utils";
+import Layout from "@layout/Layout.astro";
+import { slugify, formatpubDate } from "@assets/js/utils";
 import SocialNetwork from "@components/SocialNetwork.astro";
 import ButtonBack from "@components/ButtonBack.astro";
 import Frases from "@components/Frases.astro";
 
 const { frontmatter } = Astro.props;
-const { title, description, date, author, url } = frontmatter;
+console.log(frontmatter);
+
+const { title, description, pubDate, author, url, tags } = frontmatter;
 ---
 
 <Layout {title}>
@@ -16,6 +18,15 @@ const { title, description, date, author, url } = frontmatter;
       <h1 class="text-3xl md:text-7xl font-bold uppercase">
         {title}
       </h1>
+      <!-- category -->
+      <section>
+        <small class="">
+          <a
+            class="flex justify-center gap-1 uppercase font-medium"
+            href={`/tags/${slugify(tags)}`}>{tags}</a
+          >
+        </small>
+      </section>
       <section>
         <p class="text-center text-lg">
           Escrito por: <span class="font-semibold">{author}</span>
@@ -25,7 +36,7 @@ const { title, description, date, author, url } = frontmatter;
       <!-- divide whit fecha -->
       <span class="flex items-center my-4">
         <span class="h-px flex-1 bg-[#212121]"></span>
-        <span class="shrink-0 px-6">{formatDate(date)}</span>
+        <span class="shrink-0 px-6">{formatpubDate(pubDate)}</span>
         <span class="h-px flex-1 bg-[#212121]"></span>
       </span>
       <!-- content -->

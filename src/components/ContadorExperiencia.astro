@@ -1,0 +1,49 @@
+---
+// tiempo en las empresas
+var hbt = 11;
+var free = 50;
+var ucab = 11;
+var flasalle = 17;
+// valor de un año en meses
+var year = 12;
+// calculo del valor total del tiempo laboral en meses
+const meses = [hbt, ucab, flasalle, free];
+const timeMonths = meses.reduce((total, num) => total + num, 0);
+// calculo del valor total del tiempo laboral en años
+const years = Math.floor(timeMonths / 12);
+// calculo del valor restantes en meses
+const months = timeMonths - year * years;
+---
+
+<section class="">
+  <h2 class="font-bold text-5xl">
+    Tiempo de experiencia acumulada en el área de TI
+  </h2>
+  <p class="text-lg font-light md:text-xl">
+    En el vertiginoso mundo de las tecnologías de la información, el tiempo se
+    convierte en un bien inestimable. Con cada año que pasa, las personas
+    adquieren una gran experiencia acumulada en el área de TI. Esta experiencia
+    es como un tesoro de conocimientos, perfeccionado a través de incontables
+    horas de desarrollo de sistemas de soporte web. El profesional de TI que
+    lleva años en este campo ha sido testigo de la evolución de la tecnología,
+    desde los primeros días de los sitios web básicos hasta los complejos
+    sistemas web que vemos hoy en día. Se han enfrentado a retos y han superado
+    obstáculos, adaptándose constantemente al paisaje siempre cambiante del
+    ámbito digital. Este tiempo de experiencia acumulada no es sólo un
+    testimonio de su dedicación y pasión por su oficio, sino también una reserva
+    de sabiduría que puede aprovecharse para futuros proyectos e iniciativas.
+  </p>
+  <section class="flex justify-center mt-4">
+    <time class="bg-white inline rounded-xl text-lg md:text-2xl text-center">
+      <span class="capitalize font-light">
+        <span class="text-7xl font-black">{years}</span> años
+      </span>
+
+      <span
+        class="block px-8 py-4 capitalize font-light bg-[#f79533] text-[#f5efe7] rounded-b-xl"
+      >
+        <span class="font-black text-4xl">{months}</span> meses
+      </span>
+    </time>
+  </section>
+</section>

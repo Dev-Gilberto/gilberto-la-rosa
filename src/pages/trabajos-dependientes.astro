@@ -1,9 +1,7 @@
 ---
-import empleos from "../data/empleos.json";
 import Layout from "../layouts/Layout.astro";
-import Hbt from "../components/Hbt.astro";
-import Ucab from "../components/Ucab.astro";
-import Flasalle from "../components/Flasalle.astro";
+import Empleos from "../components/Empleos.astro";
+import ContadorExperencia from "../components/ContadorExperiencia.astro";
 ---
 
 <Layout title="Trabajos Dependientes 💻 Gilberto La Rosa 🚀 Web Developer 🌎">
@@ -22,159 +20,104 @@ import Flasalle from "../components/Flasalle.astro";
       </p>
     </section>
     <!-- empleos -->
-    <section class="md:w-[60%] md:mx-auto flex flex-col gap-4">
-      <section>
-        <div class="flex items-center">
-          <span class="h-px flex-1 bg-[#212121]"></span>
-          <span class="shrink-0 px-6 font-bold text-5xl uppercase">hbt</span>
-          <span class="h-px flex-1 bg-[#212121]"></span>
-        </div>
-        <p class="text-center text-sm font-light">
-          hbt, LTDA, es una empresa familiar de origen nórdica fundada en
-          Santiago,Chile por la Arquitecta Gisela Litvanyi quien con el objetivo
-          de crear un punto de encuentro para profesionales y clientes decide
-          desarrollar su propia cultura de diseño y tecnología de producción en
-          Chile.
-        </p>
-      </section>
-
-      <section>
-        <h2 class="font-bold text-5xl">Asistente de TI</h2>
-        <p class="font-light text-lg md:text-xl">
-          Como asistente informático en la empresa HBT, mi función consistía en
-          prestar apoyo y asistencia en diversos aspectos de la infraestructura
-          tecnológica de la empresa. Esto incluye la gestión del sitio web,
-          garantizando su funcionalidad y realizando las actualizaciones
-          necesarias.
-        </p>
-        <p class="font-light text-lg md:text-xl my-4">
-          Además, era responsable del mantenimiento del sistema ERP,
-          garantizando su buen funcionamiento y solucionando cualquier problema
-          que surja. Además de estas tareas, también atiendo las consultas del
-          HelpDesk de los empleados, proporcionando soluciones oportunas y
-          eficaces a sus necesidades técnicas.
-        </p>
-
-        <p class="font-light text-lg md:text-xl">
-          Conozco bien las integraciones y tengo experiencia trabajando con API
-          para agilizar los procesos y mejorar la eficiencia. Además, conozco
-          bien las tecnologías B2B y pude ayudar a implantar soluciones que
-          mejoren la comunicación y la colaboración con nuestros socios
-          comerciales.
-        </p>
-      </section>
-      <section>
-        <h2 class="font-bold text-5xl capitalize text-wrap">
-          habilidades &#8943; Herramientas
-        </h2>
-        <ul class="flex gap-3 flex-wrap justify-center wu md:w-1/2 mx-auto">
-          <li
-            class="py-1 px-4 rounded-xl bg-white border-t-2 border-[#f79533] uppercase"
-          >
-            windows
-          </li>
-          <li
-            class="py-1 px-4 rounded-xl bg-white border-t-2 border-[#f79533] uppercase"
-          >
-            windows server
-          </li>
-          <li
-            class="py-1 px-4 rounded-xl bg-white border-t-2 border-[#f79533] uppercase"
-          >
-            linux
-          </li>
-          <li
-            class="py-1 px-4 rounded-xl bg-white border-t-2 border-[#f79533] uppercase"
-          >
-            Microsoft 365
-          </li>
-          <li
-            class="py-1 px-4 rounded-xl bg-white border-t-2 border-[#f79533] uppercase"
-          >
-            wrike
-          </li>
-          <li
-            class="py-1 px-4 rounded-xl bg-white border-t-2 border-[#f79533] uppercase"
-          >
-            jira
-          </li>
-          <li
-            class="py-1 px-4 rounded-xl bg-white border-t-2 border-[#f79533] uppercase"
-          >
-            flexline (ERP)
-          </li>
-          <li
-            class="py-1 px-4 rounded-xl bg-white border-t-2 border-[#f79533] uppercase"
-          >
-            clickUp
-          </li>
-          <li
-            class="py-1 px-4 rounded-xl bg-white border-t-2 border-[#f79533] uppercase"
-          >
-            SQL
-          </li>
-          <li
-            class="py-1 px-4 rounded-xl bg-white border-t-2 border-[#f79533] uppercase"
-          >
-            Active Directory
-          </li>
-          <li
-            class="py-1 px-4 rounded-xl bg-white border-t-2 border-[#f79533] uppercase"
-          >
-            comercio B2C, B2B
-          </li>
-          <li
-            class="py-1 px-4 rounded-xl bg-white border-t-2 border-[#f79533] uppercase"
-          >
-            administración web
-          </li>
-          <li
-            class="py-1 px-4 rounded-xl bg-white border-t-2 border-[#f79533] uppercase"
-          >
-            soporte técnico nivel 1 y 2
-          </li>
-          <li
-            class="py-1 px-4 rounded-xl bg-white border-t-2 border-[#f79533] uppercase"
-          >
-            HelpDesk
-          </li>
-        </ul>
-      </section>
-      <section>
-        <h2 class="font-bold text-5xl capitalize">periodo</h2>
-        <time>
-          <div class="flex justify-center gap-2 items-center">
-            <span class="capitalize font-light text-lg md:text-xl"
-              >marzo <span class="font-bold text-4xl"> 2023</span></span
-            >&#10145;
-            <span class="capitalize font-light text-lg md:text-xl"
-              >enero <span class="font-bold text-4xl"> 2024</span></span
-            >
-          </div>
-          <div class="capitalize text-lg md:text-xl font-light text-center">
-            <span>durarion</span>
-            <span class="text-3xl font-bold">11 meses</span>
-          </div>
-        </time>
-        <span class="flex items-center">
-          <span class="pr-6 font-bold text-3xl capitalize">pais</span>
-          <span class="h-px flex-1 bg-[#212121]"></span>
-        </span>
-        <!-- <h3 class="font-bold text-3xl capitalize">pais</h3> -->
-        <span class="text-center font-bold capitalize text-3xl block"
-          >chile</span
-        >
-      </section>
-      <section class="text-center">
-        <a
-          href="https://www.hbt.cl/"
-          target="_blank"
-          title="sitio web de la empresa u organizacion"
-          class="font-medium underline tracking-wide text-lg hover:text-[#f79533] duration-300"
-        >
-          Sitio web de la empresa u organizacion &#10138;
-        </a>
-      </section>
+    <section class="md:w-[60%] md:mx-auto flex flex-col gap-4 mt-8">
+      <Empleos
+        nameEnterprise="hbt"
+        textEnterprise="HBT, LTDA, es una empresa familiar de origen nórdica fundada en Santiago, Chile por la Arquitecta Gisela Litvanyi quien con el objetivo de crear un punto de encuentro para profesionales y clientes decide desarrollar su propia cultura de diseño y tecnología de producción en Chile."
+        jobTitle="Asistente de TI"
+        experienceSumary="Durante mi tiempo como asistente de TI, adquirí una valiosa experiencia trabajando en un entorno de ritmo rápido proporcionando soporte técnico a los usuarios. Una de mis principales responsabilidades era gestionar el servicio de asistencia, donde recibía y respondía a las consultas y problemas de los usuarios. Esto implicaba solucionar problemas de hardware y software, así como proporcionar orientación sobre cómo utilizar diversas aplicaciones y sistemas."
+        experienceSumaryTwo="Además del servicio de asistencia, también tuve la oportunidad de trabajar con sistemas de planificación de recursos empresariales (ERP). Esto implicaba ayudar en la implantación y el mantenimiento del software ERP, así como formar a los empleados sobre cómo utilizarlo eficazmente."
+        skill="windows"
+        skillTwo="linux"
+        skillThree="microsoft 365"
+        skillFor="comercio b2c - b2b"
+        skillFive="administracion web"
+        skillSix="bases de datos"
+        skillSeven="sql"
+        skillEight="mesa ayuda"
+        skillNine="soporte tecnico nivel i - ii"
+        skillTen="sistemas de tickets"
+        month="marzo"
+        monthTwo="enero"
+        year="2023"
+        yearTwo="2024"
+        number={11}
+        contry="chile"
+        href="https://www.hbt.cl/"
+      />
+      <Empleos
+        nameEnterprise="Independiente"
+        textEnterprise="Un informático independiente es un profesional que posee un profundo conocimiento de diversos aspectos de la informática y trabaja de forma independiente, sin estar vinculado a ninguna organización o empresa concreta. Su experiencia se centra en áreas como el desarrollo web, el soporte de sistemas, el hardware y los servicios de asistencia técnica."
+        jobTitle="Consultor Informático Independiente"
+        experienceSumary="Como consultor informático independiente, he adquirido una amplia experiencia en diversos aspectos de este campo. Mi especialidad es el desarrollo web, donde he creado y mantenido numerosos sitios web para clientes de distintos sectores. Conozco muy bien lenguajes de programación como HTML, CSS y JavaScript, lo que me permite crear sitios web visualmente atractivos y funcionales."
+        experienceSumaryTwo="Además, he proporcionado sistemas de hardware de apoyo a los clientes, asegurando que sus sistemas informáticos están funcionando sin problemas y eficientemente. Esto incluye la solución de problemas de hardware, la instalación de nuevos componentes, y la realización de un mantenimiento regular. Además, también he trabajado como representante del servicio de asistencia técnica, ayudando a los clientes con sus consultas relacionadas con TI y proporcionando soluciones a sus problemas."
+        skill="windows"
+        skillTwo="linux"
+        skillThree="desarrollo web"
+        skillFor="html"
+        skillFive="css"
+        skillSix="php"
+        skillSeven="javasript"
+        skillEight="mesa ayuda"
+        skillNine="soporte tecnico nivel i - ii"
+        skillTen="servidores"
+        month="diciembre"
+        monthTwo="enero"
+        year="2018"
+        yearTwo="2023"
+        number={50}
+        contry="Perú - Chile"
+        href="https://codafter.cl/"
+      />
+      <Empleos
+        nameEnterprise="ucab"
+        textEnterprise="La Universidad Católica Andrés Bello, es una universidad privada con sede en Caracas, Venezuela, y con núcleos en Los Teques, Puerto Ordaz y Coro. Es miembro de la Asociación de Universidades Confiadas a la Compañía de Jesús en América Latina, y la dirigen padres jesuitas."
+        jobTitle="Analista de Tecnologia y Soporte Técnico"
+        experienceSumary="A lo largo de mi carrera como analista tecnológico y especialista en soporte técnico, he adquirido una amplia experiencia en el desarrollo y soporte de diversos sistemas web y bases de datos. Mi función como analista tecnológico consistía en analizar los requisitos empresariales y traducirlos en soluciones técnicas. Trabajé estrechamente con las partes interesadas para comprender sus necesidades y colaboré con los equipos de desarrollo para diseñar e implantar aplicaciones basadas en web."
+        experienceSumaryTwo="Para ello utilicé mis conocimientos de lenguajes de desarrollo web como HTML, CSS, JavaScript y marcos de trabajo como Node.Js y PHP. Además, he tenido experiencia práctica con sistemas de gestión de bases de datos como SQL Server y MySQL, donde diseñé y mantuve bases de datos para garantizar un rendimiento óptimo y la integridad de los datos."
+        skill="windows"
+        skillTwo="linux"
+        skillThree="servidores"
+        skillFor="soporte usuarios"
+        skillFive="soporte sistemas"
+        skillSix="bases de datos"
+        skillSeven="sql"
+        skillEight="html"
+        skillNine="css"
+        skillTen="javascript"
+        month="noviembre"
+        monthTwo="septiembre"
+        year="2017"
+        yearTwo="2018"
+        number={11}
+        contry="venezuela"
+        href="https://www.ucab.edu.ve/"
+      />
+      <Empleos
+        nameEnterprise="flasalle"
+        textEnterprise="La Fundación La Salle de Ciencias Naturales es una institución venezolana sin fines de lucro que se dedica a impartir educación básica, media, diversificada y técnica para el trabajo. También desarrolla investigaciones científicas relacionadas con las ciencias naturales y sociales, propias de Venezuela, y a transferir a las comunidades y relacionados las herramientas necesarias para ejecutar programas de extensión y producción que promuevan su autodesarrollo."
+        jobTitle="Coordinador de Informática"
+        experienceSumary="Durante mi mandato como Coordinador de TI, he adquirido una amplia experiencia en la gestión de servidores de desarrollo y en la prestación de apoyo a diversos sistemas. Mi principal responsabilidad ha sido garantizar el buen funcionamiento de la infraestructura de hardware y software dentro de la organización. Esto implica supervisar la instalación, la configuración y el mantenimiento de los servidores, así como solucionar cualquier problema técnico que surja."
+        experienceSumaryTwo=" Además, he trabajado en estrecha colaboración con el equipo de desarrollo para garantizar que se cumplen sus requisitos y que disponen de los recursos necesarios para llevar a cabo sus tareas con eficacia. En general, mi experiencia como coordinador informático me ha proporcionado un conocimiento exhaustivo de las complejidades de la gestión y el soporte de los sistemas informáticos en un entorno profesional."
+        skill="windows"
+        skillTwo="linux"
+        skillThree="servidores"
+        skillFor="bases de datos"
+        skillFive="informes kpis"
+        skillSix="planes estratégicos"
+        skillSeven="redes"
+        skillEight="active directory"
+        skillNine="soporte a la arquitectura de ti"
+        skillTen="políticas de seguridad informática"
+        month="mayo"
+        monthTwo="noviembre"
+        year="2016"
+        yearTwo="2017"
+        number={17}
+        contry="venezuela"
+        href="http://www.fundacionlasalle.org.ve/"
+      />
     </section>
+    <ContadorExperencia />
   </section>
 </Layout>
