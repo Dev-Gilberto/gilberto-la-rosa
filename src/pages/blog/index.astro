@@ -1,8 +1,10 @@
 ---
-import { formatBlogPosts } from "../../assets/js/utils";
-
-import Layout from "../../layouts/Layout.astro";
-import Posts from "../../components/Posts.astro";
+import { formatBlogPosts } from "@assets/js/utils";
+import Marketing from "@components/Marketing.astro";
+import Email from "@components/Email.astro";
+import Layout from "@layout/Layout.astro";
+import Posts from "@components/Posts.astro";
+import AllTags from "@components/AllTags.astro";
 const allPosts = await Astro.glob("./*.md");
 const formattedPosts = formatBlogPosts(allPosts);
 ---
@@ -23,13 +25,8 @@ const formattedPosts = formatBlogPosts(allPosts);
       <!-- categorias y filtros -->
       <section class="col-span-4 md:col-span-1">
         <section class="bg-[#d8c4b6] rounded-xl p-4">
-          <h2>categorias</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
-            voluptates magnam nulla voluptate, aperiam non quas odit, dolorum
-            similique illo vitae nobis voluptatem. Nisi, a. Commodi harum
-            repudiandae nesciunt! Pariatur.
-          </p>
+          <h2 class="text-4xl font-bold mb-2">Categorias</h2>
+          <AllTags showCount="true" />
         </section>
       </section>
       <!-- card blog posts -->
@@ -40,18 +37,20 @@ const formattedPosts = formatBlogPosts(allPosts);
               <Posts frontmatter={post.frontmatter} url={post.url} />
             ))
           }
-          <!-- <Posts frontmatter={allPosts[0].frontmatter} url={allPosts[0].url} /> -->
         </ul>
       </section>
       <!-- publicidad y otros  -->
       <section class="col-span-4 md:col-span-1">
         <section class="bg-[#6ab0e4] rounded-xl p-4">
-          <h2>aqui va la publicidad de codafter</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut
-            voluptatibus molestias in eius modi laboriosam blanditiis excepturi
-            velit odit dolores sed provident quam, possimus, temporibus
-            obcaecati quod autem praesentium perferendis.
+          <h2 class="text-4xl font-bold mb-2">
+            Clases de Diseño y Desarrollo Web Profesional
+          </h2>
+          <Marketing />
+          <hr class="py-2 border-current" />
+          <Email />
+          <p class="text-xs mt-4">
+            Nota: Los cupos son limitados, debido a que las clases son en línea
+            y completamente personalizadas.
           </p>
         </section>
       </section>

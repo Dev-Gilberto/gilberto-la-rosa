@@ -2,13 +2,13 @@
 layout: "../../layouts/SinglePostLayout.astro"
 title: "Guía paso a paso para ser un desarrollador web"
 emojis: "💪 💯"
-pubDate: "2024-03-08T00:00:00.000Z"
+pubDate: "2024-03-08"
 description: "En un mundo con rutas de aprendizajes pero sin poder definirse por cual tomar..."
 author: "Gilberto La Rosa"
 image:
   url: "📝"
   alt: "El logotipo completo de Astro."
-tags: ["websities"]
+tags: "web developer"
 ---
 
 ## Primeros pasos.

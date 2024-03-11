@@ -7,7 +7,6 @@ import ButtonBack from "@components/ButtonBack.astro";
 import Frases from "@components/Frases.astro";
 
 const { frontmatter } = Astro.props;
-console.log(frontmatter);
 
 const { title, emojis, pubDate, author, tags } = frontmatter;
 ---
@@ -22,13 +21,14 @@ const { title, emojis, pubDate, author, tags } = frontmatter;
       </div>
       <!-- category -->
       <section>
-        <small class="">
+        <small class="flex justify-center mb-4">
           <a
-            class="flex justify-center gap-1 uppercase font-medium"
+            class="uppercase font-medium py-1 px-4 rounded-xl border-b-2 border-[#f79533] tracking-wider"
             href={`/tags/${slugify(tags)}`}>{tags}</a
           >
         </small>
       </section>
+      <!-- Autor -->
       <section>
         <p class="text-center text-lg">
           Escrito por: <span class="font-semibold">{author}</span>

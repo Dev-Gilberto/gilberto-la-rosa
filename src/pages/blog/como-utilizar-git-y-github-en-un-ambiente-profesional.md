@@ -2,13 +2,13 @@
 layout: "../../layouts/SinglePostLayout.astro"
 title: "como utilizar git y github en un ambiente profesional"
 emojis: "📣 🌎"
-pubDate: "2024-03-09T00:00:00.000Z"
+pubDate: "2024-03-09"
 description: "Todo desarrollador web o programador, tiene que tener el conocimiento de usar esta valiosa herramienta..."
 author: "Gilberto La Rosa"
 image:
   url: "🔀"
   alt: "El emoji del articulo"
-tags: ["control de versiones"]
+tags: "control de versiones"
 ---
 
 En un entorno profesional, el uso del control de versiones es crucial para un desarrollo de software eficiente y colaborativo. Git es uno de los sistemas de control de versiones más populares utilizados hoy en día, conocido por su flexibilidad y naturaleza distribuida. Al comprender cómo utilizar Git y GitHub de forma eficaz, los desarrolladores pueden agilizar su flujo de trabajo, garantizar la calidad del código y mejorar la colaboración en equipo.

@@ -1,0 +1,39 @@
+---
+import { formatBlogPosts, slugify } from "@assets/js/utils";
+
+const allPosts = await Astro.glob("../pages/blog/*.md");
+const formattedPosts = formatBlogPosts(allPosts);
+const allTags = formattedPosts
+  .map((cat) => cat.frontmatter.tags.toUpperCase())
+  .flat();
+
+const processedCats = allTags.reduce((acc, tags) => {
+  // check if the category exists in the acc
+  const value = acc[tags] || 0;
+
+  return {
+    ...acc,
+    [tags]: value + 1,
+  };
+}, {});
+
+const { showCount } = Astro.props;
+---
+
+<ul class="flex flex-wrap gap-2">
+  {
+    Object.entries(processedCats).map(([key, val]) => (
+      <li class="rounded-lg  border-white border-2 border-dashed md:hover:bg-[#f79533]  md:hover:border-[#f79533] duration-300">
+        <a
+          class="rounded-lg pl-2 inline-flex items-center"
+          href={`/tags/${slugify(key)}/`}
+        >
+          {key}{" "}
+          <span class="text-white ml-2 bg-[#f79533] py-1 px-2 font-medium rounded-lg">
+            {showCount && `${val}`}
+          </span>
+        </a>
+      </li>
+    ))
+  }
+</ul>
