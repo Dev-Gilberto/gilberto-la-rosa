@@ -1,21 +1,14 @@
+---
+import { Icon } from "astro-icon/components";
+---
+
 <nav>
   <div>
     <input id="responsive-menu" type="checkbox" />
-    <label for="responsive-menu">
+    <label for="responsive-menu" class="items-center">
       <!-- logo -->
       <a href="/" title="Logo Gilberto La Rosa">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="32"
-          height="32"
-          viewBox="0 0 24 24"
-          class="hover:text-[#f79533]"
-          ><path
-            fill="currentcolor"
-            fill-rule="evenodd"
-            d="M20.05 17.65a3 3 0 0 0 1.2-2.4v-11a3 3 0 0 0-3-3h-12a3 3 0 0 0-3 3v11a3 3 0 0 0 1.2 2.4l6 4.5a3 3 0 0 0 3.6 0z"
-            clip-rule="evenodd"></path>
-        </svg>
+        <Icon name="logo" size={60} />
       </a>
       <!-- texto -->
       <span class="animate-text-deg text-4xl uppercase font-bold">[menú]</span>
@@ -55,6 +48,8 @@
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             class="hover:text-[#f79533]"
+            width="32"
+            height="32"
             ><path
               fill="currentColor"
               fill-rule="evenodd"
@@ -99,6 +94,8 @@
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             class="hover:text-[#6fba82]"
+            width="32"
+            height="32"
             ><g fill="none"
               ><g clip-path="url(#akarIconsGithubFill0)"
                 ><path
@@ -130,7 +127,7 @@
   }
 
   nav {
-    flex:;
+    flex: none;
     right: 0;
     position: relative;
     top: 0;
@@ -267,10 +264,5 @@
   nav ul#social-media > li {
     display: inline-block;
     margin: 0.5em;
-  }
-  svg {
-    width: 1.3em;
-    height: 1.3em;
-    transition: color 0.4s ease-in-out;
   }
 </style>
