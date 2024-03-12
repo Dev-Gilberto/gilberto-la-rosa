@@ -1,11 +1,26 @@
 article p {
   font-size: 1.3em;
   font-weight: 300;
+  letter-spacing: 0.025em;
   margin-bottom: 1rem;
 }
 article h2 {
-  font-size: 4em;
+  font-size: 2.2em;
   line-height: 1;
   font-weight: 700;
   margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  article h2 {
+    font-size: 4em;
+  }
+}
+p a {
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+p a:hover {
+  text-decoration: underline;
 }

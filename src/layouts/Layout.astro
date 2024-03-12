@@ -1,10 +1,10 @@
 ---
 import "@styles/Global.css";
+
 import FooterLayout from "@components/FooterLayout.astro";
 import NavBar from "@components/NavBar.astro";
 import BtnTop from "@components/BtnTop.astro";
 
-// import ButtonTopV from "../components/ButtonTopV.vue";
 import { ViewTransitions } from "astro:transitions";
 import { slide } from "astro:transitions";
 
@@ -21,9 +21,11 @@ const { title } = Astro.props;
     <meta charset="UTF-8" />
     <meta
       name="description"
-      content="Gilberto La Rosa, Developer Web, sitio web biografico de su trayectoria profesional"
+      content="Gilberto La Rosa 🚀 Web Developer 💻 Diseñador Web"
     />
     <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="sitemap" href="/sitemap-index.xml" />
     <link
       rel="icon"
       type="image/svg+xml"
@@ -43,7 +45,6 @@ const { title } = Astro.props;
       referrerpolicy="no-referrer"
     />
 
-    <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
     <ViewTransitions />
   </head>
