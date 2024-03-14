@@ -3,7 +3,7 @@ layout: "../../layouts/SinglePostLayout.astro"
 title: "Que es la inteligencia artificial? y cual es su impacto en el mundo"
 emojis: "📈 🚄"
 pubDate: "2024-03-11"
-description: "En un mundo con rutas de aprendizajes pero sin poder definirse por cual tomar..."
+description: "La inteligencia artificial (IA) se refiere al desarrollo de sistemas informáticos capaces de realizar tareas que normalmente requieren inteligencia humana."
 author: "Gilberto La Rosa"
 image:
   url: "🚀"

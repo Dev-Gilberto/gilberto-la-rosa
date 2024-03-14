@@ -3,7 +3,7 @@ layout: "../../layouts/SinglePostLayout.astro"
 title: "Como obtener tu primer empleo como web developer"
 emojis: "💰 💵"
 pubDate: "2024-03-07"
-description: "Este es la primera publicación de mi nuevo blog de Astro."
+description: "En la era digital actual, el desarrollo web se ha convertido en una habilidad muy solicitada."
 author: "Gilberto La Rosa"
 image:
   url: "💼"

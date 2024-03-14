@@ -3,7 +3,7 @@ layout: "../../layouts/SinglePostLayout.astro"
 title: "Guía paso a paso para ser un desarrollador web"
 emojis: "💪 💯"
 pubDate: "2024-03-08"
-description: "En un mundo con rutas de aprendizajes pero sin poder definirse por cual tomar..."
+description: "Convertirse en desarrollador web puede ser una elección profesional apasionante y gratificante."
 author: "Gilberto La Rosa"
 image:
   url: "📝"

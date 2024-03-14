@@ -3,7 +3,7 @@ layout: "../../layouts/SinglePostLayout.astro"
 title: "como utilizar git y github en un ambiente profesional"
 emojis: "📣 🌎"
 pubDate: "2024-03-09"
-description: "Todo desarrollador web o programador, tiene que tener el conocimiento de usar esta valiosa herramienta..."
+description: "En un entorno profesional, el uso del control de versiones es crucial para un desarrollo de software eficiente y colaborativo."
 author: "Gilberto La Rosa"
 image:
   url: "🔀"
