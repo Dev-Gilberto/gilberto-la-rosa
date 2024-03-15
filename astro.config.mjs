@@ -1,8 +1,6 @@
 import { defineConfig } from "astro/config";
 import tailwind from "@astrojs/tailwind";
 import mdx from "@astrojs/mdx";
-import partytown from "@astrojs/partytown";
-import vue from "@astrojs/vue";
 import sitemap from "@astrojs/sitemap";
 
 import icon from "astro-icon";
@@ -25,8 +23,6 @@ export default defineConfig({
   integrations: [
     tailwind(),
     mdx(),
-    partytown(),
-    vue(),
     sitemap({
       filter: (page) =>
         page !== "https://gilbertolarosa.dev/proyectos-open-source/" &&
