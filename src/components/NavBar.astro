@@ -2,16 +2,23 @@
 import { Icon } from "astro-icon/components";
 ---
 
-<nav>
+<nav class="flex-none right-0 relative top-0 z-[100]">
   <div>
-    <input id="responsive-menu" type="checkbox" />
-    <label for="responsive-menu" class="items-center">
+    <input
+      id="responsive-menu"
+      class="opacity-0 absolute -z-10"
+      type="checkbox"
+    />
+    <label
+      for="responsive-menu"
+      class="items-center cursor-pointer flex justify-between py-[0.5em] px-0"
+    >
       <!-- logo -->
       <a href="/" title="Logo Gilberto La Rosa">
         <Icon name="logo" size={60} />
       </a>
       <!-- texto -->
-      <span class="animate-text-deg text-4xl uppercase font-bold">[menú]</span>
+      <span class="animate-text-deg text-4xl uppercase font-black">(menú)</span>
       <!-- button -->
       <span id="menu-icon"></span>
     </label>
@@ -19,7 +26,7 @@ import { Icon } from "astro-icon/components";
     <div id="overlay"></div>
     <ul>
       <li>
-        <a class="capitalize" href="/">¡hola!</a>
+        <a href="/">¡hola!</a>
       </li>
       <li>
         <a href="/proyectos-open-source">proyectos open source</a>
@@ -85,28 +92,9 @@ import { Icon } from "astro-icon/components";
     width: 1px;
   }
 
-  nav {
-    flex: none;
-    right: 0;
-    position: relative;
-    top: 0;
-    z-index: 9999;
-  }
-
-  /*** INPUT ***/
-  nav input {
-    opacity: 0;
-    position: absolute;
-    z-index: -1;
-  }
-
   /*** LABEL ***/
   nav label {
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
     font: 2em/1 var(--Font-global);
-    padding: 0.5em 0;
   }
 
   /* Hamburger Icon */

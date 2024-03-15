@@ -1,5 +1,5 @@
 ---
-import GitHub from "../components/GitHub.astro";
+import { Icon } from "astro-icon/components";
 
 interface Props {
   name: string;
@@ -13,7 +13,7 @@ const { name, href } = Astro.props;
   class="border-[#f79533] border-t-8 md:border-l-8 md:border-t-0 rounded-xl items-center grid grid-cols-4"
 >
   <div class="flex justify-center col-span-1 md:col-span-1">
-    <GitHub width="70" height="70" fill="#212121" />
+    <Icon name="github" size={70} />
   </div>
 
   <div class="col-span-3 md:col-span-2 py-4 md:py-0">

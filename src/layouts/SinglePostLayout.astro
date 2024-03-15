@@ -5,6 +5,7 @@ import { slugify, formatpubDate } from "@assets/js/utils";
 import SocialNetwork from "@components/SocialNetwork.astro";
 import ButtonBack from "@components/ButtonBack.astro";
 import Frases from "@components/Frases.astro";
+import Share from "@components/Share.astro";
 
 const { frontmatter } = Astro.props;
 
@@ -41,6 +42,7 @@ const { title, emojis, pubDate, author, tags } = frontmatter;
         <span class="shrink-0 px-6">{formatpubDate(pubDate)}</span>
         <span class="h-px flex-1 bg-[#212121]"></span>
       </span>
+
       <!-- content -->
       <slot />
     </article>
@@ -52,7 +54,8 @@ const { title, emojis, pubDate, author, tags } = frontmatter;
     </span>
     <Frases />
   </section>
-  <span class="block text-right w-[60%] mx-auto mb-8">
+  <section class="flex justify-between w-[90%] md:w-[60%] mx-auto my-8">
+    <Share />
     <ButtonBack />
-  </span>
+  </section>
 </Layout>

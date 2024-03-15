@@ -1,0 +1,37 @@
+---
+import { Icon } from "astro-icon/components";
+---
+
+<button
+  id="btn-share"
+  class="inline-flex gap-1 text-sm font-medium uppercase hover:text-[#f79533] duration-300 tracking-wide"
+>
+  <Icon
+    name="share"
+    class="block duration-300 group-hover:me-0.5 rtl:rotate-180"
+  /> Compartir
+</button>
+
+<script type="text/javascript">
+  const shareButton = document.getElementById("btn-share");
+
+  shareButton.addEventListener("click", (event) => {
+    if ("share" in navigator) {
+      navigator
+        .share({
+          title: "Comparte Esta Página, en tu platafoma favorita",
+
+          url: window.location.href,
+        })
+
+        .then(() => {
+          console.log("Contenido Compartido !");
+        })
+        .catch(console.error);
+    } else {
+      alert(
+        "Lo siento, este navegador no tiene soporte para recursos compartidos."
+      );
+    }
+  });
+</script>

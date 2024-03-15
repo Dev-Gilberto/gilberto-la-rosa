@@ -3,7 +3,7 @@ layout: "../../layouts/SinglePostLayout.astro"
 title: "¿Qué es Devin AI?"
 emojis: "💣 💀"
 pubDate: "2024-03-14"
-description: "Devin AI es una plataforma de inteligencia artificial diseñada para revolucionar la forma en que las empresas interactúan con los datos y toman decisiones estratégicas"
+description: "Devin AI es una plataforma de inteligencia artificial diseñada para revolucionar la forma en que las empresas interactúan con los datos y toman decisiones estratégicas."
 author: "Gilberto La Rosa"
 image:
   url: "🔥"
