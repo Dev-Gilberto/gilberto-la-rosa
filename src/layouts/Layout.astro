@@ -4,7 +4,8 @@ import "@styles/Global.css";
 import FooterLayout from "@components/FooterLayout.astro";
 import NavBar from "@components/NavBar.astro";
 import BtnTop from "@components/BtnTop.astro";
-
+import GoogleTagAnalytics from "@components/GoogleTagAnalytics.astro";
+import Seo from "@components/Seo.astro";
 import { ViewTransitions } from "astro:transitions";
 import { slide } from "astro:transitions";
 
@@ -12,44 +13,16 @@ interface Props {
   title: string;
 }
 
-const {
-  title,
-
-  // url = Astro.url,
-} = Astro.props;
+const { title } = Astro.props;
 ---
 
 <!doctype html>
 <html lang="es">
   <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="description"
-      content="Gilberto La Rosa 🚀 Web Developer 💻 Diseñador Web"
-    />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <link rel="sitemap" href="/sitemap-index.xml" />
-    <link rel="canonical" href={Astro.url} />
-    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
-    <link rel="apple-touch-icon" sizes="57x57" href="" />
-    <link rel="apple-touch-icon" sizes="114x114" href="" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200..700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/csshake/1.7.0/csshake.min.css"
-      integrity="sha512-Kd+SEhBK155eAi26GMJymGkvztAnpEGA/PsJc9OKxRwkhJGblvtVv5Fv1R8zYvPq7dbsy+3o4QJco6hzBdxVjg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <Seo />
 
     <title>{title}</title>
+    <GoogleTagAnalytics />
     <ViewTransitions />
   </head>
   <body>
