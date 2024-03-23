@@ -2,7 +2,7 @@ article p {
   font-size: 1.3em;
   font-weight: 300;
   letter-spacing: 0.025em;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 article h2 {
   font-size: 2.2em;
@@ -23,4 +23,13 @@ p a {
 }
 p a:hover {
   text-decoration: underline;
+}
+article pre {
+  font-size: 0.7em;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+.astro-code {
+  background-color: black;
 }

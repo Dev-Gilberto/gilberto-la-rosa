@@ -16,14 +16,31 @@ export default defineConfig({
   //Opciones del Servidor
   server: {
     port: 7000,
-    host: true
+    host: true,
   },
   //La URL final donde se desplegará
   site: "https://gilbertolarosa.dev/",
   // integraciones
-  integrations: [tailwind(), mdx(), sitemap({
-    filter: page => page !== "https://gilbertolarosa.dev/proyectos-open-source/" && page !== "https://gilbertolarosa.dev/trabajos-dependientes/" && page !== "https://gilbertolarosa.dev/proyectos-freelance/" && page !== "https://gilbertolarosa.dev/blog/"
-  }), icon({
-    iconDir: "src/assets/icons"
-  }), partytown()]
+  integrations: [
+    tailwind(),
+    mdx({
+      syntaxHighlight: "shiki",
+      shikiConfig: { theme: "github-dark-dimmed" },
+      // remarkPlugins: [remarkToc],
+      // rehypePlugins: [rehypeMinifyHtml],
+      remarkRehype: { footnoteLabel: "Footnotes" },
+      gfm: false,
+    }),
+    sitemap({
+      filter: (page) =>
+        page !== "https://gilbertolarosa.dev/proyectos-open-source/" &&
+        page !== "https://gilbertolarosa.dev/trabajos-dependientes/" &&
+        page !== "https://gilbertolarosa.dev/proyectos-freelance/" &&
+        page !== "https://gilbertolarosa.dev/blog/",
+    }),
+    icon({
+      iconDir: "src/assets/icons",
+    }),
+    partytown(),
+  ],
 });

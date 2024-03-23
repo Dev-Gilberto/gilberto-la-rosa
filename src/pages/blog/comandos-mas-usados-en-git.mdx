@@ -1,0 +1,102 @@
+---
+layout: "../../layouts/SinglePostLayout.astro"
+title: "Comandos más utilizados en Git"
+emojis: "👈 👏"
+pubDate: "2024-03-22"
+description: "Git es un potente sistema de control de versiones que permite a los desarrolladores gestionar y rastrear los cambios realizados en su código."
+author: "Gilberto La Rosa"
+image:
+  url: "😎"
+  alt: "Emoji del articulo"
+tags: "control de versiones"
+---
+
+## Que es Git?
+
+Git es un potente sistema de control de versiones que permite a los desarrolladores gestionar y rastrear los cambios realizados en su código. Su uso está muy extendido en la industria del desarrollo de software, y conocer los comandos más utilizados en Git es esencial para una gestión eficiente y eficaz del código.
+
+## El comando de inicio
+
+Uno de los comandos más utilizados en Git es "git init". Este comando inicializa un nuevo repositorio Git en el directorio actual, permitiendo a los desarrolladores comenzar el seguimiento de los cambios en su código. Al ejecutar este comando, Git crea una carpeta .git oculta que contiene todos los archivos y datos necesarios para el control de versiones.
+
+Ejemplo: Este comando inicia y crea el archivo oculto .gitignore.
+
+```sh:
+git init
+```
+
+Esta es una configuración básica del archivo .gitignore para un proyecto de Astro.
+
+```md:
+# build output
+dist/
+
+# generated types
+.astro/
+
+# dependencies
+node_modules/
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# environment variables
+.env
+.env.production
+
+# macOS-specific files
+.DS_Store
+```
+
+## Agregando archivos y cambios en tu proyecto
+
+Una vez inicializado un repositorio, los desarrolladores pueden empezar a añadirle archivos mediante el comando "git add". Este comando escenifica los cambios realizados en el código, preparándolo para el commit. Especificando el nombre del archivo o directorio después del comando "git add", los desarrolladores pueden poner en etapa archivos o directorios específicos. La preparación de los cambios es un paso importante en el flujo de trabajo de Git, ya que permite a los desarrolladores controlar qué cambios se incluyen en una confirmación.
+
+Ejemplo: preparando los cambios para hacer el commit.
+
+```sh:
+git add .
+```
+
+## Registrando los cambios realizados
+
+Después de preparar los cambios, los desarrolladores pueden crear una nueva confirmación utilizando el comando "git commit". Un commit representa una instantánea del código en un momento determinado e incluye un mensaje que describe los cambios realizados. Los commits sirven como puntos de control en el proceso de desarrollo, permitiendo a los desarrolladores navegar fácilmente a través de diferentes versiones de su código y volver a estados anteriores si es necesario. El comando "git commit" suele ir seguido de la opción "-m" para proporcionar un mensaje de confirmación significativo y descriptivo.
+
+Ejemplo: no olvides siempre escribir una descripción exacta de lo que hiciste por si estas trabajando en equipo sea más fácil identificar en lo que trabajaste.
+
+```sh:
+git commit -m "Haciendo mi primer commit con git"
+```
+
+## Trabajando en equipo
+
+Otro comando muy utilizado en Git es "git pull". Este comando recupera los cambios realizados en el repositorio remoto y los fusiona con la rama local. A menudo se utiliza para actualizar el código local con los últimos cambios de otros miembros del equipo o de un repositorio central. Al extraer actualizaciones con regularidad, los desarrolladores pueden asegurarse de que su código local está actualizado y evitar conflictos al fusionar los cambios.
+
+Ejemplo: realiza una fusión o actualización entre los cambios remotos y la rama local.
+
+```sh:
+git pull
+```
+
+## Creando las populares ramas o bifurcaciones
+
+La creación de ramas es otra característica esencial de Git, y el comando "git branch" se utiliza con frecuencia para gestionar ramas. Con Git, los desarrolladores pueden crear varias ramas para trabajar en distintas funciones o correcciones de errores de forma independiente. El comando "git branch" lista todas las ramas existentes en el repositorio, mientras que el comando "git branch nombre_de_rama>" crea una nueva rama con el nombre especificado. Los desarrolladores pueden pasar de una rama a otra mediante el comando "git checkout", lo que les permite alternar sin problemas entre distintas tareas.
+
+Ejemplo:
+
+```sh:
+git branch nombre_de_la_rama
+```
+
+Lista todos los archivos los cuales sufrieron una modificación.
+
+```sh:
+git checkout
+```
+
+## Resumen
+
+En conclusión, comprender y dominar los comandos más utilizados en Git es crucial para un control de versiones y una gestión del código eficaces. Comandos como "git init", "git add", "git commit", "git pull" y "git branch" son fundamentales para la funcionalidad de Git y son muy utilizados por desarrolladores de todo el mundo. Al familiarizarse con estos comandos e incorporarlos a su flujo de trabajo, los desarrolladores pueden agilizar su proceso de desarrollo y garantizar una colaboración eficiente dentro de sus equipos.

@@ -5,7 +5,7 @@ import Email from "@components/Email.astro";
 import Layout from "@layout/Layout.astro";
 import Posts from "@components/Posts.astro";
 import AllTags from "@components/AllTags.astro";
-const allPosts = await Astro.glob("./*.md");
+const allPosts = await Astro.glob("./*.mdx");
 const formattedPosts = formatBlogPosts(allPosts);
 ---
 
