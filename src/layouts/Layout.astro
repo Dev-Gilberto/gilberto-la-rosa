@@ -20,24 +20,20 @@ const { title } = Astro.props;
 <html lang="es">
   <head>
     <Seo />
-
     <title>{title}</title>
+    <ViewTransitions />
     <!-- Google tag (gtag.js) -->
-    <script
-      async
-      type="text/partytown"
-      src="https://www.googletagmanager.com/gtag/js?id=G-R9ZB16P4YF"></script>
-    <script class="module">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8E6J7BCCGV"
+    ></script>
+    <script type="module">
       window.dataLayer = window.dataLayer || [];
       function gtag() {
         dataLayer.push(arguments);
       }
       gtag("js", new Date());
 
-      gtag("config", "G-R9ZB16P4YF");
+      gtag("config", "G-8E6J7BCCGV");
     </script>
-
-    <ViewTransitions />
   </head>
   <body>
     <header class="w-[90%] mx-auto">

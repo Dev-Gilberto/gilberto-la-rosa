@@ -3,11 +3,12 @@ import tailwind from "@astrojs/tailwind";
 import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
 import icon from "astro-icon";
-
+import remarkToc from "remark-toc";
 import partytown from "@astrojs/partytown";
 
 // https://astro.build/config
 export default defineConfig({
+  compressHTML: true,
   output: "static",
   // o 'hybrid'
   // build: {
@@ -26,7 +27,7 @@ export default defineConfig({
     mdx({
       syntaxHighlight: "shiki",
       shikiConfig: { theme: "github-dark-dimmed" },
-      // remarkPlugins: [remarkToc],
+      remarkPlugins: [remarkToc],
       // rehypePlugins: [rehypeMinifyHtml],
       remarkRehype: { footnoteLabel: "Footnotes" },
       gfm: false,
