@@ -1,5 +1,6 @@
 ---
 // tiempo en las empresas
+var codafter = 4;
 var hbt = 11;
 var free = 50;
 var ucab = 11;
@@ -7,7 +8,7 @@ var flasalle = 17;
 // valor de un año en meses
 var year = 12;
 // calculo del valor total del tiempo laboral en meses
-const meses = [hbt, ucab, flasalle, free];
+const meses = [hbt, ucab, flasalle, free, codafter];
 const timeMonths = meses.reduce((total, num) => total + num, 0);
 // calculo del valor total del tiempo laboral en años
 const years = Math.floor(timeMonths / 12);

@@ -6,30 +6,33 @@ import icon from "astro-icon";
 import remarkToc from "remark-toc";
 import partytown from "@astrojs/partytown";
 
+import cloudflare from "@astrojs/cloudflare";
+
 // https://astro.build/config
 export default defineConfig({
   compressHTML: true,
-  output: "static",
-  // o 'hybrid'
-  // build: {
-  //   client: "./client",
-  // },
+  output: "hybrid",
+  adapter: cloudflare(),
   //Opciones del Servidor
   server: {
     port: 7000,
     host: true,
   },
   //La URL final donde se desplegará
-  site: "https://gilbertolarosa.dev/",
+  site: "https://gilberto-la-rosa.xyz/",
   // integraciones
   integrations: [
     tailwind(),
     mdx({
       syntaxHighlight: "shiki",
-      shikiConfig: { theme: "github-dark-dimmed" },
+      shikiConfig: {
+        theme: "github-dark-dimmed",
+      },
       remarkPlugins: [remarkToc],
       // rehypePlugins: [rehypeMinifyHtml],
-      remarkRehype: { footnoteLabel: "Footnotes" },
+      remarkRehype: {
+        footnoteLabel: "Footnotes",
+      },
       gfm: false,
     }),
     sitemap({

@@ -2,7 +2,7 @@
 
 :root {
   /* fonts */
-  --Font-global: "Yanone Kaffeesatz";
+  --Font-global: "Fira Mono", monospace;
   /* colors*/
   --bg-global: #f5efe7;
   --text-color-global: #213555;
@@ -41,6 +41,24 @@ html {
   position: relative;
 }
 /* global class */
+.fira-mono-regular {
+  font-family: "Fira Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.fira-mono-medium {
+  font-family: "Fira Mono", monospace;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.fira-mono-bold {
+  font-family: "Fira Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
 .text-deg {
   background: var(--degra-text-rainbow);
   background-clip: text;
@@ -70,4 +88,5 @@ h1 {
   background: var(--degra-text-rainbow);
   background-clip: text;
   color: transparent;
+  margin: 3rem 0;
 }
