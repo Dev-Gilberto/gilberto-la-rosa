@@ -1,6 +1,6 @@
 globalThis.process ??= {}; globalThis.process.env ??= {};
 export { renderers } from '../renderers.mjs';
 
-const page = () => import('./pages/comandos-mas-usados-en-git_ByKddZO_.mjs').then(n => n.c);
+const page = () => import('./pages/proyectos-open-source_Condvw0d.mjs');
 
 export { page };

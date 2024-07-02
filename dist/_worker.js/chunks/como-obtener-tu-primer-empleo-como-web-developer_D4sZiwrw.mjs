@@ -1,6 +1,6 @@
 globalThis.process ??= {}; globalThis.process.env ??= {};
 export { renderers } from '../renderers.mjs';
 
-const page = () => import('./pages/index_Cwq12Lko.mjs').then(n => n.d);
+const page = () => import('./pages/como-obtener-tu-primer-empleo-como-web-developer_CZhVyd2e.mjs');
 
 export { page };
