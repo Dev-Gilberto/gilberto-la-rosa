@@ -1,6 +1,6 @@
 globalThis.process ??= {}; globalThis.process.env ??= {};
 import { k as baseService } from './astro/assets-service_Dposy6aH.mjs';
-import './pages/comandos-mas-usados-en-git_DQWvWFTc.mjs';
+import './pages/comandos-mas-usados-en-git_C_V0Qwfu.mjs';
 
 function removeTrailingForwardSlash(path) {
   return path.endsWith("/") ? path.slice(0, path.length - 1) : path;

@@ -1,11 +1,11 @@
 {
   "name": "gilberto-la-rosa",
   "type": "module",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": {
     "name": "Gilberto La Rosa",
-    "email": "gilberto.larosa@codafter.cl",
-    "url": "https://www.gilbertolarosa.dev"
+    "email": "yosoy@gilberto.dev",
+    "url": "https://www.gilberto.dev"
   },
   "scripts": {
     "dev": "astro dev",
