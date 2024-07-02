@@ -1,5 +1,5 @@
 ---
-import "@styles/Global.css";
+import "@styles/global.css";
 
 import FooterLayout from "@components/FooterLayout.astro";
 import NavBar from "@components/NavBar.astro";
@@ -38,9 +38,6 @@ const { title } = Astro.props;
     <ViewTransitions />
   </head>
   <body>
-    <header class="w-[90%] mx-auto">
-      <NavBar />
-    </header>
     <main transition:animate={slide({ duration: "0.6s" })}>
       <slot />
     </main>

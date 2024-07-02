@@ -1,4 +1,44 @@
 ---
+const nav = [
+  {
+    name: "¡hola!",
+    href: "/",
+  },
+  {
+    name: "proyectos freelance",
+    href: "/proyectos-freelance",
+  },
+  {
+    name: "trabajos dependientes",
+    href: "/trabajos-dependientes",
+  },
+  {
+    name: "proyectos open source",
+    href: "/proyectos-open-source",
+  },
+  {
+    name: "blog",
+    href: "/blog",
+  },
+];
+const navSocial = [
+  {
+    name: "linkedin",
+    url: "https://www.linkedin.com/in/gilberto-la-rosa/",
+    class: "hover:text-[#ef4e7b] duration-300",
+  },
+  {
+    name: "x",
+    url: "https://twitter.com/dev_gilberto",
+    class: "hover:text-[#a166ab] duration-300",
+  },
+  {
+    name: "github",
+    url: "https://github.com/Dev-Gilberto",
+    class: "hover:text-[#6fba82] duration-300",
+  },
+];
+
 import { Icon } from "astro-icon/components";
 ---
 
@@ -18,71 +58,48 @@ import { Icon } from "astro-icon/components";
         <Icon name="logo" size={60} />
       </a>
       <!-- texto -->
-      <span class="animate-text-deg text-4xl uppercase font-black">(menú)</span>
+      <span class="animate-text-deg text-3xl uppercase font-black f"
+        >(menu)</span
+      >
       <!-- button -->
       <span id="menu-icon"></span>
     </label>
     <!-- menu  -->
     <div id="overlay"></div>
     <ul>
-      <li>
-        <a href="/">¡hola!</a>
-      </li>
-      <li>
-        <a href="/proyectos-open-source">proyectos open source</a>
-      </li>
-      <li>
-        <a href="/trabajos-dependientes">trabajos dependientes</a>
-      </li>
-      <li>
-        <a href="/proyectos-freelance">proyectos freelance</a>
-      </li>
-      <li>
-        <a href="/blog">blog</a>
-      </li>
+      {
+        nav.map((item) => (
+          <li>
+            <a href={item.href}>{item.name}</a>
+          </li>
+        ))
+      }
     </ul>
     <!-- redes sociales -->
     <!-- LinkedIn -->
     <ul id="social-media">
-      <li>
-        <a
-          href="https://www.linkedin.com/in/gilberto-la-rosa/"
-          sr-only="linkedin"
-          target="_blank"
-          title="linkedin"
-        >
-          <Icon name="linkedin" class="hover:text-[#ef4e7b] duration-300" />
-          <span class="screen-reader-text">LinkedIn</span>
-        </a>
-      </li>
-      <!-- twitter -->
-      <li>
-        <a
-          href="https://twitter.com/dev_gilberto"
-          sr-only="X"
-          title="X"
-          target="_blank"
-        >
-          <Icon name="x" class="hover:text-[#a166ab] duration-300" />
-          <span class="screen-reader-text">X</span>
-        </a>
-      </li>
-      <!-- github -->
-      <li>
-        <a
-          href="https://github.com/Dev-Gilberto"
-          sr-only="github"
-          target="_blank"
-          title="github"
-        >
-          <Icon name="github" class="hover:text-[#6fba82] duration-300" />
-          <span class="screen-reader-text">Github</span>
-        </a>
-      </li>
+      {
+        navSocial.map((itemli) => (
+          <li>
+            <a
+              href={itemli.url}
+              sr-only={itemli.name}
+              target="_blank"
+              title={itemli.name}
+            >
+              <Icon name={itemli.name} class={itemli.class} />
+              <span class="screen-reader-text">{itemli.name}</span>
+            </a>
+          </li>
+        ))
+      }
     </ul>
   </div>
 </nav>
 <style>
+  .f {
+    font-family: var(--font-title);
+  }
   .screen-reader-text {
     clip: rect(1px 1px 1px 1px);
     clip: rect(1px, 1px, 1px, 1px);
@@ -190,16 +207,17 @@ import { Icon } from "astro-icon/components";
 
   nav ul a {
     color: var(--gray-dark-color) !important;
+    font-family: var(--font-nav);
+    text-transform: uppercase;
     text-decoration: none;
-    font-weight: 900;
-    text-transform: capitalize;
-    font-size: 1.2em;
+    font-weight: bold;
+    font-size: 0.8em;
     transition: text-decoration 0.3s ease-in-out;
   }
 
   @media (min-width: 768px) {
     nav ul a {
-      font-size: 3em;
+      font-size: 2.3em;
     }
   }
 

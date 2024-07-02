@@ -5,14 +5,15 @@ import sitemap from "@astrojs/sitemap";
 import icon from "astro-icon";
 import remarkToc from "remark-toc";
 import partytown from "@astrojs/partytown";
-
 import cloudflare from "@astrojs/cloudflare";
 
 // https://astro.build/config
 export default defineConfig({
   compressHTML: true,
-  output: "hybrid",
-  adapter: cloudflare(),
+  output: "server",
+  adapter: cloudflare({
+    imageService: "cloudflare",
+  }),
   //Opciones del Servidor
   server: {
     port: 7000,
