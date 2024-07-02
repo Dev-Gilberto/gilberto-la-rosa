@@ -1,8 +1,8 @@
 globalThis.process ??= {}; globalThis.process.env ??= {};
 import { renderers } from './renderers.mjs';
-import { l as levels, g as getEventPrefix, L as Logger, A as AstroIntegrationLogger, manifest } from './manifest_DGGW6emE.mjs';
-import { e as appendForwardSlash, j as joinPaths, t as trimSlashes, f as fileExtension, s as slash, p as prependForwardSlash, g as removeTrailingForwardSlash, h as collapseDuplicateSlashes } from './chunks/astro/assets-service_Dposy6aH.mjs';
-import { R as ROUTE_TYPE_HEADER, q as REROUTE_DIRECTIVE_HEADER, A as AstroError, t as ResponseSentError, v as MiddlewareNoDataOrNextCalled, w as MiddlewareNotAResponse, G as GetStaticPathsRequired, x as InvalidGetStaticPathsReturn, y as InvalidGetStaticPathsEntry, z as GetStaticPathsExpectedParams, B as GetStaticPathsInvalidRouteParam, P as PageNumberParamNotFound, D as DEFAULT_404_COMPONENT, N as NoMatchingStaticPathFound, C as PrerenderDynamicEndpointPathCollide, H as ReservedSlotName, J as renderSlotToString, K as renderJSX, O as chunkToString, Q as isRenderInstruction, S as LocalsNotAnObject, T as clientLocalsSymbol, V as clientAddressSymbol, W as ClientAddressNotAvailable, X as StaticClientAddressNotAvailable, Y as ASTRO_VERSION, Z as responseSentSymbol$1, $ as AstroResponseHeadersReassigned, a0 as renderPage, a1 as renderEndpoint, a2 as REROUTABLE_STATUS_CODES } from './chunks/astro_DMCz-Pb0.mjs';
+import { l as levels, g as getEventPrefix, L as Logger, A as AstroIntegrationLogger, manifest } from './manifest_Ca2dEm7c.mjs';
+import { e as appendForwardSlash, j as joinPaths, t as trimSlashes, f as fileExtension, s as slash, p as prependForwardSlash, g as removeTrailingForwardSlash, h as collapseDuplicateSlashes } from './chunks/astro/assets-service_Bp0U1sds.mjs';
+import { R as ROUTE_TYPE_HEADER, q as REROUTE_DIRECTIVE_HEADER, A as AstroError, t as ResponseSentError, v as MiddlewareNoDataOrNextCalled, w as MiddlewareNotAResponse, G as GetStaticPathsRequired, x as InvalidGetStaticPathsReturn, y as InvalidGetStaticPathsEntry, z as GetStaticPathsExpectedParams, B as GetStaticPathsInvalidRouteParam, P as PageNumberParamNotFound, D as DEFAULT_404_COMPONENT, N as NoMatchingStaticPathFound, C as PrerenderDynamicEndpointPathCollide, H as ReservedSlotName, J as renderSlotToString, K as renderJSX, O as chunkToString, Q as isRenderInstruction, S as LocalsNotAnObject, T as clientLocalsSymbol, V as clientAddressSymbol, W as ClientAddressNotAvailable, X as StaticClientAddressNotAvailable, Y as ASTRO_VERSION, Z as responseSentSymbol$1, $ as AstroResponseHeadersReassigned, a0 as renderPage, a1 as renderEndpoint, a2 as REROUTABLE_STATUS_CODES } from './chunks/astro_utylptCb.mjs';
 import { onRequest } from './_noop-middleware.mjs';
 
 function shouldAppendForwardSlash(trailingSlash, buildFormat) {
@@ -2213,22 +2213,22 @@ const serverEntrypointModule = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.de
   createExports
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const _page0 = () => import('./chunks/generic_CBx5LWbG.mjs');
-const _page1 = () => import('./chunks/404_DoCyeeVy.mjs');
-const _page2 = () => import('./chunks/comandos-mas-usados-en-git_B0lYhaJj.mjs');
-const _page3 = () => import('./chunks/como-obtener-tu-primer-empleo-como-web-developer_7ES_0jOK.mjs');
-const _page4 = () => import('./chunks/como-utilizar-git-y-github-en-un-ambiente-profesional_DgLJMpXF.mjs');
-const _page5 = () => import('./chunks/el-origen-de-javascript_BxpVpJMu.mjs');
-const _page6 = () => import('./chunks/guia-para-ser-un-desarrollador-web_D2fJRb_u.mjs');
-const _page7 = () => import('./chunks/que-es-devin-el-primer-ingeniero-de-software-de-ia_DWNamXxB.mjs');
-const _page8 = () => import('./chunks/que-es-la-inteligencia-artificial-y-cual-es-su-impacto-en-el-mundo_DO-IRH7a.mjs');
-const _page9 = () => import('./chunks/index_p9en6qB9.mjs');
-const _page10 = () => import('./chunks/proyectos-freelance_DT0EOvNP.mjs');
-const _page11 = () => import('./chunks/proyectos-open-source_shkwsfZ7.mjs');
+const _page0 = () => import('./chunks/generic_CVXB5_0t.mjs');
+const _page1 = () => import('./chunks/404_DAqL7_kw.mjs');
+const _page2 = () => import('./chunks/comandos-mas-usados-en-git_n5Iniig5.mjs');
+const _page3 = () => import('./chunks/como-obtener-tu-primer-empleo-como-web-developer_BGRiObD9.mjs');
+const _page4 = () => import('./chunks/como-utilizar-git-y-github-en-un-ambiente-profesional_CdqNY2wR.mjs');
+const _page5 = () => import('./chunks/el-origen-de-javascript_BlX1-b5K.mjs');
+const _page6 = () => import('./chunks/guia-para-ser-un-desarrollador-web_Xfaw1IKC.mjs');
+const _page7 = () => import('./chunks/que-es-devin-el-primer-ingeniero-de-software-de-ia_Dhtk3vgQ.mjs');
+const _page8 = () => import('./chunks/que-es-la-inteligencia-artificial-y-cual-es-su-impacto-en-el-mundo_B0vl87Mv.mjs');
+const _page9 = () => import('./chunks/index_JI-qqobZ.mjs');
+const _page10 = () => import('./chunks/proyectos-freelance_CMa9B5aq.mjs');
+const _page11 = () => import('./chunks/proyectos-open-source_CBdzOktq.mjs');
 const _page12 = () => import('./chunks/robots_Bkj3u-FP.mjs');
-const _page13 = () => import('./chunks/_tags__D_xm0z9C.mjs');
-const _page14 = () => import('./chunks/trabajos-dependientes_xnr-5cRj.mjs');
-const _page15 = () => import('./chunks/index_CRkJaw5X.mjs');
+const _page13 = () => import('./chunks/_tags__BhTUHB1B.mjs');
+const _page14 = () => import('./chunks/trabajos-dependientes_CK5W4PBy.mjs');
+const _page15 = () => import('./chunks/index_CkSs2rEi.mjs');
 const pageMap = new Map([
     ["node_modules/astro/dist/assets/endpoint/generic.js", _page0],
     ["src/pages/404.astro", _page1],
