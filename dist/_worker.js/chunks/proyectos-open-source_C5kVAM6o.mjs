@@ -1,6 +1,6 @@
 globalThis.process ??= {}; globalThis.process.env ??= {};
 export { renderers } from '../renderers.mjs';
 
-const page = () => import('./prerender_H5hb9Prs.mjs').then(n => n._);
+const page = () => import('./pages/proyectos-open-source_BKwnCszn.mjs');
 
 export { page };

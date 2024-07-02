@@ -1,7 +1,7 @@
 globalThis.process ??= {}; globalThis.process.env ??= {};
 /* empty css                                               */
 import { c as createAstro, b as createComponent, r as renderTemplate, m as maybeRenderHead, d as addAttribute, e as renderComponent } from '../astro_utylptCb.mjs';
-import { $ as $$Layout } from './404_Dx41XQ9m.mjs';
+import { $ as $$Layout } from './404_CYNjVRzL.mjs';
 /* empty css                                        */
 
 const $$Astro$1 = createAstro("https://gilberto-la-rosa.xyz/");

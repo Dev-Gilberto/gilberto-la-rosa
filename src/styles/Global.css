@@ -1,4 +1,3 @@
-@import "./_scrollbar.css";
 /*
 Creado  por:
 ╭━━━┳━━┳╮╱╱╭━━╮╭━━━┳━━━┳━━━━┳━╮╭━╮╭━━━┳━━━┳╮╱╱╭╮
@@ -17,6 +16,7 @@ Fundador de:
 ░╚════╝░░╚════╝░╚═════╝░╚═╝░░╚═╝╚═╝░░░░░░░░╚═╝░░░╚══════╝╚═╝░░╚═╝
 */
 
+@import "./_scrollbar.css";
 :root {
   /* fonts */
   --Font-global: "Fira Mono", monospace;

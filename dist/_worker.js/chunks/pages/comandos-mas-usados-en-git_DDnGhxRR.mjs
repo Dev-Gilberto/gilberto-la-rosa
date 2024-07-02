@@ -818,7 +818,7 @@ async function getConfiguredImageService() {
   if (!globalThis?.astroAsset?.imageService) {
     const { default: service } = await import(
       // @ts-expect-error
-      '../image-service_DHMrtiDl.mjs'
+      '../image-service_BqLICrfI.mjs'
     ).catch((e) => {
       const error = new AstroError(InvalidImageService);
       error.cause = e;
@@ -984,7 +984,7 @@ const imageConfig = {"service":{"entrypoint":"@astrojs/cloudflare/image-service"
 const MDXLayout = async function ({
   children
 }) {
-  const Layout = (await import('../SinglePostLayout_DkdEQw3b.mjs')).default;
+  const Layout = (await import('../SinglePostLayout_B67oHlDH.mjs')).default;
   const {
     layout,
     ...content
