@@ -1,7 +1,7 @@
 globalThis.process ??= {}; globalThis.process.env ??= {};
 import { c as isRemotePath, d as isRemoteAllowed } from '../astro/assets-service_Dposy6aH.mjs';
 import { p as getDefaultExportFromCjs } from '../astro_DMCz-Pb0.mjs';
-import { g as getConfiguredImageService, i as imageConfig } from './comandos-mas-usados-en-git_bmX8kgqy.mjs';
+import { g as getConfiguredImageService, i as imageConfig } from './comandos-mas-usados-en-git_6qokF4c5.mjs';
 
 /**
  * @param typeMap [Object] Map of MIME type -> Array[extensions]
