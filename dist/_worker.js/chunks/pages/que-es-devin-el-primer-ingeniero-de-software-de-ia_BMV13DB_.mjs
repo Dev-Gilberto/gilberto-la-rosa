@@ -1,12 +1,12 @@
 globalThis.process ??= {}; globalThis.process.env ??= {};
 /* empty css                                               */
 import { _ as __astro_tag_component__, n as Fragment, o as createVNode } from '../astro_DMCz-Pb0.mjs';
-import { $ as $$Image } from './comandos-mas-usados-en-git_B7Ef0v1u.mjs';
+import { $ as $$Image } from './comandos-mas-usados-en-git_DQWvWFTc.mjs';
 
 const MDXLayout = async function ({
   children
 }) {
-  const Layout = (await import('../SinglePostLayout_DbC0j-ba.mjs')).default;
+  const Layout = (await import('../SinglePostLayout_CZ3Bagms.mjs')).default;
   const {
     layout,
     ...content

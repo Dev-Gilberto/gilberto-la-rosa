@@ -1,6 +1,6 @@
 globalThis.process ??= {}; globalThis.process.env ??= {};
 export { renderers } from '../renderers.mjs';
 
-const page = () => import('./pages/index_Cssh3Jei.mjs').then(n => n.b);
+const page = () => import('./pages/guia-para-ser-un-desarrollador-web_8kbNqSbb.mjs');
 
 export { page };
