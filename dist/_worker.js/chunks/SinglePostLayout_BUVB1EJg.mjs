@@ -2,8 +2,8 @@ globalThis.process ??= {}; globalThis.process.env ??= {};
 import { c as createAstro, b as createComponent, r as renderTemplate, m as maybeRenderHead, e as renderComponent, d as addAttribute, f as renderSlot } from './astro_utylptCb.mjs';
 /* empty css                                              */
 import { $ as $$Layout } from './pages/404_CYNjVRzL.mjs';
-import { $ as $$Icon, s as slugify, b as $$SocialNetwork, c as formatpubDate } from './pages/index_B-r8v0Hv.mjs';
-import { $ as $$ButtonBack } from './prerender_Z8Q_fMfU.mjs';
+import { $ as $$Icon, s as slugify, b as $$SocialNetwork, c as formatpubDate } from './pages/index_Cwq12Lko.mjs';
+import { $ as $$ButtonBack } from './prerender_Cp0j4sg7.mjs';
 
 const $$Astro$2 = createAstro("https://gilberto-la-rosa.xyz/");
 const $$Frases = createComponent(async ($$result, $$props, $$slots) => {

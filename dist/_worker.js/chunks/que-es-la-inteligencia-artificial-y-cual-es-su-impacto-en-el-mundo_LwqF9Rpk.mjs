@@ -1,6 +1,6 @@
 globalThis.process ??= {}; globalThis.process.env ??= {};
 export { renderers } from '../renderers.mjs';
 
-const page = () => import('./pages/index_B-r8v0Hv.mjs').then(n => n.d);
+const page = () => import('./pages/que-es-la-inteligencia-artificial-y-cual-es-su-impacto-en-el-mundo_DTMitAKC.mjs');
 
 export { page };

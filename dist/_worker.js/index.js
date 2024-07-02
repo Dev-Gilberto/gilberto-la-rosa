@@ -1,6 +1,6 @@
 globalThis.process ??= {}; globalThis.process.env ??= {};
 import { renderers } from './renderers.mjs';
-import { l as levels, g as getEventPrefix, L as Logger, A as AstroIntegrationLogger, manifest } from './manifest_CX31ApIk.mjs';
+import { l as levels, g as getEventPrefix, L as Logger, A as AstroIntegrationLogger, manifest } from './manifest_B81uneFb.mjs';
 import { e as appendForwardSlash, j as joinPaths, t as trimSlashes, f as fileExtension, s as slash, p as prependForwardSlash, g as removeTrailingForwardSlash, h as collapseDuplicateSlashes } from './chunks/astro/assets-service_Bp0U1sds.mjs';
 import { R as ROUTE_TYPE_HEADER, q as REROUTE_DIRECTIVE_HEADER, A as AstroError, t as ResponseSentError, v as MiddlewareNoDataOrNextCalled, w as MiddlewareNotAResponse, G as GetStaticPathsRequired, x as InvalidGetStaticPathsReturn, y as InvalidGetStaticPathsEntry, z as GetStaticPathsExpectedParams, B as GetStaticPathsInvalidRouteParam, P as PageNumberParamNotFound, D as DEFAULT_404_COMPONENT, N as NoMatchingStaticPathFound, C as PrerenderDynamicEndpointPathCollide, H as ReservedSlotName, J as renderSlotToString, K as renderJSX, O as chunkToString, Q as isRenderInstruction, S as LocalsNotAnObject, T as clientLocalsSymbol, V as clientAddressSymbol, W as ClientAddressNotAvailable, X as StaticClientAddressNotAvailable, Y as ASTRO_VERSION, Z as responseSentSymbol$1, $ as AstroResponseHeadersReassigned, a0 as renderPage, a1 as renderEndpoint, a2 as REROUTABLE_STATUS_CODES } from './chunks/astro_utylptCb.mjs';
 import { onRequest } from './_noop-middleware.mjs';
@@ -2213,22 +2213,22 @@ const serverEntrypointModule = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.de
   createExports
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const _page0 = () => import('./chunks/generic_CtLDw8SX.mjs');
+const _page0 = () => import('./chunks/generic_NqAof6A0.mjs');
 const _page1 = () => import('./chunks/404_lSMZv7o7.mjs');
-const _page2 = () => import('./chunks/comandos-mas-usados-en-git_Kr2cwqh_.mjs');
-const _page3 = () => import('./chunks/como-obtener-tu-primer-empleo-como-web-developer_DkcQV06Y.mjs');
-const _page4 = () => import('./chunks/como-utilizar-git-y-github-en-un-ambiente-profesional_B4HibLDD.mjs');
-const _page5 = () => import('./chunks/el-origen-de-javascript_DtQmC-8e.mjs');
-const _page6 = () => import('./chunks/guia-para-ser-un-desarrollador-web_DM6rKYk0.mjs');
-const _page7 = () => import('./chunks/que-es-devin-el-primer-ingeniero-de-software-de-ia_Dt20Ib9g.mjs');
-const _page8 = () => import('./chunks/que-es-la-inteligencia-artificial-y-cual-es-su-impacto-en-el-mundo_CTJF632b.mjs');
-const _page9 = () => import('./chunks/index_Cl9VQ_hl.mjs');
+const _page2 = () => import('./chunks/comandos-mas-usados-en-git_CfLAuADZ.mjs');
+const _page3 = () => import('./chunks/como-obtener-tu-primer-empleo-como-web-developer_DGMBOQka.mjs');
+const _page4 = () => import('./chunks/como-utilizar-git-y-github-en-un-ambiente-profesional_C0RyFqLa.mjs');
+const _page5 = () => import('./chunks/el-origen-de-javascript_V7w06gMj.mjs');
+const _page6 = () => import('./chunks/guia-para-ser-un-desarrollador-web_BA6HEYp3.mjs');
+const _page7 = () => import('./chunks/que-es-devin-el-primer-ingeniero-de-software-de-ia_aJzBIEJ8.mjs');
+const _page8 = () => import('./chunks/que-es-la-inteligencia-artificial-y-cual-es-su-impacto-en-el-mundo_LwqF9Rpk.mjs');
+const _page9 = () => import('./chunks/index_sLN5V-9P.mjs');
 const _page10 = () => import('./chunks/proyectos-freelance_CyNZa5PM.mjs');
-const _page11 = () => import('./chunks/proyectos-open-source_C5kVAM6o.mjs');
+const _page11 = () => import('./chunks/proyectos-open-source_C94yR52N.mjs');
 const _page12 = () => import('./chunks/robots_Bkj3u-FP.mjs');
-const _page13 = () => import('./chunks/_tags__Dx2YE_H-.mjs');
+const _page13 = () => import('./chunks/_tags__B3Hc7aC0.mjs');
 const _page14 = () => import('./chunks/trabajos-dependientes_BU3FzFRA.mjs');
-const _page15 = () => import('./chunks/index_D_hZYJxk.mjs');
+const _page15 = () => import('./chunks/index_CdIULkry.mjs');
 const pageMap = new Map([
     ["node_modules/astro/dist/assets/endpoint/generic.js", _page0],
     ["src/pages/404.astro", _page1],

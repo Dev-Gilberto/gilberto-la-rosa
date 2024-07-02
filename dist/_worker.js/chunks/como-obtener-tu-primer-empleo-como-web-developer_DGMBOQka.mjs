@@ -1,6 +1,6 @@
 globalThis.process ??= {}; globalThis.process.env ??= {};
 export { renderers } from '../renderers.mjs';
 
-const page = () => import('./pages/que-es-devin-el-primer-ingeniero-de-software-de-ia_DFKKezM7.mjs');
+const page = () => import('./pages/como-obtener-tu-primer-empleo-como-web-developer_BkoL1Dm5.mjs');
 
 export { page };
