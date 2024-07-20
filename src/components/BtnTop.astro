@@ -8,7 +8,16 @@
   >Subir <span>&#11014;</span></button
 >
 
-<script is:inline data-astro-rerun>
+<script type="text/javascript" is:inline data-astro-rerun>
+  document.addEventListener(
+    "astro:page-load",
+    () => {
+      // Esto solo se ejecuta una vez.
+      setupStuff();
+    },
+    { once: true }
+  );
+
   window.onscroll = function () {
     scrollFunction();
   };

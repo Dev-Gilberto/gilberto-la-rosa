@@ -1,9 +1,9 @@
 globalThis.process ??= {}; globalThis.process.env ??= {};
 import { c as createComponent, r as renderTemplate, m as maybeRenderHead, a as renderComponent, b as createAstro, d as addAttribute, E as renderSlot } from './astro/server_EQjFAZZG.mjs';
 /* empty css                                              */
-import { $ as $$Layout } from './Layout_BprZGMis.mjs';
+import { $ as $$Layout } from './Layout_DiJaf4w2.mjs';
 import { s as slugify, a as formatpubDate } from './utils_BneGKSZi.mjs';
-import { a as $$Icon, $ as $$SocialNetwork } from './SocialNetwork_lJOfYvzO.mjs';
+import { a as $$Icon, $ as $$SocialNetwork } from './SocialNetwork_PEbGz6Tm.mjs';
 import { $ as $$ButtonBack } from './ButtonBack_De9OMSQ3.mjs';
 
 const $$Frases = createComponent(($$result, $$props, $$slots) => {
@@ -19,7 +19,7 @@ var __defProp = Object.defineProperty;
 var __template = (cooked, raw) => __freeze(__defProp(cooked, "raw", { value: __freeze(cooked.slice()) }));
 var _a;
 const $$Share = createComponent(($$result, $$props, $$slots) => {
-  return renderTemplate(_a || (_a = __template(["", '<button id="btn-share" class="inline-flex items-center gap-1 text-lg font-bold uppercase hover:text-[#f79533] duration-150 tracking-wide font-[Antonio]"> ', ' Compartir\n</button> <script type="text/javascript">\n  const shareButton = document.getElementById("btn-share");\n\n  shareButton.addEventListener("click", (event) => {\n    if ("share" in navigator) {\n      navigator\n        .share({\n          title: "Comparte Esta P\xE1gina, en tu platafoma favorita",\n\n          url: window.location.href,\n        })\n\n        .then(() => {\n          console.log("Contenido Compartido !");\n        })\n        .catch(console.error);\n    } else {\n      alert(\n        "Lo siento, este navegador no tiene soporte para recursos compartidos."\n      );\n    }\n  });\n<\/script>'])), maybeRenderHead(), renderComponent($$result, "Icon", $$Icon, { "name": "share", "class": "block duration-150 group-hover:me-0.5 rtl:rotate-180" }));
+  return renderTemplate(_a || (_a = __template(["", '<button id="btn-share" class="inline-flex items-center gap-1 text-lg font-bold uppercase hover:text-[#f79533] duration-150 tracking-wide font-[Antonio]"> ', ' Compartir\n</button> <script type="text/javascript" data-astro-rerun>\n  const shareButton = document.getElementById("btn-share");\n\n  shareButton.addEventListener("click", (event) => {\n    if ("share" in navigator) {\n      navigator\n        .share({\n          title: "Comparte Esta P\xE1gina, en tu platafoma favorita",\n\n          url: window.location.href,\n        })\n\n        .then(() => {\n          console.log("Contenido Compartido !");\n        })\n        .catch(console.error);\n    } else {\n      alert(\n        "Lo siento, este navegador no tiene soporte para recursos compartidos."\n      );\n    }\n  });\n<\/script>'])), maybeRenderHead(), renderComponent($$result, "Icon", $$Icon, { "name": "share", "class": "block duration-150 group-hover:me-0.5 rtl:rotate-180" }));
 }, "C:/Users/Gilberto La Rosa/Desktop/WebSitiesStactics/gilberto-la-rosa/src/components/Share.astro", void 0);
 
 const $$Astro = createAstro("https://gilberto-la-rosa.xyz/");
