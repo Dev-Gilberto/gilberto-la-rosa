@@ -13,7 +13,7 @@ Dentro del proyecto, verá las siguientes carpetas y archivos:
 │   ├── components/
 │   ├── layouts/
 │   ├── pages/
-│   │   └── blog/
+│   │   └── index/
 │   ├── styles/
 │   └── env.d.ts
 ├── astro.config.mjs
@@ -48,7 +48,7 @@ Estos son todos los comandos utilizados en el proyecto ubicados en el `package.j
 ## 📣 ¿Quieres saber más de mi? Sígueme
 
 - [LinkedIn](https://www.linkedin.com/in/gilberto-la-rosa/)🚀
-- [Twitter](https://twitter.com/dev_gilberto)🌎
+- [Twitter](https://twitter.com/gilbertoxdev)🌎
 - [CODAFTER](https://codafter.cl/)💻
 
 ## English Version 🗽
@@ -68,7 +68,7 @@ Inside the project, you will see the following folders and files:
 │   ├── components/
 │   ├── layouts/
 │   ├── pages/
-│   │   └── blog/
+│   │   └── index/
 │   ├── styles/
 │   └── env.d.ts
 ├── astro.config.mjs
@@ -103,5 +103,5 @@ These are all the commands used in the project located in the:
 ### 📣 Do you want to know more about me? follow me
 
 - 🚀 [LinkedIn](https://www.linkedin.com/in/gilberto-la-rosa/)
-- 🌎 [Twitter](https://twitter.com/dev_gilberto)
+- 🌎 [Twitter](https://twitter.com/gilbertoxdev)
 - 💻 [CODAFTER](https://codafter.cl/)
