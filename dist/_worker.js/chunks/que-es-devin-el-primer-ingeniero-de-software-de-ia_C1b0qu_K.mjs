@@ -4,7 +4,7 @@ import { _ as __astro_tag_component__, H as Fragment, C as createVNode } from '.
 import { $ as $$Image } from './_astro_assets_DZ7CHJB7.mjs';
 
 const MDXLayout = async function ({children}) {
-  const Layout = (await import('./SinglePostLayout_CLKMbWuf.mjs')).default;
+  const Layout = (await import('./SinglePostLayout_DcvwGTik.mjs')).default;
   const {layout, ...content} = frontmatter;
   content.file = file;
   content.url = url;
@@ -56,10 +56,6 @@ function getHeadings() {
     "depth": 2,
     "slug": "resultados",
     "text": "Resultados"
-  }, {
-    "depth": 2,
-    "slug": "resumen",
-    "text": "Resumen"
   }];
 }
 const __usesAstroImage = true;
@@ -100,11 +96,6 @@ function _createMdxContent(props) {
       children: "Resultados"
     }), "\n", createVNode(_components.p, {
       children: "Los logros de Devin son inspiradores no sólo para los desarrolladores, sino para todos los interesados en la tecnología y su potencial para dar forma a nuestro futuro. Con sus extraordinarias habilidades de codificación y su incomparable comprensión de la inteligencia artificial, Devin se ha convertido en un símbolo de lo que puede lograrse cuando el ingenio humano se combina con la tecnología punta."
-    }), "\n", createVNode(_components.h2, {
-      id: "resumen",
-      children: "Resumen"
-    }), "\n", createVNode(_components.p, {
-      children: "En conclusión, Devin, el primer ingeniero de software de IA, es un pionero en el campo de la inteligencia artificial. Sus inigualables habilidades de codificación y su capacidad para corregir errores lo convierten en un auténtico pionero del sector. Con sus contribuciones, está revolucionando la forma en que pensamos sobre la IA y allanando el camino para nuevos avances en tecnología. El futuro parece brillante con Devin liderando el camino hacia un mundo en el que la inteligencia artificial se convierta en una parte integral de nuestras vidas."
     })]
   });
 }

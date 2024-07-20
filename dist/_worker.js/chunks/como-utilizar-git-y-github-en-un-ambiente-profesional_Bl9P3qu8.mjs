@@ -4,7 +4,7 @@ import { _ as __astro_tag_component__, H as Fragment, C as createVNode } from '.
 import { $ as $$Image } from './_astro_assets_DZ7CHJB7.mjs';
 
 const MDXLayout = async function ({children}) {
-  const Layout = (await import('./SinglePostLayout_CLKMbWuf.mjs')).default;
+  const Layout = (await import('./SinglePostLayout_DcvwGTik.mjs')).default;
   const {layout, ...content} = frontmatter;
   content.file = file;
   content.url = url;
@@ -60,10 +60,6 @@ function getHeadings() {
     "depth": 2,
     "slug": "ultimo-paso",
     "text": "Ultimo paso"
-  }, {
-    "depth": 2,
-    "slug": "resumen",
-    "text": "Resumen"
   }];
 }
 const __usesAstroImage = true;
@@ -146,23 +142,6 @@ function _createMdxContent(props) {
       children: "Ultimo paso"
     }), "\n", createVNode(_components.p, {
       children: "Por último, aprovechar las pull requests y las revisiones de código es crucial para mantener la calidad del código en un entorno profesional. Las solicitudes de extracción permiten a los desarrolladores proponer cambios y solicitar la opinión de sus compañeros antes de incorporarlos al código base principal. Las revisiones del código ayudan a detectar posibles problemas, mejoran la legibilidad del código y garantizan que se sigan las mejores prácticas de forma coherente en todo el proyecto."
-    }), "\n", createVNode(_components.h2, {
-      id: "resumen",
-      children: "Resumen"
-    }), "\n", createVNode(_components.p, {
-      children: ["En conclusión, entender cómo utilizar ", createVNode(_components.a, {
-        href: "https://git-scm.com/book/es/v2/Inicio---Sobre-el-Control-de-Versiones-Acerca-del-Control-de-Versiones",
-        children: "Git"
-      }), " y ", createVNode(_components.a, {
-        href: "https://docs.github.com/es/get-started",
-        children: "GitHub"
-      }), " de forma eficaz en un entorno profesional es esencial para un desarrollo de software eficiente. Al utilizar el control de versiones con ", createVNode(_components.a, {
-        href: "https://git-scm.com/book/es/v2/Inicio---Sobre-el-Control-de-Versiones-Acerca-del-Control-de-Versiones",
-        children: "Git"
-      }), " y aprovechar las funciones de colaboración de ", createVNode(_components.a, {
-        href: "https://docs.github.com/es/get-started",
-        children: "GitHub"
-      }), ", los desarrolladores pueden agilizar su flujo de trabajo, garantizar la calidad del código y mejorar la colaboración en equipo. Seguir las mejores prácticas, como estrategias de bifurcación estructuradas, mensajes de confirmación descriptivos, seguimiento de problemas y revisiones de código, refuerza aún más el proceso de desarrollo."]
     })]
   });
 }

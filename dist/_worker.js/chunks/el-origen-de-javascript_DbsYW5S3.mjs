@@ -4,7 +4,7 @@ import { _ as __astro_tag_component__, H as Fragment, C as createVNode } from '.
 import { $ as $$Image } from './_astro_assets_DZ7CHJB7.mjs';
 
 const MDXLayout = async function ({children}) {
-  const Layout = (await import('./SinglePostLayout_CLKMbWuf.mjs')).default;
+  const Layout = (await import('./SinglePostLayout_DcvwGTik.mjs')).default;
   const {layout, ...content} = frontmatter;
   content.file = file;
   content.url = url;
@@ -64,10 +64,6 @@ function getHeadings() {
     "depth": 2,
     "slug": "la-funcionalidad",
     "text": "La funcionalidad"
-  }, {
-    "depth": 2,
-    "slug": "resumen",
-    "text": "Resumen"
   }];
 }
 const __usesAstroImage = true;
@@ -218,26 +214,6 @@ function _createMdxContent(props) {
         href: "https://es.wikipedia.org/wiki/Electron_(software)",
         children: "Electron"
       }), "). Su versatilidad y adopción generalizada lo convierten en una habilidad esencial para cualquier aspirante a programador en la era digital actual."]
-    }), "\n", createVNode(_components.h2, {
-      id: "resumen",
-      children: "Resumen"
-    }), "\n", createVNode(_components.p, {
-      children: ["En conclusión, el origen de ", createVNode(_components.a, {
-        href: "https://es.wikipedia.org/wiki/JavaScript",
-        children: "JavaScript"
-      }), " se remonta a los primeros días de Internet, cuando existía la necesidad de un lenguaje de programación que pudiera aportar interactividad a las páginas web estáticas. La creación de ", createVNode(_components.a, {
-        href: "https://es.wikipedia.org/wiki/JavaScript",
-        children: "JavaScript"
-      }), " por ", createVNode(_components.a, {
-        href: "https://es.wikipedia.org/wiki/Brendan_Eich",
-        children: "Brendan Eich"
-      }), " en ", createVNode(_components.a, {
-        href: "https://es.wikipedia.org/wiki/Netscape_Communications_Corporation",
-        children: "Netscape"
-      }), " allanó el camino para el desarrollo web dinámico e interactivo. Con el tiempo, ", createVNode(_components.a, {
-        href: "https://es.wikipedia.org/wiki/JavaScript",
-        children: "JavaScript"
-      }), " evolucionó a través de la estandarización y la mejora continua, convirtiéndose en uno de los lenguajes de programación más utilizados en la actualidad. Su impacto en el mundo digital es incalculable y su futuro parece prometedor, ya que sigue adaptándose y creciendo junto a las tecnologías modernas."]
     })]
   });
 }

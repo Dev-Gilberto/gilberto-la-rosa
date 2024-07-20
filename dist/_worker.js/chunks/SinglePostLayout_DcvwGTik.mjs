@@ -3,9 +3,9 @@ import { c as createComponent, r as renderTemplate, m as maybeRenderHead, a as r
 /* empty css                                              */
 import { $ as $$Layout } from './Layout_Dlg086ht.mjs';
 import { s as slugify, a as formatpubDate } from './utils_BneGKSZi.mjs';
-import { $ as $$SocialNetwork } from './SocialNetwork_6PRIC-Ri.mjs';
+import { $ as $$SocialNetwork } from './SocialNetwork_DIuYMUrI.mjs';
 import { $ as $$ButtonBack } from './ButtonBack_De9OMSQ3.mjs';
-import { $ as $$Icon } from './Icon_CuEOkvgQ.mjs';
+import { $ as $$Icon } from './Icon_UwBjW_Zt.mjs';
 
 const $$Frases = createComponent(($$result, $$props, $$slots) => {
   return renderTemplate`${maybeRenderHead()}<section class="rounded block p-4 font-light bg-[radial-gradient(164.75%_100%_at_0%_0%,#f79533_0%,#f37055_35.73%,#ef4e7b_56%,#a166ab_88%)]"> <span class="block text-xl">👍</span> <p class="text-xl font-light my-2 italic">

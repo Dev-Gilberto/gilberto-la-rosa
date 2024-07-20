@@ -4,7 +4,7 @@ import { _ as __astro_tag_component__, H as Fragment, C as createVNode } from '.
 import { $ as $$Image } from './_astro_assets_DZ7CHJB7.mjs';
 
 const MDXLayout = async function ({children}) {
-  const Layout = (await import('./SinglePostLayout_CLKMbWuf.mjs')).default;
+  const Layout = (await import('./SinglePostLayout_DcvwGTik.mjs')).default;
   const {layout, ...content} = frontmatter;
   content.file = file;
   content.url = url;
@@ -52,10 +52,6 @@ function getHeadings() {
     "depth": 2,
     "slug": "el-cuestionamiento-ético",
     "text": "El cuestionamiento ético"
-  }, {
-    "depth": 2,
-    "slug": "resumen",
-    "text": "Resumen"
   }];
 }
 const __usesAstroImage = true;
@@ -155,17 +151,6 @@ function _createMdxContent(props) {
         href: "https://es.wikipedia.org/wiki/Inteligencia_artificial",
         children: "IA"
       }), " tienen acceso a grandes cantidades de datos personales. Lograr un equilibrio entre el avance tecnológico y el bienestar de la sociedad será crucial para aprovechar las ventajas de la IA y mitigar sus posibles riesgos."]
-    }), "\n", createVNode(_components.h2, {
-      id: "resumen",
-      children: "Resumen"
-    }), "\n", createVNode(_components.p, {
-      children: ["En conclusión, la inteligencia artificial es un campo en rápida evolución que ha tenido un profundo impacto en el mundo. Sus aplicaciones en tecnología, programación y diversas industrias han revolucionado nuestra forma de vivir y trabajar. Aunque existen preocupaciones sobre el desplazamiento de puestos de trabajo y consideraciones éticas, no se pueden ignorar los beneficios potenciales de la ", createVNode(_components.a, {
-        href: "https://es.wikipedia.org/wiki/Inteligencia_artificial",
-        children: "IA"
-      }), ". A medida que la tecnología siga avanzando, será importante que la sociedad se adapte y adopte la ", createVNode(_components.a, {
-        href: "https://es.wikipedia.org/wiki/Inteligencia_artificial",
-        children: "IA"
-      }), ", garantizando al mismo tiempo que se utilice de forma responsable y ética."]
     })]
   });
 }

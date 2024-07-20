@@ -2,7 +2,7 @@ globalThis.process ??= {}; globalThis.process.env ??= {};
 /* empty css                                 */
 import { b as createAstro, c as createComponent, r as renderTemplate, m as maybeRenderHead, a as renderComponent, d as addAttribute } from '../chunks/astro/server_EQjFAZZG.mjs';
 import { $ as $$Layout } from '../chunks/Layout_Dlg086ht.mjs';
-import { $ as $$Icon } from '../chunks/Icon_CuEOkvgQ.mjs';
+import { $ as $$Icon } from '../chunks/Icon_UwBjW_Zt.mjs';
 /* empty css                                                 */
 export { renderers } from '../renderers.mjs';
 

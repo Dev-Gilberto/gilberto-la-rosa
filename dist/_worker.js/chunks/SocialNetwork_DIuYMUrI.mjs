@@ -1,6 +1,6 @@
 globalThis.process ??= {}; globalThis.process.env ??= {};
 import { c as createComponent, r as renderTemplate, m as maybeRenderHead, d as addAttribute, a as renderComponent } from './astro/server_EQjFAZZG.mjs';
-import { $ as $$Icon } from './Icon_CuEOkvgQ.mjs';
+import { $ as $$Icon } from './Icon_UwBjW_Zt.mjs';
 
 const $$SocialNetwork = createComponent(($$result, $$props, $$slots) => {
   const rrss = [

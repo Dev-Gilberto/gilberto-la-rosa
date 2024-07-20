@@ -4,7 +4,7 @@ import { _ as __astro_tag_component__, H as Fragment, C as createVNode } from '.
 import { $ as $$Image } from './_astro_assets_DZ7CHJB7.mjs';
 
 const MDXLayout = async function ({children}) {
-  const Layout = (await import('./SinglePostLayout_CLKMbWuf.mjs')).default;
+  const Layout = (await import('./SinglePostLayout_DcvwGTik.mjs')).default;
   const {layout, ...content} = frontmatter;
   content.file = file;
   content.url = url;
@@ -48,10 +48,6 @@ function getHeadings() {
     "depth": 2,
     "slug": "crear-tu-portafolio-web",
     "text": "Crear tu portafolio web"
-  }, {
-    "depth": 2,
-    "slug": "resumen",
-    "text": "Resumen"
   }];
 }
 const __usesAstroImage = true;
@@ -113,11 +109,6 @@ function _createMdxContent(props) {
       children: "Crear tu portafolio web"
     }), "\n", createVNode(_components.p, {
       children: "Por último, crear un portafolio sólido es esencial para mostrar las habilidades y atraer a posibles clientes o empleadores. Esto puede hacerse trabajando en proyectos personales u ofreciendo servicios como autónomo para adquirir experiencia práctica. Incluir una variedad de proyectos que demuestren el dominio de distintos aspectos del desarrollo web puede ayudar a destacar la versatilidad y la experiencia."
-    }), "\n", createVNode(_components.h2, {
-      id: "resumen",
-      children: "Resumen"
-    }), "\n", createVNode(_components.p, {
-      children: "En conclusión, convertirse en desarrollador web requiere dedicación, aprendizaje continuo y experiencia práctica. Siguiendo una guía paso a paso que incluya la creación de una base sólida en lenguajes de programación, la ampliación de conocimientos en diversas áreas del desarrollo web, la actualización con las tendencias del sector y la creación de una cartera, las personas pueden allanar su camino hacia una carrera de éxito en este campo."
     })]
   });
 }

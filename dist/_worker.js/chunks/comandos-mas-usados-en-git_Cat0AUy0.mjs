@@ -4,7 +4,7 @@ import { _ as __astro_tag_component__, H as Fragment, C as createVNode } from '.
 import { $ as $$Image } from './_astro_assets_DZ7CHJB7.mjs';
 
 const MDXLayout = async function ({children}) {
-  const Layout = (await import('./SinglePostLayout_CLKMbWuf.mjs')).default;
+  const Layout = (await import('./SinglePostLayout_DcvwGTik.mjs')).default;
   const {layout, ...content} = frontmatter;
   content.file = file;
   content.url = url;
@@ -56,10 +56,6 @@ function getHeadings() {
     "depth": 2,
     "slug": "creando-las-populares-ramas-o-bifurcaciones",
     "text": "Creando las populares ramas o bifurcaciones"
-  }, {
-    "depth": 2,
-    "slug": "resumen",
-    "text": "Resumen"
   }];
 }
 const __usesAstroImage = true;
@@ -457,11 +453,8 @@ function _createMdxContent(props) {
           class: "line"
         })]
       })
-    }), "\n", createVNode(_components.h2, {
-      id: "resumen",
-      children: "Resumen"
     }), "\n", createVNode(_components.p, {
-      children: "En conclusión, comprender y dominar los comandos más utilizados en Git es crucial para un control de versiones y una gestión del código eficaces. Comandos como “git init”, “git add”, “git commit”, “git pull” y “git branch” son fundamentales para la funcionalidad de Git y son muy utilizados por desarrolladores de todo el mundo. Al familiarizarse con estos comandos e incorporarlos a su flujo de trabajo, los desarrolladores pueden agilizar su proceso de desarrollo y garantizar una colaboración eficiente dentro de sus equipos."
+      children: "Al dia de hoy Git es unos de los controladores de versiones mas utilizados en el mundo de la programación, por ello que es vital aprender a utilizarlo."
     })]
   });
 }

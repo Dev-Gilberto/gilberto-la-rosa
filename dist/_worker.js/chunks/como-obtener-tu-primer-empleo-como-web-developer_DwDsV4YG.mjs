@@ -4,7 +4,7 @@ import { _ as __astro_tag_component__, H as Fragment, C as createVNode } from '.
 import { $ as $$Image } from './_astro_assets_DZ7CHJB7.mjs';
 
 const MDXLayout = async function ({children}) {
-  const Layout = (await import('./SinglePostLayout_CLKMbWuf.mjs')).default;
+  const Layout = (await import('./SinglePostLayout_DcvwGTik.mjs')).default;
   const {layout, ...content} = frontmatter;
   content.file = file;
   content.url = url;
@@ -52,10 +52,6 @@ function getHeadings() {
     "depth": 2,
     "slug": "seguir-ganando-experiencia-en-las-plataformas-para-freelancer",
     "text": "Seguir ganando experiencia en las plataformas para freelancer"
-  }, {
-    "depth": 2,
-    "slug": "resumen",
-    "text": "Resumen"
   }];
 }
 const __usesAstroImage = true;
@@ -104,11 +100,6 @@ function _createMdxContent(props) {
       children: "Seguir ganando experiencia en las plataformas para freelancer"
     }), "\n", createVNode(_components.p, {
       children: "Por último, considera las oportunidades de trabajo a distancia. Con el auge del trabajo a distancia, muchas empresas están dispuestas a contratar desarrolladores web que puedan trabajar desde casa. Plataformas como Upwork y Freelancer ofrecen proyectos de desarrollo web freelance que pueden ayudarte a ganar experiencia y establecer una reputación como desarrollador fiable."
-    }), "\n", createVNode(_components.h2, {
-      id: "resumen",
-      children: "Resumen"
-    }), "\n", createVNode(_components.p, {
-      children: "En conclusión, introducirse en el sector del desarrollo web requiere una combinación de conocimientos técnicos, una sólida cartera de trabajos, la creación de redes de contactos y considerar las oportunidades de trabajo a distancia. Siguiendo estos pasos y siendo proactivo en tu búsqueda de empleo, puedes aumentar tus posibilidades de conseguir tu primer trabajo como desarrollador web y embarcarte en una apasionante carrera en este campo."
     })]
   });
 }
