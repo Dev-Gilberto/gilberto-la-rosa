@@ -4,7 +4,7 @@ import { _ as __astro_tag_component__, H as Fragment, C as createVNode } from '.
 import { $ as $$Image } from './_astro_assets_DZ7CHJB7.mjs';
 
 const MDXLayout = async function ({children}) {
-  const Layout = (await import('./SinglePostLayout_BXPtARG2.mjs')).default;
+  const Layout = (await import('./SinglePostLayout_Ar5i7fIq.mjs')).default;
   const {layout, ...content} = frontmatter;
   content.file = file;
   content.url = url;

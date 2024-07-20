@@ -3,7 +3,7 @@ import { c as createComponent, r as renderTemplate, m as maybeRenderHead, a as r
 /* empty css                                              */
 import { $ as $$Layout } from './Layout_DiJaf4w2.mjs';
 import { s as slugify, a as formatpubDate } from './utils_BneGKSZi.mjs';
-import { a as $$Icon, $ as $$SocialNetwork } from './SocialNetwork_CBCDtviw.mjs';
+import { a as $$Icon, $ as $$SocialNetwork } from './SocialNetwork_Gqnfit1c.mjs';
 import { $ as $$ButtonBack } from './ButtonBack_De9OMSQ3.mjs';
 
 const $$Frases = createComponent(($$result, $$props, $$slots) => {
