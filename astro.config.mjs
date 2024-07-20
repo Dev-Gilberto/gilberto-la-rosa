@@ -36,11 +36,7 @@ export default defineConfig({
       gfm: false,
     }),
     sitemap({
-      filter: (page) =>
-        page !== "https://gilbertolarosa.dev/proyectos-open-source/" &&
-        page !== "https://gilbertolarosa.dev/trabajos-dependientes/" &&
-        page !== "https://gilbertolarosa.dev/proyectos-freelance/" &&
-        page !== "https://gilbertolarosa.dev/blog/",
+      filter: (page) => page !== "https://gilberto-la-rosa.xyz/",
     }),
     icon({
       iconDir: "src/assets/icons",

@@ -1,7 +1,7 @@
 ---
 import { formatBlogPosts, slugify } from "@assets/js/utils";
 
-const allPosts = await Astro.glob("../pages/blog/*.mdx");
+const allPosts = await Astro.glob("../pages/post/*.mdx");
 const formattedPosts = formatBlogPosts(allPosts);
 const allTags = formattedPosts
   .map((cat) => cat.frontmatter.tags.toUpperCase())
@@ -20,20 +20,27 @@ const processedCats = allTags.reduce((acc, tags) => {
 const { showCount } = Astro.props;
 ---
 
-<ul class="flex flex-wrap gap-2">
-  {
-    Object.entries(processedCats).map(([key, val]) => (
-      <li class="rounded-lg  border-white border-2 border-dashed md:hover:bg-[#f79533]  md:hover:border-[#f79533] duration-300">
-        <a
-          class="rounded-lg pl-2 inline-flex items-center"
-          href={`/tags/${slugify(key)}/`}
-        >
-          {key}{" "}
-          <span class="text-white ml-2 bg-[#f79533] py-1 px-2 font-medium rounded-lg">
-            {showCount && `${val}`}
-          </span>
-        </a>
-      </li>
-    ))
-  }
-</ul>
+<section class="col-span-4 md:col-span-1">
+  <section class="bg-[#212121] rounded p-4 md:sticky md:top-4">
+    <h2 class="text-3xl font-bold font-[Antonio] text-[#f5efe7] mb-4">
+      Categorias
+    </h2>
+    <ul class="flex flex-wrap gap-2 text-[#f5efe7]">
+      {
+        Object.entries(processedCats).map(([key, val]) => (
+          <li class="rounded border-[#f79533] border border-dashed md:hover:bg-[#f79533] md:hover:border-[#f79533] duration-150 font-medium">
+            <a
+              class="text-sm rounded pl-2 inline-flex items-center"
+              href={`/tags/${slugify(key)}/`}
+            >
+              {key}{" "}
+              <span class="ml-2 bg-[#f79533] py-1 px-2 rounded-e ">
+                {showCount && `${val}`}
+              </span>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+</section>

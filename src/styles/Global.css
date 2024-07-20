@@ -1,11 +1,11 @@
 /*
 Creado  por:
-╭━━━┳━━┳╮╱╱╭━━╮╭━━━┳━━━┳━━━━┳━╮╭━╮╭━━━┳━━━┳╮╱╱╭╮
-┃╭━╮┣┫┣┫┃╱╱┃╭╮┃┃╭━━┫╭━╮┃╭╮╭╮┣╮╰╯╭╯╰╮╭╮┃╭━━┫╰╮╭╯┃
-┃┃╱╰╯┃┃┃┃╱╱┃╰╯╰┫╰━━┫╰━╯┣╯┃┃╰╯╰╮╭╯╱╱┃┃┃┃╰━━╋╮┃┃╭╯
-┃┃╭━╮┃┃┃┃╱╭┫╭━╮┃╭━━┫╭╮╭╯╱┃┃╱╱╭╯╰╮╱╱┃┃┃┃╭━━╯┃╰╯┃
-┃╰┻━┣┫┣┫╰━╯┃╰━╯┃╰━━┫┃┃╰╮╱┃┃╱╭╯╭╮╰┳┳╯╰╯┃╰━━╮╰╮╭╯
-╰━━━┻━━┻━━━┻━━━┻━━━┻╯╰━╯╱╰╯╱╰━╯╰━┻┻━━━┻━━━╯╱╰╯
+╭━━━┳━━┳╮╱╱╭━━╮╭━━━┳━━━┳━━━━┳━━━┳━╮╭━┳━━━┳━━━┳╮╱╱╭╮
+┃╭━╮┣┫┣┫┃╱╱┃╭╮┃┃╭━━┫╭━╮┃╭╮╭╮┃╭━╮┣╮╰╯╭┻╮╭╮┃╭━━┫╰╮╭╯┃
+┃┃╱╰╯┃┃┃┃╱╱┃╰╯╰┫╰━━┫╰━╯┣╯┃┃╰┫┃╱┃┃╰╮╭╯╱┃┃┃┃╰━━╋╮┃┃╭╯
+┃┃╭━╮┃┃┃┃╱╭┫╭━╮┃╭━━┫╭╮╭╯╱┃┃╱┃┃╱┃┃╭╯╰╮╱┃┃┃┃╭━━╯┃╰╯┃
+┃╰┻━┣┫┣┫╰━╯┃╰━╯┃╰━━┫┃┃╰╮╱┃┃╱┃╰━╯┣╯╭╮╰┳╯╰╯┃╰━━╮╰╮╭╯
+╰━━━┻━━┻━━━┻━━━┻━━━┻╯╰━╯╱╰╯╱╰━━━┻━╯╰━┻━━━┻━━━╯╱╰╯
 
 Fundador de:
 ░█████╗░░█████╗░██████╗░░█████╗░███████╗████████╗███████╗██████╗░
@@ -20,8 +20,7 @@ Fundador de:
 :root {
   /* fonts */
   --Font-global: "Fira Mono", monospace;
-  --font-nav: "Ubuntu Condensed", sans-serif;
-  --font-title: "Press Start 2P", system-ui;
+  --font-nav: "Antonio", sans-serif;
   /* colors*/
   --bg-global: #f5efe7;
   --text-color-global: #213555;
@@ -44,12 +43,23 @@ Fundador de:
     #6fba82
   );
 }
+
 *,
 *:before,
 *:after {
   box-sizing: border-box;
 }
-
+* {
+  user-select: var(--hover-orange);
+}
+*::selection {
+  background: var(--hover-orange);
+  color: var(--bg-global);
+}
+*::-moz-selection {
+  background: var(--hover-orange);
+  color: var(--bg-global);
+}
 html {
   font-family: var(--Font-global);
   background: var(--bg-global);

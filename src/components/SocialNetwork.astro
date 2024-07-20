@@ -1,39 +1,52 @@
 ---
 import { Icon } from "astro-icon/components";
+
+const rrss = [
+  {
+    url: "https://www.linkedin.com/in/gilberto-la-rosa/",
+    name: "linkedin",
+    icon: "linkedin",
+  },
+  {
+    url: "https://twitter.com/gilbertoxdev",
+    name: "x",
+    icon: "x",
+  },
+  {
+    url: "mailto:gilberto.larosa@codafter.codes",
+    name: "gilberto.larosa@codafter.codes",
+    icon: "mail",
+  },
+  {
+    url: "https://github.com/gilbertoxdev",
+    name: "github",
+    icon: "github",
+  },
+];
 ---
 
 <aside>
-  <nav class="flex justify-center gap-8 items-center">
-    <a
-      href="https://www.linkedin.com/in/gilberto-la-rosa/"
-      sr-only="linkedin"
-      target="_blank"
-      title="linkedin"
-      class="hover:text-[#f79533] transition-all"
-    >
-      <Icon
-        name="linkedin"
-        class="hover:text-[#f79533] duration-300"
-        size={35}
-      />
-    </a>
-    <a
-      href="https://twitter.com/dev_gilberto"
-      sr-only="X"
-      title="X"
-      target="_blank"
-      class="hover:text-[#a166ab] transition-all"
-    >
-      <Icon name="x" class="hover:text-[#a166ab] duration-300" size={35} />
-    </a>
-    <a
-      href="https://github.com/Dev-Gilberto"
-      sr-only="github"
-      target="_blank"
-      title="github"
-      class="hover:text-[#6fba82] transition-all"
-    >
-      <Icon name="github" class="hover:text-[#6fba82] duration-300" size={35} />
-    </a>
+  <nav>
+    <ul class="flex justify-center gap-8 items-center">
+      {
+        rrss.map((item) => (
+          <li>
+            <a
+              href={item.url}
+              sr-only={item}
+              target="_blank"
+              title={item.name}
+              class="hover:text-[#f79533] transition-all"
+            >
+              <Icon
+                name={item.icon}
+                class="hover:text-[#f79533] duration-150"
+                size={35}
+              />
+            </a>
+          </li>
+        ))
+      }
+    </ul>
   </nav>
 </aside>

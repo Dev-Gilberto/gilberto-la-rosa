@@ -1,11 +1,11 @@
 {
   "name": "gilberto-la-rosa",
   "type": "module",
-  "version": "1.0.2",
+  "version": "2.1.0",
   "author": {
     "name": "Gilberto La Rosa",
-    "email": "yosoy@gilberto.dev",
-    "url": "https://www.gilberto.dev"
+    "email": "gilberto.larosa@codafter.codes",
+    "url": "https://www.gilberto-la-rosa.xyz"
   },
   "scripts": {
     "dev": "astro dev",
@@ -14,14 +14,14 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/cloudflare": "^10.1.0",
-    "@astrojs/mdx": "^2.3.0",
-    "@astrojs/partytown": "^2.0.4",
-    "@astrojs/sitemap": "^3.1.2",
+    "@astrojs/cloudflare": "^11.0.1",
+    "@astrojs/mdx": "^3.1.3",
+    "@astrojs/partytown": "^2.1.1",
+    "@astrojs/sitemap": "^3.1.6",
     "@astrojs/tailwind": "^5.1.0",
-    "astro": "^4.6.0",
+    "astro": "^4.12.2",
     "astro-icon": "^1.1.0",
     "remark-toc": "^9.0.0",
-    "tailwindcss": "^3.4.1"
+    "tailwindcss": "^3.4.6"
   }
 }

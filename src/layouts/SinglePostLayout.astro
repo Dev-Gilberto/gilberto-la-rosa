@@ -13,31 +13,41 @@ const { title, emojis, pubDate, author, tags } = frontmatter;
 ---
 
 <Layout {title}>
-  <section class="w-[90%] mx-auto my-8 md:w-3/5">
+  <section class="w-[97%] mx-auto my-8 md:w-3/5">
     <article>
-      <div class="text-3xl md:text-7xl font-bold uppercase mb-4">
+      <div class="text-3xl md:text-7xl font-[Antonio] font-bold uppercase mb-4">
         <h1 class="inline">
           {title}
         </h1>{emojis}
       </div>
       <!-- category -->
       <section>
-        <small class="flex justify-center mb-4">
+        <small class="flex flex-wrap mb-4">
           <a
-            class="uppercase font-medium py-1 px-4 rounded-xl border-b-2 border-[#f79533] tracking-wider"
+            class="uppercase font-medium py-1 px-4 rounded border-b-2 border-[#f79533] tracking-wider bg-white hover:border-transparent duration-150"
             href={`/tags/${slugify(tags)}`}>{tags}</a
           >
         </small>
       </section>
       <!-- Autor -->
       <section>
-        <p class="text-center text-lg">
-          Escrito por: <span class="font-semibold">{author}</span>
+        <p class="text-lg flex flex-col items-center">
+          Escrito por: <br />
+          <span
+            class="flex gap-1 items-center font-[Antonio] font-bold text-3xl"
+          >
+            <img
+              src="/AVATAR-GILBERTO.jpg"
+              alt="Gilberto La Rosa"
+              class="w-12 rounded-full"
+            />
+            {author}</span
+          >
         </p>
         <SocialNetwork />
       </section>
       <!-- divide whit fecha -->
-      <span class="flex items-center my-4">
+      <span class="flex items-center my-10">
         <span class="h-px flex-1 bg-[#212121]"></span>
         <span class="shrink-0 px-6 text-lg font-bold"
           >{formatpubDate(pubDate)}</span
@@ -49,7 +59,7 @@ const { title, emojis, pubDate, author, tags } = frontmatter;
       <slot />
     </article>
     <!-- divide whit rrss -->
-    <span class="flex items-center my-8">
+    <span class="flex items-center my-10">
       <span class="h-px flex-1 bg-[#212121]"></span>
       <span class="shrink-0 px-6"><SocialNetwork /></span>
       <span class="h-px flex-1 bg-[#212121]"></span>

@@ -1,0 +1,42 @@
+---
+import Marketing from "@components/Marketing.astro";
+import Email from "@components/Email.astro";
+import SocialNetwork from "./SocialNetwork.astro";
+import { Icon } from "astro-icon/components";
+---
+
+<section class="col-span-4 md:col-span-1">
+  <section class="bg-[#212121] rounded p-4 text-[#f5efe7]">
+    <h2 class="text-3xl font-bold font-[Antonio] mb-4">Un poco sobre mi</h2>
+    <section class="relative">
+      <img
+        src="/AVATAR-GILBERTO.jpg"
+        alt="Gilberto La Rosa"
+        class="float-left w-24 h-auto mr-2"
+      />
+      <p class="text-sm">
+        Hola soy Gilberto La Rosa, un joven Venezolano más esparcido por el
+        mundo,actualmente viviendo en Santiago de Chile, padre de familia,
+        esposo, Ingeniero de Sistemas de profesión y programador web de oficio,
+        aunque en el desarrollo de mi carrera me ha tocado trabajar en distintas
+        áreas de sector TI.
+      </p>
+    </section>
+    <section class="my-8">
+      <h2 class="text-3xl font-bold font-[Antonio] mb-4">Contacto</h2>
+      <SocialNetwork />
+    </section>
+    <section class="my-4">
+      <h2 class="text-3xl font-bold font-[Antonio] mb-4">Portafolio</h2>
+      <a
+        href="https://codafter.cl/"
+        target="_blank"
+        title="Sitio de Codafter"
+        class="hover:text-[#f79533] hover:underline duration-150 flex flex-wrap"
+      >
+        <Icon name="travel-explore" size={30} />
+        www.codafter.cl</a
+      >
+    </section>
+  </section>
+</section>

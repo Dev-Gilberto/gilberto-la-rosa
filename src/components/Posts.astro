@@ -6,19 +6,19 @@ const { frontmatter, url } = Astro.props;
 const { title, emojis, pubDate, image, description } = frontmatter;
 ---
 
-<li class="rounded-xl bg-white p-4 sm:p-6">
+<li class="rounded bg-white p-4 sm:p-6 border border-[#212121] flex-1 flex">
   <article>
     <span class="inline-block text-5xl pt-2">{image.url}</span>
 
     <a href={url} title="Guía paso a paso para ser un desarrollador web">
       <h2
-        class="my-4 text-3xl font-bold uppercase tracking-wide hover:text-[#f79533] transition duration-300"
+        class="my-4 text-3xl font-[Antonio] font-bold uppercase tracking-wide hover:text-[#f79533] transition duration-150"
       >
         <span class="md:hover:underline">{title}</span>{emojis}
       </h2>
     </a>
 
-    <p class="mt-2 text-base font-light">
+    <p class="mt-2 text-sm font-light">
       {description}
     </p>
 
@@ -27,19 +27,19 @@ const { title, emojis, pubDate, image, description } = frontmatter;
     >
       <a
         href={url}
-        title="Guía paso a paso para ser un desarrollador web"
-        class="group inline-flex gap-1 hover:text-[#f79533] transition duration-300"
+        title="ver mas"
+        class="group inline-flex gap-1 hover:text-[#f79533] transition duration-150 font-[Antonio] font-bold"
       >
         ver mas
 
         <span
           aria-hidden="true"
-          class="block duration-300 group-hover:ms-0.5 rtl:rotate-180"
+          class="block duration-150 group-hover:ms-1 rtl:rotate-180"
         >
           &#10145;
         </span>
       </a>
-      <time datetime="" class="uppercase"
+      <time datetime="" class="capitalize"
         >publicación: {formatpubDate(pubDate)}</time
       >
     </div>

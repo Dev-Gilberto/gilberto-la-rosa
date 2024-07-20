@@ -1,13 +1,58 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import Hero from "../components/Hero.astro";
-import TextIntro from "../components/TextIntro.astro";
-import SocialNetwork from "../components/SocialNetwork.astro";
+import { formatBlogPosts } from "@assets/js/utils";
+import Layout from "@layout/Layout.astro";
+import Posts from "@components/Posts.astro";
+import AllTags from "@components/AllTags.astro";
+import Perfil from "@components/Perfil.astro";
+import { Icon } from "astro-icon/components";
+const allPosts = await Astro.glob("./post/*.mdx");
+const formattedPosts = formatBlogPosts(allPosts);
 ---
 
-<Layout title="Gilberto La Rosa 🚀 Web Developer 🌎">
-  <section class="w-[90%] mx-auto mb-8">
-    <TextIntro />
-    <SocialNetwork />
+<Layout
+  title="Gilberto La Rosa 🚀 Web Developer 🌎 Blog 📝 Programación Web 💻 GilbertoXdev 💣"
+>
+  <section class="w-[97%] mx-auto my-4">
+    <section class="flex flex-wrap items-end mb-16">
+      <h1
+        class="text-6xl m-0 md:text-9xl uppercase font-bold font-[Antonio] flex-1 items-baseline pb-1"
+      >
+        Un blog con gilberto
+      </h1>
+      <div class="flex-1">
+        <p class="text-lg md:text-xl font-light">
+          Este mi simple y cautivador blog, donde estaré publicando tips,
+          anécdotas de todo lo que he vivido como programador web y como una
+          persona humana <span class="font-bold"
+            >(Existen muchas personas, que no son humanas)</span
+          >.
+        </p>
+      </div>
+    </section>
+
+    <!-- divide whit fecha -->
+    <span class="flex items-center mb-16">
+      <span class="h-px flex-1 bg-[#212121]"></span>
+      <span class="shrink-0 px-2 flex flex-col items-center">
+        <Icon name="logo" size={90} class="text-[#212121]" />
+        <span class="font-bold block">GilbertoXdev</span>
+      </span>
+      <span class="h-px flex-1 bg-[#212121]"></span>
+    </span>
+
+    <section class="grid grid-cols-4 gap-4 my-8">
+      <Perfil />
+      <section class="col-span-4 md:col-span-2">
+        <ul class="flex flex-col gap-4">
+          {
+            formattedPosts.map((post) => (
+              <Posts frontmatter={post.frontmatter} url={post.url} />
+            ))
+          }
+        </ul>
+      </section>
+
+      <AllTags showCount="true" />
+    </section>
   </section>
 </Layout>
