@@ -21,11 +21,9 @@ const { title } = Astro.props;
     <title>{title}</title>
 
     <!-- Google tag (gtag.js) -->
-    <script
-      async
-      type="text/partytown"
-      src="https://www.googletagmanager.com/gtag/js?id=G-FQWMBV9PW7"></script>
-    <script type="text/partytown">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FQWMBV9PW7"
+    ></script>
+    <script type="text/javascript">
       window.dataLayer = window.dataLayer || [];
       function gtag() {
         dataLayer.push(arguments);

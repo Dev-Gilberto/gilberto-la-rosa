@@ -4,7 +4,6 @@ import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
 import icon from "astro-icon";
 import remarkToc from "remark-toc";
-import partytown from "@astrojs/partytown";
 import cloudflare from "@astrojs/cloudflare";
 
 // https://astro.build/config
@@ -41,6 +40,5 @@ export default defineConfig({
     icon({
       iconDir: "src/assets/icons",
     }),
-    partytown(),
   ],
 });
