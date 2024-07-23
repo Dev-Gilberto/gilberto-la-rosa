@@ -1,9 +1,9 @@
 globalThis.process ??= {}; globalThis.process.env ??= {};
 import { c as createComponent, r as renderTemplate, m as maybeRenderHead, a as renderComponent, b as createAstro, d as addAttribute, E as renderSlot } from './astro/server_DF50JbGT.mjs';
 /* empty css                                              */
-import { a as $$Icon, $ as $$Layout } from './Layout_G-QiqGG-.mjs';
+import { a as $$Icon, $ as $$Layout } from './Layout_BpopZr_B.mjs';
 import { s as slugify, a as formatpubDate } from './utils_BneGKSZi.mjs';
-import { $ as $$SocialNetwork } from './SocialNetwork_p0pv_eIu.mjs';
+import { $ as $$SocialNetwork } from './SocialNetwork_CWFyszou.mjs';
 import { $ as $$ButtonBack } from './ButtonBack_BnhHHHC6.mjs';
 
 const $$Frases = createComponent(($$result, $$props, $$slots) => {
