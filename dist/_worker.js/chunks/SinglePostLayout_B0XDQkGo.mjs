@@ -1,10 +1,10 @@
 globalThis.process ??= {}; globalThis.process.env ??= {};
-import { c as createComponent, r as renderTemplate, m as maybeRenderHead, a as renderComponent, b as createAstro, d as addAttribute, E as renderSlot } from './astro/server_EQjFAZZG.mjs';
+import { c as createComponent, r as renderTemplate, m as maybeRenderHead, a as renderComponent, b as createAstro, d as addAttribute, E as renderSlot } from './astro/server_DF50JbGT.mjs';
 /* empty css                                              */
-import { $ as $$Layout } from './Layout_B3JNV4kA.mjs';
+import { a as $$Icon, $ as $$Layout } from './Layout_G-QiqGG-.mjs';
 import { s as slugify, a as formatpubDate } from './utils_BneGKSZi.mjs';
-import { a as $$Icon, $ as $$SocialNetwork } from './SocialNetwork_D2gKBP5B.mjs';
-import { $ as $$ButtonBack } from './ButtonBack_De9OMSQ3.mjs';
+import { $ as $$SocialNetwork } from './SocialNetwork_p0pv_eIu.mjs';
+import { $ as $$ButtonBack } from './ButtonBack_BnhHHHC6.mjs';
 
 const $$Frases = createComponent(($$result, $$props, $$slots) => {
   return renderTemplate`${maybeRenderHead()}<section class="rounded block p-4 font-light bg-[radial-gradient(164.75%_100%_at_0%_0%,#f79533_0%,#f37055_35.73%,#ef4e7b_56%,#a166ab_88%)]"> <span class="block text-xl">👍</span> <p class="text-xl font-light my-2 italic">

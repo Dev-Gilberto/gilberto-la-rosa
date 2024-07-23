@@ -1,6 +1,6 @@
 globalThis.process ??= {}; globalThis.process.env ??= {};
 import { F as baseService } from './astro/assets-service_wYDhUdhy.mjs';
-import './_astro_assets_DZ7CHJB7.mjs';
+import './_astro_assets_D3f2sY_6.mjs';
 
 function removeTrailingForwardSlash(path) {
   return path.endsWith("/") ? path.slice(0, path.length - 1) : path;
