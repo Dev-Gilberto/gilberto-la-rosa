@@ -4,7 +4,7 @@ import { _ as __astro_tag_component__, H as Fragment, C as createVNode } from '.
 import { $ as $$Image } from './_astro_assets_D3f2sY_6.mjs';
 
 const MDXLayout = async function ({children}) {
-  const Layout = (await import('./SinglePostLayout_DbLU1a-W.mjs')).default;
+  const Layout = (await import('./SinglePostLayout_B-3D-I_L.mjs')).default;
   const {layout, ...content} = frontmatter;
   content.file = file;
   content.url = url;
@@ -478,7 +478,7 @@ Content[Symbol.for('astro.needsHeadRendering')] = !Boolean(frontmatter.layout);
 Content.moduleId = "C:/Users/Gilberto La Rosa/Desktop/WebSitiesStactics/gilberto-la-rosa/src/pages/post/comandos-mas-usados-en-git.mdx";
 __astro_tag_component__(Content, 'astro:jsx');
 
-const _page = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+const __vite_glob_0_0 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
   __proto__: null,
   Content,
   __usesAstroImage,
@@ -489,4 +489,4 @@ const _page = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
   url
 }, Symbol.toStringTag, { value: 'Module' }));
 
-export { _page as _ };
+export { __vite_glob_0_0 as _ };

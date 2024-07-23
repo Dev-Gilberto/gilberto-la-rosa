@@ -1,7 +1,7 @@
 globalThis.process ??= {}; globalThis.process.env ??= {};
-import { _ as _page } from '../../chunks/que-es-la-inteligencia-artificial-y-cual-es-su-impacto-en-el-mundo_CIxZ7WOf.mjs';
+import { _ as __vite_glob_0_6 } from '../../chunks/que-es-la-inteligencia-artificial-y-cual-es-su-impacto-en-el-mundo_D8R8ZU5r.mjs';
 export { renderers } from '../../renderers.mjs';
 
-const page = () => _page;
+const page = () => __vite_glob_0_6;
 
 export { page };

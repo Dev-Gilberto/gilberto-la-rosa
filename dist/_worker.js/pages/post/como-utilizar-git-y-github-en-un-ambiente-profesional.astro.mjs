@@ -1,7 +1,7 @@
 globalThis.process ??= {}; globalThis.process.env ??= {};
-import { _ as _page } from '../../chunks/como-utilizar-git-y-github-en-un-ambiente-profesional_BQo8kOBQ.mjs';
+import { _ as __vite_glob_0_2 } from '../../chunks/como-utilizar-git-y-github-en-un-ambiente-profesional_C0feYT6I.mjs';
 export { renderers } from '../../renderers.mjs';
 
-const page = () => _page;
+const page = () => __vite_glob_0_2;
 
 export { page };

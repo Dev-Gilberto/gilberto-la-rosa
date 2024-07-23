@@ -2654,9 +2654,10 @@ const _page6 = () => import('./pages/post/guia-para-ser-un-desarrollador-web.ast
 const _page7 = () => import('./pages/post/que-es-devin-el-primer-ingeniero-de-software-de-ia.astro.mjs');
 const _page8 = () => import('./pages/post/que-es-la-inteligencia-artificial-y-cual-es-su-impacto-en-el-mundo.astro.mjs');
 const _page9 = () => import('./pages/robots.txt.astro.mjs');
-const _page10 = () => import('./pages/tags/_tags_.astro.mjs');
-const _page11 = () => import('./pages/trabajos-dependientes.astro.mjs');
-const _page12 = () => import('./pages/index.astro.mjs');
+const _page10 = () => import('./pages/rss.xml.astro.mjs');
+const _page11 = () => import('./pages/tags/_tags_.astro.mjs');
+const _page12 = () => import('./pages/trabajos-dependientes.astro.mjs');
+const _page13 = () => import('./pages/index.astro.mjs');
 
 const pageMap = new Map([
     ["node_modules/astro/dist/assets/endpoint/generic.js", _page0],
@@ -2669,9 +2670,10 @@ const pageMap = new Map([
     ["src/pages/post/que-es-devin-el-primer-ingeniero-de-software-de-ia.mdx", _page7],
     ["src/pages/post/que-es-la-inteligencia-artificial-y-cual-es-su-impacto-en-el-mundo.mdx", _page8],
     ["src/pages/robots.txt.ts", _page9],
-    ["src/pages/tags/[tags].astro", _page10],
-    ["src/pages/trabajos-dependientes.astro", _page11],
-    ["src/pages/index.astro", _page12]
+    ["src/pages/rss.xml.js", _page10],
+    ["src/pages/tags/[tags].astro", _page11],
+    ["src/pages/trabajos-dependientes.astro", _page12],
+    ["src/pages/index.astro", _page13]
 ]);
 const serverIslandMap = new Map();
 

@@ -1,7 +1,7 @@
 globalThis.process ??= {}; globalThis.process.env ??= {};
-import { _ as _page } from '../../chunks/el-origen-de-javascript_D5n90nUI.mjs';
+import { _ as __vite_glob_0_3 } from '../../chunks/el-origen-de-javascript_CztOe57r.mjs';
 export { renderers } from '../../renderers.mjs';
 
-const page = () => _page;
+const page = () => __vite_glob_0_3;
 
 export { page };
