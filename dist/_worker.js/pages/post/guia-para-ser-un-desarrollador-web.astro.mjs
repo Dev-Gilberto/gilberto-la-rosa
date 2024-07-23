@@ -1,5 +1,5 @@
 globalThis.process ??= {}; globalThis.process.env ??= {};
-import { _ as _page } from '../../chunks/guia-para-ser-un-desarrollador-web_MUbpWJAI.mjs';
+import { _ as _page } from '../../chunks/guia-para-ser-un-desarrollador-web_BZ-OBgUI.mjs';
 export { renderers } from '../../renderers.mjs';
 
 const page = () => _page;

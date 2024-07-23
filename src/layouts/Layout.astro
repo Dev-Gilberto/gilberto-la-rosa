@@ -24,20 +24,18 @@ const { title } = Astro.props;
     <ViewTransitions />
   </head>
 
-  <body>
-    <section class="relative overflow-hidden">
-      <Icon
-        name="cpu"
-        class="absolute -top-40 -right-40 text-[#212121] opacity-5"
-        size={600}
-      />
-      <main transition:animate={slide({ duration: "0.6s" })}>
-        <slot />
-      </main>
+  <body class="relative">
+    <!-- <Icon
+      name="cpu"
+      class="absolute -top-40 -right-40 text-[#212121] opacity-5"
+      size={600}
+    /> -->
+    <main transition:animate={slide({ duration: "0.6s" })}>
+      <slot />
+    </main>
 
-      <FooterLayout />
+    <FooterLayout />
 
-      <BtnTop />
-    </section>
+    <BtnTop />
   </body>
 </html>

@@ -6,7 +6,9 @@ const { frontmatter, url } = Astro.props;
 const { title, emojis, pubDate, image, description } = frontmatter;
 ---
 
-<li class="rounded bg-white p-4 sm:p-6 border border-[#212121] flex-1 flex">
+<li
+  class="rounded bg-white p-4 sm:p-6 border border-[#212121] flex-1 flex mb-2"
+>
   <article>
     <span class="inline-block text-5xl pt-2">{image.url}</span>
 
@@ -52,6 +54,6 @@ const { title, emojis, pubDate, image, description } = frontmatter;
     transition: all 0.3s ease-in-out;
   }
   li:hover {
-    box-shadow: 8px 10px 0 var(--hover-orange);
+    box-shadow: 10px 15px 0 var(--hover-orange);
   }
 </style>
