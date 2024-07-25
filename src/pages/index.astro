@@ -1,8 +1,6 @@
 ---
-// import { formatBlogPosts } from "@assets/js/utils";
 import { getCollection } from "astro:content";
 
-// import Clima from "@components/Clima";
 import Layout from "@layout/Layout.astro";
 import Posts from "@components/Posts.astro";
 import AllTags from "@components/AllTags.astro";
@@ -12,8 +10,6 @@ import { Icon } from "astro-icon/components";
 const postsBlog = (await getCollection("blog")).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 );
-// const allPosts = await Astro.glob("../content/blog/*.mdx");
-// const formattedPosts = formatBlogPosts(allPosts);
 ---
 
 <Layout
