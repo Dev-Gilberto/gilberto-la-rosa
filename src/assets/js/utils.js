@@ -9,7 +9,7 @@ export function slugify(text) {
     .replace(/-+$/, "");
 }
 export function formatpubDate(pubDate) {
-  return new Date(pubDate).toLocaleDateString("es", {
+  return new Date(pubDate).toLocaleDateString("es-cl", {
     timeZone: "UTC",
   });
 }

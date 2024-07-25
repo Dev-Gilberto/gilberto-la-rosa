@@ -1,0 +1,18 @@
+---
+interface Props {
+  date: Date;
+}
+const { date } = Astro.props;
+---
+
+<time datetime={date.toISOString()} class="capitalize">
+  publicación: <span class="uppercase">
+    {
+      date.toLocaleDateString("es-cl", {
+        year: "numeric",
+        month: "short",
+        day: "numeric",
+      })
+    }</span
+  >
+</time>

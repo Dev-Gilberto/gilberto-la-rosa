@@ -1,7 +1,7 @@
 ---
 import { formatBlogPosts, slugify } from "@assets/js/utils";
 
-const allPosts = await Astro.glob("../pages/post/*.mdx");
+const allPosts = await Astro.glob("../content/blog/*.mdx");
 const formattedPosts = formatBlogPosts(allPosts);
 const allTags = formattedPosts
   .map((cat) => cat.frontmatter.tags.toUpperCase())

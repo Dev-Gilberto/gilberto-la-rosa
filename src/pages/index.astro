@@ -1,12 +1,19 @@
 ---
-import { formatBlogPosts } from "@assets/js/utils";
+// import { formatBlogPosts } from "@assets/js/utils";
+import { getCollection } from "astro:content";
+
+// import Clima from "@components/Clima";
 import Layout from "@layout/Layout.astro";
 import Posts from "@components/Posts.astro";
 import AllTags from "@components/AllTags.astro";
 import Perfil from "@components/Perfil.astro";
 import { Icon } from "astro-icon/components";
-const allPosts = await Astro.glob("./post/*.mdx");
-const formattedPosts = formatBlogPosts(allPosts);
+
+const postsBlog = (await getCollection("blog")).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+// const allPosts = await Astro.glob("../content/blog/*.mdx");
+// const formattedPosts = formatBlogPosts(allPosts);
 ---
 
 <Layout
@@ -20,6 +27,7 @@ const formattedPosts = formatBlogPosts(allPosts);
         Un blog con gilberto
       </h1>
       <div class="flex-1">
+        <!-- <Clima client:load /> -->
         <p class="text-lg md:text-xl font-light">
           Este mi simple y cautivador blog, donde estaré publicando tips,
           anécdotas de todo lo que he vivido como programador web y como una
@@ -44,15 +52,11 @@ const formattedPosts = formatBlogPosts(allPosts);
       <Perfil />
       <section class="col-span-4 md:col-span-2">
         <ul class="flex flex-col gap-4">
-          {
-            formattedPosts.map((post) => (
-              <Posts frontmatter={post.frontmatter} url={post.url} />
-            ))
-          }
+          {postsBlog.map((post) => <Posts {...post.data} />)}
         </ul>
       </section>
 
-      <AllTags showCount="true" />
+      <!-- <AllTags showCount="true" /> -->
     </section>
   </section>
 </Layout>
