@@ -1,15 +1,16 @@
 ---
 import "@styles/BlogPosts.css";
+import { type CollectionEntry } from "astro:content";
+type Props = CollectionEntry<"blog">["data"];
 import Layout from "@layout/Layout.astro";
-import { slugify, formatpubDate } from "@assets/js/utils";
+
 import SocialNetwork from "@components/SocialNetwork.astro";
 import ButtonBack from "@components/ButtonBack.astro";
 import Frases from "@components/Frases.astro";
 import Share from "@components/Share.astro";
+import FormattedDate from "@components/FormattedDate.astro";
 
-const { frontmatter } = Astro.props;
-
-const { title, emojis, pubDate, author, tags } = frontmatter;
+const { title, emojis, tags, author, pubDate } = Astro.props;
 ---
 
 <Layout {title}>
@@ -21,14 +22,14 @@ const { title, emojis, pubDate, author, tags } = frontmatter;
         </h1>{emojis}
       </div>
       <!-- category -->
-      <section>
+      <!-- <section>
         <small class="flex flex-wrap mb-4">
           <a
             class="uppercase font-medium py-1 px-4 rounded border-b-2 border-[#f79533] tracking-wider bg-white hover:border-transparent duration-150"
             href={`/tags/${slugify(tags)}`}>{tags}</a
           >
         </small>
-      </section>
+      </section> -->
       <!-- Autor -->
       <section>
         <p class="text-lg flex flex-col items-center">
@@ -49,9 +50,9 @@ const { title, emojis, pubDate, author, tags } = frontmatter;
       <!-- divide whit fecha -->
       <span class="flex items-center my-10">
         <span class="h-px flex-1 bg-[#212121]"></span>
-        <span class="shrink-0 px-6 text-lg font-bold"
-          >{formatpubDate(pubDate)}</span
-        >
+        <span class="shrink-0 px-6 text-lg font-bold">
+          <FormattedDate date={pubDate} />
+        </span>
         <span class="h-px flex-1 bg-[#212121]"></span>
       </span>
 

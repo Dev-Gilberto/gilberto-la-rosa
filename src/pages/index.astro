@@ -3,7 +3,7 @@ import { getCollection } from "astro:content";
 
 import Layout from "@layout/Layout.astro";
 import Posts from "@components/Posts.astro";
-import AllTags from "@components/AllTags.astro";
+// import AllTags from "@components/AllTags.astro";
 import Perfil from "@components/Perfil.astro";
 import { Icon } from "astro-icon/components";
 
@@ -23,7 +23,6 @@ const postsBlog = (await getCollection("blog")).sort(
         Un blog con gilberto
       </h1>
       <div class="flex-1">
-        <!-- <Clima client:load /> -->
         <p class="text-lg md:text-xl font-light">
           Este mi simple y cautivador blog, donde estaré publicando tips,
           anécdotas de todo lo que he vivido como programador web y como una
@@ -48,7 +47,7 @@ const postsBlog = (await getCollection("blog")).sort(
       <Perfil />
       <section class="col-span-4 md:col-span-2">
         <ul class="flex flex-col gap-4">
-          {postsBlog.map((post) => <Posts {...post.data} />)}
+          {postsBlog.map((post) => <Posts {...post.data} slug={post.slug} />)}
         </ul>
       </section>
 

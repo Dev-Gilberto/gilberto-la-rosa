@@ -1,8 +1,8 @@
 globalThis.process ??= {}; globalThis.process.env ??= {};
 import { renderers } from './renderers.mjs';
-import { l as levels, g as getEventPrefix, e as ensure404Route, d as default404Instance, D as DEFAULT_404_ROUTE, L as Logger, A as AstroIntegrationLogger, m as manifest } from './chunks/_@astrojs-manifest_DsDukmUu.mjs';
-import { A as AstroError, g as i18nNoLocaleFoundInPath, h as appendForwardSlash, j as joinPaths, R as ResponseSentError, k as MiddlewareNoDataOrNextCalled, l as MiddlewareNotAResponse, G as GetStaticPathsRequired, m as InvalidGetStaticPathsReturn, n as InvalidGetStaticPathsEntry, o as GetStaticPathsExpectedParams, p as GetStaticPathsInvalidRouteParam, t as trimSlashes, P as PageNumberParamNotFound, q as NoMatchingStaticPathFound, r as PrerenderDynamicEndpointPathCollide, s as ReservedSlotName, L as LocalsNotAnObject, u as PrerenderClientAddressNotAvailable, C as ClientAddressNotAvailable, S as StaticClientAddressNotAvailable, v as RewriteWithBodyUsed, w as AstroResponseHeadersReassigned, x as fileExtension, y as slash, z as prependForwardSlash, B as removeTrailingForwardSlash } from './chunks/astro/assets-service_wYDhUdhy.mjs';
-import { R as ROUTE_TYPE_HEADER, e as REROUTE_DIRECTIVE_HEADER, f as createSlotValueFromString, r as renderTemplate, a as renderComponent, D as DEFAULT_404_COMPONENT, g as renderSlotToString, h as renderJSX, i as chunkToString, j as isRenderInstruction, k as clientLocalsSymbol, l as clientAddressSymbol, n as renderPage, o as REWRITE_DIRECTIVE_HEADER_KEY, p as REWRITE_DIRECTIVE_HEADER_VALUE, q as renderEndpoint, A as ASTRO_VERSION, s as responseSentSymbol$1, t as REROUTABLE_STATUS_CODES } from './chunks/astro/server_DF50JbGT.mjs';
+import { l as levels, g as getEventPrefix, e as ensure404Route, d as default404Instance, D as DEFAULT_404_ROUTE, L as Logger, A as AstroIntegrationLogger, m as manifest } from './chunks/_@astrojs-manifest_Wb1mRiGp.mjs';
+import { A as AstroError, g as i18nNoLocaleFoundInPath, h as appendForwardSlash, j as joinPaths, R as ResponseSentError, k as MiddlewareNoDataOrNextCalled, l as MiddlewareNotAResponse, G as GetStaticPathsRequired, m as InvalidGetStaticPathsReturn, n as InvalidGetStaticPathsEntry, o as GetStaticPathsExpectedParams, q as GetStaticPathsInvalidRouteParam, t as trimSlashes, P as PageNumberParamNotFound, r as NoMatchingStaticPathFound, s as PrerenderDynamicEndpointPathCollide, u as ReservedSlotName, L as LocalsNotAnObject, v as PrerenderClientAddressNotAvailable, C as ClientAddressNotAvailable, S as StaticClientAddressNotAvailable, w as RewriteWithBodyUsed, x as AstroResponseHeadersReassigned, y as fileExtension, z as slash, p as prependForwardSlash, B as removeTrailingForwardSlash } from './chunks/astro/assets-service_CAQf36mH.mjs';
+import { R as ROUTE_TYPE_HEADER, l as REROUTE_DIRECTIVE_HEADER, n as createSlotValueFromString, r as renderTemplate, a as renderComponent, D as DEFAULT_404_COMPONENT, o as renderSlotToString, p as renderJSX, q as chunkToString, t as isRenderInstruction, v as clientLocalsSymbol, w as clientAddressSymbol, x as renderPage, z as REWRITE_DIRECTIVE_HEADER_KEY, A as REWRITE_DIRECTIVE_HEADER_VALUE, B as renderEndpoint, C as ASTRO_VERSION, E as responseSentSymbol$1, G as REROUTABLE_STATUS_CODES } from './chunks/astro/server_zRN-DKkT.mjs';
 import { onRequest } from './_noop-middleware.mjs';
 
 function shouldAppendForwardSlash(trailingSlash, buildFormat) {
@@ -2646,34 +2646,22 @@ const serverEntrypointModule = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.de
 
 const _page0 = () => import('./pages/_image.astro.mjs');
 const _page1 = () => import('./pages/404.astro.mjs');
-const _page2 = () => import('./pages/post/comandos-mas-usados-en-git.astro.mjs');
-const _page3 = () => import('./pages/post/como-obtener-tu-primer-empleo-como-web-developer.astro.mjs');
-const _page4 = () => import('./pages/post/como-utilizar-git-y-github-en-un-ambiente-profesional.astro.mjs');
-const _page5 = () => import('./pages/post/el-origen-de-javascript.astro.mjs');
-const _page6 = () => import('./pages/post/guia-para-ser-un-desarrollador-web.astro.mjs');
-const _page7 = () => import('./pages/post/que-es-devin-el-primer-ingeniero-de-software-de-ia.astro.mjs');
-const _page8 = () => import('./pages/post/que-es-la-inteligencia-artificial-y-cual-es-su-impacto-en-el-mundo.astro.mjs');
-const _page9 = () => import('./pages/robots.txt.astro.mjs');
-const _page10 = () => import('./pages/rss.xml.astro.mjs');
-const _page11 = () => import('./pages/tags/_tags_.astro.mjs');
-const _page12 = () => import('./pages/trabajos-dependientes.astro.mjs');
-const _page13 = () => import('./pages/index.astro.mjs');
+const _page2 = () => import('./pages/blog/_---slug_.astro.mjs');
+const _page3 = () => import('./pages/robots.txt.astro.mjs');
+const _page4 = () => import('./pages/rss.xml.astro.mjs');
+const _page5 = () => import('./pages/tags/_tags_.astro.mjs');
+const _page6 = () => import('./pages/trabajos-dependientes.astro.mjs');
+const _page7 = () => import('./pages/index.astro.mjs');
 
 const pageMap = new Map([
     ["node_modules/astro/dist/assets/endpoint/generic.js", _page0],
     ["src/pages/404.astro", _page1],
-    ["src/pages/post/comandos-mas-usados-en-git.mdx", _page2],
-    ["src/pages/post/como-obtener-tu-primer-empleo-como-web-developer.mdx", _page3],
-    ["src/pages/post/como-utilizar-git-y-github-en-un-ambiente-profesional.mdx", _page4],
-    ["src/pages/post/el-origen-de-javascript.mdx", _page5],
-    ["src/pages/post/guia-para-ser-un-desarrollador-web.mdx", _page6],
-    ["src/pages/post/que-es-devin-el-primer-ingeniero-de-software-de-ia.mdx", _page7],
-    ["src/pages/post/que-es-la-inteligencia-artificial-y-cual-es-su-impacto-en-el-mundo.mdx", _page8],
-    ["src/pages/robots.txt.ts", _page9],
-    ["src/pages/rss.xml.js", _page10],
-    ["src/pages/tags/[tags].astro", _page11],
-    ["src/pages/trabajos-dependientes.astro", _page12],
-    ["src/pages/index.astro", _page13]
+    ["src/pages/blog/[...slug].astro", _page2],
+    ["src/pages/robots.txt.ts", _page3],
+    ["src/pages/rss.xml.js", _page4],
+    ["src/pages/tags/[tags].astro", _page5],
+    ["src/pages/trabajos-dependientes.astro", _page6],
+    ["src/pages/index.astro", _page7]
 ]);
 const serverIslandMap = new Map();
 

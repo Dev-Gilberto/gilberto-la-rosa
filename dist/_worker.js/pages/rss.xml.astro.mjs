@@ -1,13 +1,5 @@
 globalThis.process ??= {}; globalThis.process.env ??= {};
-import { _ as __vite_glob_0_0 } from '../chunks/comandos-mas-usados-en-git_BfwiDQg5.mjs';
-import { _ as __vite_glob_0_1 } from '../chunks/como-obtener-tu-primer-empleo-como-web-developer_R4zaVPE_.mjs';
-import { _ as __vite_glob_0_2 } from '../chunks/como-utilizar-git-y-github-en-un-ambiente-profesional_C0feYT6I.mjs';
-import { _ as __vite_glob_0_3 } from '../chunks/el-origen-de-javascript_CztOe57r.mjs';
-import { _ as __vite_glob_0_4 } from '../chunks/guia-para-ser-un-desarrollador-web_Dv6Lv2rX.mjs';
-import { _ as __vite_glob_0_5 } from '../chunks/que-es-devin-el-primer-ingeniero-de-software-de-ia_Putjw92k.mjs';
-import { _ as __vite_glob_0_6 } from '../chunks/que-es-la-inteligencia-artificial-y-cual-es-su-impacto-en-el-mundo_D8R8ZU5r.mjs';
-import { y as yellow } from '../chunks/astro/server_DF50JbGT.mjs';
-import { f as formatBlogPosts } from '../chunks/utils_BneGKSZi.mjs';
+import { y as yellow } from '../chunks/astro/server_zRN-DKkT.mjs';
 export { renderers } from '../renderers.mjs';
 
 var util$4;
@@ -6327,27 +6319,24 @@ async function generateRSS(rssOptions) {
   return new fxp.XMLBuilder(xmlOptions).build(root);
 }
 
-const postImportResult = /* #__PURE__ */ Object.assign({"./post/comandos-mas-usados-en-git.mdx": __vite_glob_0_0,"./post/como-obtener-tu-primer-empleo-como-web-developer.mdx": __vite_glob_0_1,"./post/como-utilizar-git-y-github-en-un-ambiente-profesional.mdx": __vite_glob_0_2,"./post/el-origen-de-javascript.mdx": __vite_glob_0_3,"./post/guia-para-ser-un-desarrollador-web.mdx": __vite_glob_0_4,"./post/que-es-devin-el-primer-ingeniero-de-software-de-ia.mdx": __vite_glob_0_5,"./post/que-es-la-inteligencia-artificial-y-cual-es-su-impacto-en-el-mundo.mdx": __vite_glob_0_6});
-const posts = formatBlogPosts(Object.values(postImportResult));
-const get = () => getRssResponse({
-  stylesheet: "/rss/styles.xsl",
-  title: "Gilberto La Rosa 🚀 Web Developer 🌎 Blog 📝 Programación Web 💻 GilbertoXdev 💣",
-  description: "Este mi simple y cautivador blog, donde estaré publicando tips, anécdotas de todo lo que he vivido como programador web y como una persona humana (Existen muchas personas, que no son humanas).",
-  site: "https://gilberto-la-rosa.xyz/",
-  items: posts.map((post) => ({
-    link: post.url,
-    title: post.frontmatter.title,
-    pubDate: post.frontmatter.date,
-    description: post.frontmatter.description,
-    customData: `
-      <author>${post.frontmatter.author}</author>
-    `
-  }))
-});
+async function GET(context) {
+  getRssResponse({
+    // stylesheet: "/rss/styles.xsl",
+    title: "Gilberto La Rosa 🚀 Web Developer 🌎 Blog 📝 Programación Web 💻 GilbertoXdev 💣",
+    description: "Este mi simple y cautivador blog, donde estaré publicando tips, anécdotas de todo lo que he vivido como programador web y como una persona humana (Existen muchas personas, que no son humanas).",
+    site: "https://gilberto-la-rosa.xyz/",
+    items: posts.map((post) => ({
+      link: post.url,
+      title: post.frontmatter.title,
+      pubDate: post.frontmatter.pubDate,
+      description: post.frontmatter.description
+    }))
+  });
+}
 
 const _page = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
     __proto__: null,
-    get
+    GET
 }, Symbol.toStringTag, { value: 'Module' }));
 
 const page = () => _page;

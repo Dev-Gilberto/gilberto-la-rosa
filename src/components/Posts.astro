@@ -1,12 +1,9 @@
 ---
-import { formatpubDate } from "@assets/js/utils";
-import { formDataToObject } from "astro/actions/runtime/virtual/server.js";
-
 import type { CollectionEntry } from "astro:content";
+type Props = CollectionEntry<"blog">["data"] & { slug: string };
 import FormattedDate from "@components/FormattedDate.astro";
-type Props = CollectionEntry<"blog">["data"];
 
-const { title, image, pubDate, emojis, description } = Astro.props;
+const { title, image, pubDate, emojis, description, slug } = Astro.props;
 ---
 
 <li
@@ -15,7 +12,7 @@ const { title, image, pubDate, emojis, description } = Astro.props;
   <article>
     <span class="inline-block text-5xl pt-2">{image}</span>
 
-    <a href="" title="Guía paso a paso para ser un desarrollador web">
+    <a href={`/blog/${slug}`}>
       <h2
         class="my-4 text-3xl font-[Antonio] font-bold uppercase tracking-wide hover:text-[#f79533] transition duration-150"
       >
@@ -31,7 +28,7 @@ const { title, image, pubDate, emojis, description } = Astro.props;
       class="text-sm font-medium uppercase mt-4 items-center flex justify-between"
     >
       <a
-        href=""
+        href={`/blog/${slug}`}
         title="ver mas"
         class="group inline-flex gap-1 hover:text-[#f79533] transition duration-150 font-[Antonio] font-bold"
       >
