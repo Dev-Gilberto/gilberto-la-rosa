@@ -12,6 +12,7 @@ export default defineConfig({
   adapter: cloudflare({
     imageService: "cloudflare",
   }),
+
   //Opciones del Servidor
   server: {
     port: 7000,

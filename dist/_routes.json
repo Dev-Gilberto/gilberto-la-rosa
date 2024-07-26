@@ -9,6 +9,7 @@
     "/AVATAR-GILBERTO.jpg",
     "/codafter-cl.png",
     "/logo.svg",
+<<<<<<< HEAD
     "/blog/comandos-mas-usados-en-git",
     "/blog/como-obtener-tu-primer-empleo-como-web-developer",
     "/blog/como-utilizar-git-y-github-en-un-ambiente-profesional",
@@ -18,6 +19,10 @@
     "/blog/que-es-la-inteligencia-artificial-y-cual-es-su-impacto-en-el-mundo",
     "/tags/webdeveloper",
     "/tags/git",
+=======
+    "/tags/web-developer",
+    "/tags/control-de-versiones",
+>>>>>>> 7f1c80e (nueva version)
     "/tags/tecnologa",
     "/tags/programacin"
   ]
